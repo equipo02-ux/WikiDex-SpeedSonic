@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-primary": "#003548", "on-secondary": "#3b2f00", "on-background": "#d6e3ff", "inverse-surface": "#d6e3ff", "on-surface": "#d6e3ff", "surface-bright": "#2c3951", "on-secondary-fixed": "#231b00", "on-tertiary-fixed": "#011d35", "on-primary-fixed": "#001e2b", "error-container": "#93000a", "secondary-fixed-dim": "#ecc200", "tertiary-fixed-dim": "#b0c9e8", "surface-variant": "#27354c", "on-tertiary-container": "#3b526d", "surface-dim": "#041329", "outline-variant": "#3e484e", "primary": "#bae6ff", "on-error": "#690005", "background": "#041329", "on-error-container": "#ffdad6", "primary-fixed": "#c1e8ff", "tertiary-container": "#aec6e6", "error": "#ffb4ab", "surface-container-lowest": "#010e24", "on-secondary-container": "#6e5900", "on-surface-variant": "#bec8cf", "surface-tint": "#73d1ff", "surface": "#041329", "surface-container-high": "#1c2a41", "primary-container": "#69cfff", "secondary": "#fff0c8", "secondary-container": "#fdd000", "inverse-primary": "#006687", "on-secondary-fixed-variant": "#564500", "outline": "#889299", "surface-container-low": "#0d1c32", "on-primary-container": "#005774", "on-tertiary": "#19324b", "surface-container-highest": "#27354c", "secondary-fixed": "#ffe07c", "tertiary-fixed": "#d1e4ff", "primary-fixed-dim": "#73d1ff", "surface-container": "#112036", "tertiary": "#cce2ff", "on-tertiary-fixed-variant": "#314863", "on-primary-fixed-variant": "#004d67" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-xl": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-lg": "1.5rem", "space-lg": "1rem", "gutter-sm": "0.75rem", "space-md": "0.75rem", "gutter": "1rem" }, "fontFamily": { "label-sm": ["Outfit"], "label-md": ["Outfit"], "headline-md": ["Outfit"], "label-lg": ["Outfit"], "display-lg-mobile": ["Outfit"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Outfit"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#041329;color:#d6e3ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary-container shadow-[0_0_16px_rgba(105,207,255,0.25)]"><span class="material-symbols-outlined text-[24px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface leading-none">WikiSpeed</span><span class="font-label-sm text-label-sm text-primary-container tracking-widest uppercase">Lore &amp; Más</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Buscar" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Ajustes" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen px-margin"><div class="flex flex-col w-full pb-8 space-y-6">
+<!-- CABECERA DE SECCIÓN & HERO COMPACTO -->
+<section class="flex flex-col space-y-3 pt-2">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high w-fit">
+<span class="material-symbols-outlined text-primary-container text-[16px]">public_off</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Archivo Histórico &amp; Multiverso</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight">
+        Lore, Curiosidades &amp; No-Canon
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Secretos de desarrollo, creadores legendarios, reparto de voces multilingüe y dimensiones alternas fuera del canon oficial de SEGA.
+      </p>
+</div>
+<!-- OMNI-BUSCADOR DE LORE -->
+<div class="relative w-full mt-2">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-primary-container">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full pl-10 pr-10 py-3 rounded-xl bg-surface-container text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-high transition-colors" id="loreSearch" placeholder="Buscar curiosidad, creador o personaje no canónico..." type="search"/>
+<button aria-label="Limpiar búsqueda" class="absolute inset-y-0 right-0 pr-3 flex items-center text-on-surface-variant hover:text-primary-container hidden" id="clearSearch">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- CHIPS DE FILTRO HORIZONTALES -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="filter-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm flex items-center gap-1 shrink-0" data-filter="all">
+<span class="material-symbols-outlined text-[14px]">grid_view</span>
+<span>Todo</span>
+</button>
+<button class="filter-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 flex items-center gap-1" data-filter="creators">
+<span class="material-symbols-outlined text-[14px]">engineering</span>
+<span>Creadores</span>
+</button>
+<button class="filter-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 flex items-center gap-1" data-filter="nocanon">
+<span class="material-symbols-outlined text-[14px]">alt_route</span>
+<span>No-Canon</span>
+</button>
+<button class="filter-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 flex items-center gap-1" data-filter="voices">
+<span class="material-symbols-outlined text-[14px]">record_voice_over</span>
+<span>Doblaje</span>
+</button>
+<button class="filter-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 flex items-center gap-1" data-filter="trivia">
+<span class="material-symbols-outlined text-[14px]">lightbulb</span>
+<span>Curiosidades &amp; Beta</span>
+</button>
+</div>
+</section>
+<!-- SECCIÓN 1: CREADORES LEGENDARIOS -->
+<section class="flex flex-col space-y-3 filterable-section" data-section="creators">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Arquitectos del Destello Azul</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SEGA / Sonic Team Fundacional (1990-1992)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary">4 Leyendas</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- YUJI NAKA -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container">Yuji Naka</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-bold uppercase tracking-wider">Programador Principal &amp; Productor</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Motor Físico</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Pionero de la subrutina de aceleración por inercia curvilínea en la Sega Mega Drive/Genesis. Logró que un sprite rotase a 60 FPS a través de bucles gravitacionales sin ralentización.
+        </p>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span class="font-label-sm text-label-sm">Inercia &amp; Momentum</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Sonic 1, 2, CD, Adventure</span>
+</div>
+</div>
+<!-- NAOTO OHSHIMA -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container">Naoto Ohshima</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-bold uppercase tracking-wider">Diseñador del Personaje Original</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Concept Art</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Diseñó a Sonic fusionando el rostro de Felix the Cat con la silueta de Mickey Mouse. Eligió el azul corporativo de SEGA y adaptó las icónicas zapatillas rojas con hebillas inspiradas en Michael Jackson (álbum <em>Bad</em>) y Santa Claus.
+        </p>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">palette</span>
+<span class="font-label-sm text-label-sm">Diseño Visual Canónico</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Diseño Sonic &amp; Dr. Eggman</span>
+</div>
+</div>
+<!-- HIROKAZU YASUHARA -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container">Hirokazu Yasuhara</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-bold uppercase tracking-wider">Director de Planificación &amp; Level Design</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Map Architect</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          El maestro de la topografía vertical. Equilibró la desmesurada velocidad programada por Naka mediante rutas alternativas en múltiples niveles para Green Hill, Marble Zone y Chemical Plant.
+        </p>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">map</span>
+<span class="font-label-sm text-label-sm">Rutas Multinivel</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Sonic 1, 2, 3 &amp; Knuckles</span>
+</div>
+</div>
+<!-- MASATO NAKAMURA -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container">Masato Nakamura</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-bold uppercase tracking-wider">Compositor Maestro (Dreams Come True)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Yamaha YM2612</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Líder de la banda pop japonesa <em>Dreams Come True</em>. Creó los pentagramas melódicos más influyentes de los 16-bits para Sonic 1 y Sonic 2 exprimiendo el chip sintetizador FM de la consola.
+        </p>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">music_note</span>
+<span class="font-label-sm text-label-sm">Banda Sonora Original</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Green Hill, Star Light, Emerald Hill</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ILUSTRACIÓN / BANNER VISUAL MULTIVERSAL -->
+<div class="w-full rounded-2xl overflow-hidden relative bg-surface-container-low p-space-lg flex flex-col justify-end min-h-[140px] shadow-sm">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-dim via-surface-container to-surface-container-high opacity-90"></div>
+<div class="relative z-10 flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Fisura en el Continuum Temporal</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary-fixed">Continuidades Descartadas &amp; Universos Expandidos</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Archie Comics Pre-SGW, Fleetway Editions, series de TV y conceptos que traspasaron el canon de SEGA.</p>
+</div>
+</div>
+<!-- SECCIÓN 2: UNIVERSOS NO CANÓNICOS & ANOMALÍAS -->
+<section class="flex flex-col space-y-3 filterable-section" data-section="nocanon">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">crisis_alert</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Personajes Fuera de Continuidad</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Archie Pre-Wave, Animación &amp; Fanon Oficializado</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-bold">No-Canon</span>
+</div>
+<!-- TARJETAS DE PERSONAJES NO-CANON (BENTO LIST) -->
+<div class="flex flex-col space-y-space-sm">
+<!-- SCOURGE -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">electric_bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Scourge the Hedgehog</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Anti-Mobius / Moebius</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase">Archie Pre-SGW</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Originalmente "Evil Sonic", se transformó en Scourge tras absorber la radiación de la Master Emerald, adquiriendo púas verde ácido, chaqueta de cuero negra y cicatrices gemelas en el pecho provocadas por Locke.
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estado: Borrado tras la Super Genesis Wave</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">Anomalía Nivel S</span>
+</div>
+</div>
+<!-- SALLY ACORN & FREEDOM FIGHTERS -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">shield_person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Princesa Sally Acorn</span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Knothole Freedom Fighters</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase">Sonic SatAM &amp; Archie</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Líder estratégica de la resistencia rebelde frente a la tiranía del Dr. Julian Robotnik. Hija del Rey Nigel Acorn y operadora de la supercomputadora táctica de mano NICOLE.
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estado: Exclusiva de medios occidentales</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Coconspiradora de Sonic</span>
+</div>
+</div>
+<!-- NAZO -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">flare</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Nazo</span>
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">El Destello Plateado del Piloto X</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase">TMS Piloto &amp; Fanon</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Un erizo plateado brillante que apareció por 2 segundos en el tráiler piloto de Sonic X (2000). SEGA archivó la imagen como "Nazo.jpg" ("Misterio"). La comunidad lo convirtió en leyenda con la serie de animación "Wrath of Nazo".
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Origen: Fotograma de producción TMS</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">Fenómeno de Culto</span>
+</div>
+</div>
+<!-- COSMO THE SEEDRIAN -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[28px]">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cosmo the Seedrian</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase tracking-wider">Saga Espacial Metarex</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase">Sonic X Temporada 3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Última superviviente de la especie vegetal espacial Seedrian. Vínculo emocional crucial de Miles 'Tails' Prower. Su sacrificio cósmico para erradicar a Dark Oak es uno de los arcos más recordados fuera del canon principal.
+        </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estado: Canon exclusivo de animación TV</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Semilla del Blue Typhoon</span>
+</div>
+</div>
+<!-- MECHA KNUCKLES & ROBIANS -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[28px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Robians &amp; Mecha Knuckles</span>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">Victimas de la Robotización</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase">Archie &amp; Sonic R</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Los habitantes biológicos convertidos por la fuerza en autómatas sirvientes de Robotnik (incluyendo al tío Chuck). Contrastado con los duplicados mecánicos letales creados en los cómics.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 3: REPARTO Y ACTORES DE DOBLAJE (VOICE CAST MULTILINGÜE) -->
+<section class="flex flex-col space-y-3 filterable-section" data-section="voices">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Reparto de Voces Multilingüe</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Los Actores Detrás del Ícono</p>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">translate</span>
+<span class="font-label-sm text-label-sm">4 Regiones</span>
+</div>
+</div>
+<!-- TARJETAS DE DOBLAJE POR PERSONAJE -->
+<div class="flex flex-col space-y-space-sm">
+<!-- SONIC THE HEDGEHOG DOBLAJE -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-primary-container">Sonic the Hedgehog</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Erizo Supersónico</span>
+</div>
+<div class="grid grid-cols-1 gap-2 pt-1">
+<!-- Japonés -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">JP</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Jun'ichi Kanemaru</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ininterrumpido desde Sonic Adventure (1998)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Voz Definitiva</span>
+</div>
+<!-- Inglés -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">EN</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Ryan Drummond / Roger Craig Smith</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Era Dreamcast y Era Colors hasta la actualidad</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oficial Juegos</span>
+</div>
+<!-- Español Latino -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">LAT</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Jorge Bringas / Yamil Atala</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sonic Boom, Sonic X &amp; Películas (Luisito Comunica)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">TV &amp; Cine</span>
+</div>
+<!-- Castellano -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">ES</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Ángel de Gracia</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Voz oficial en castellano desde Sonic Generations</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">España</span>
+</div>
+</div>
+</div>
+<!-- DR. EGGMAN DOBLAJE -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-headline-sm text-headline-sm text-error">Dr. Ivo Robotnik (Eggman)</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Científico Genio</span>
+</div>
+<div class="grid grid-cols-1 gap-2 pt-1">
+<!-- Japonés -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-error">JP</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Chikao Ohtsuka (†) / Kotaro Nakamura</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">El tono grave imponente y carismático</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pilar Nipón</span>
+</div>
+<!-- Inglés -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-error">EN</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Mike Pollock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">La voz angloparlante más longeva (desde Sonic X, 2003)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Récord Mundial</span>
+</div>
+<!-- Castellano -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-error">ES</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Carlos del Pino</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">El Dr. Eggman en todos los juegos localizados a España</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">España</span>
+</div>
+</div>
+</div>
+<!-- MILES TAILS PROWER DOBLAJE -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-headline-sm text-headline-sm text-secondary-container">Miles 'Tails' Prower</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">El Mecánico Prodigio</span>
+</div>
+<div class="grid grid-cols-1 gap-2 pt-1">
+<!-- Japonés -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary-container">JP</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Ryo Hirohashi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Voz canónica en Tokio desde Sonic Heroes (2003)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oficial JP</span>
+</div>
+<!-- Inglés -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary-container">EN</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Colleen O'Shaughnessey</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Única actriz de voz que pasó de los juegos al cine de Paramount</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Cine &amp; Juegos</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 4: CURIOSIDADES, PROTOTIPOS & SECRETOS BETA -->
+<section class="flex flex-col space-y-3 filterable-section" data-section="trivia">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Curiosidades, Betas &amp; B-Sides</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Mitos Confirmados por Desarrolladores</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-secondary">Documentado</span>
+</div>
+<!-- TARJETAS EXPANDIBLES / INTERACTIVAS DE TRIVIA -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- CURIOSIDAD 1: CONEJO / RISTAR -->
+<div class="trivia-card p-space-lg rounded-xl bg-surface-container transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">cruelty_free</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">"Feel the Rabbit": El erizo antes de ser erizo</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant trivia-chevron text-[20px] transition-transform">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Antes de decidirse por un puercoespín, Sonic Team consideró un armadillo, un bulldog y un conejo con orejas elásticas que recogía objetos. La mecánica de orejas fue reciclada más tarde en el clásico <em>Ristar</em> (1995).
+        </p>
+<div class="trivia-extra hidden pt-3 mt-2 border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container">Prototipo interno: "Twin Stars" / AM8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Archivos de diseño SEGA 1990</span>
+</div>
+</div>
+<!-- CURIOSIDAD 2: NATACIÓN / ERROR BIOLÓGICO -->
+<div class="trivia-card p-space-lg rounded-xl bg-surface-container transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">pool</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">¿Por qué Sonic no sabe nadar bajo el agua?</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant trivia-chevron text-[20px] transition-transform">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Yuji Naka admitió en múltiples entrevistas que creía erróneamente que los erizos reales eran incapaces de nadar. Por eso, al entrar al agua, Sonic se hunde pesadamente y necesita burbujas para no ahogarse. Los erizos reales nadan con destreza.
+        </p>
+<div class="trivia-extra hidden pt-3 mt-2 border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container">Origen: Confesión en Sonic Central 2009</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Labyrinth Zone trauma</span>
+</div>
+</div>
+<!-- CURIOSIDAD 3: MICHAEL JACKSON SONIC 3 -->
+<div class="trivia-card p-space-lg rounded-xl bg-surface-container transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">album</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Michael Jackson &amp; la música de Sonic 3 (1994)</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant trivia-chevron text-[20px] transition-transform">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Brad Buxer y su equipo compusieron temas para Sonic 3 con el mismísimo Rey del Pop. Los acordes de los créditos finales son idénticos a <em>Stranger in Moscow</em>, y las cajas de ritmos de Carnival Night y IceCap derivan de sesiones de MJ.
+        </p>
+<div class="trivia-extra hidden pt-3 mt-2 border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container">Confirmado oficialmente por Yuji Naka en 2022</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sonic Origins BSO Reemplazada</span>
+</div>
+</div>
+<!-- CURIOSIDAD 4: MADONNA -->
+<div class="trivia-card p-space-lg rounded-xl bg-surface-container transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[20px]">heart_broken</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Madonna: La novia humana cancelada de 1991</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant trivia-chevron text-[20px] transition-transform">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          En los storyboards iniciales de Naoto Ohshima, Sonic tenía una banda de rock y una novia humana rubia llamada "Madonna". Madeleine Schroeder (SEGA of America) ordenó eliminarla para "suavizar el tono para la audiencia occidental infantil".
+        </p>
+<div class="trivia-extra hidden pt-3 mt-2 border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Archivos prototipo: Sega Mega Play 1991</span>
+<span class="font-label-sm text-label-sm text-primary">Precursora de Elise (2006)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- BANNER COMUNIDAD / CALL TO ACTION INTERACTIVO -->
+<section class="rounded-2xl bg-surface-container-high p-space-lg relative overflow-hidden">
+<div class="flex flex-col space-y-3 relative z-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">auto_fix_high</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">¿Conoces un secreto o variante no listada?</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        La enciclopedia WikiSpeed es construida colaborativamente por speedrunners, archivistas de prototipos e historiadores del erizo azul en todo el mundo.
+      </p>
+<div class="pt-1 flex items-center gap-3">
+<button class="px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center gap-2 hover:bg-primary-container active:scale-95 transition-all shadow-md" id="btnContribute">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Aportar al Archivo</span>
+</button>
+<span class="font-label-sm text-label-sm text-primary-container underline underline-offset-4 cursor-pointer">Guía de Fuentes</span>
+</div>
+</div>
+</section>
+<!-- MODAL / BOTTOM SHEET DE CONTRIBUCIÓN (OCULTO POR DEFECTO) -->
+<div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-end justify-center hidden" id="contributionSheet">
+<div class="w-full max-w-lg bg-surface-container rounded-t-2xl p-space-lg flex flex-col space-y-4 animate-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container-highest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">edit_note</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Enviar Curiosidad o Lore</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="closeSheet">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-3">
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1 block">Categoría de la Aportación</label>
+<select class="w-full p-2.5 rounded-xl bg-surface-container-low text-body-sm text-on-surface focus:outline-none">
+<option>Secreto de Desarrollo / Prototipo</option>
+<option>Personaje / Continuidad No Canónica</option>
+<option>Actor de Doblaje / Grabaciones Beta</option>
+<option>Música &amp; Diseñadores de Sonic Team</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1 block">Título del Dato o Descubrimiento</label>
+<input class="w-full p-2.5 rounded-xl bg-surface-container-low text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none" placeholder="Ej: Sprite descartado en Sonic 2 Beta de Nick Arcade..." type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1 block">Fuente Verificable (ROM Hack, Entrevista, Revista)</label>
+<input class="w-full p-2.5 rounded-xl bg-surface-container-low text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none" placeholder="https://tcrf.net/... o entrevista oficial" type="text"/>
+</div>
+<button class="w-full py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold mt-2" id="submitContribution">
+          Enviar a Revisión Comunitaria
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // FILTRADO DINÁMICO POR CATEGORÍA
+  const chips = document.querySelectorAll('.filter-chip');
+  const sections = document.querySelectorAll('.filterable-section');
+  const searchInput = document.getElementById('loreSearch');
+  const clearSearchBtn = document.getElementById('clearSearch');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-primary', 'text-on-primary');
+      chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      const filter = chip.getAttribute('data-filter');
+      sections.forEach(sec => {
+        if (filter === 'all' || sec.getAttribute('data-section') === filter) {
+          sec.classList.remove('hidden');
+        } else {
+          sec.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // BÚSQUEDA INTERACTIVA
+  searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase().trim();
+    if (term.length > 0) {
+      clearSearchBtn.classList.remove('hidden');
+    } else {
+      clearSearchBtn.classList.add('hidden');
+    }
+
+    sections.forEach(sec => {
+      const text = sec.innerText.toLowerCase();
+      if (text.includes(term)) {
+        sec.classList.remove('hidden');
+      } else {
+        sec.classList.add('hidden');
+      }
+    });
+  });
+
+  clearSearchBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearSearchBtn.classList.add('hidden');
+    sections.forEach(sec => sec.classList.remove('hidden'));
+    searchInput.focus();
+  });
+
+  // ACORDEÓN EXPANDIBLE DE TRIVIAS
+  const triviaCards = document.querySelectorAll('.trivia-card');
+  triviaCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const extra = card.querySelector('.trivia-extra');
+      const chevron = card.querySelector('.trivia-chevron');
+      if (extra) {
+        extra.classList.toggle('hidden');
+        if (extra.classList.contains('hidden')) {
+          chevron.style.transform = 'rotate(0deg)';
+        } else {
+          chevron.style.transform = 'rotate(180deg)';
+        }
+      }
+    });
+  });
+
+  // MODAL / BOTTOM SHEET DE APORTACIÓN
+  const btnContribute = document.getElementById('btnContribute');
+  const contributionSheet = document.getElementById('contributionSheet');
+  const closeSheet = document.getElementById('closeSheet');
+  const submitContribution = document.getElementById('submitContribution');
+
+  btnContribute.addEventListener('click', () => {
+    contributionSheet.classList.remove('hidden');
+  });
+
+  closeSheet.addEventListener('click', () => {
+    contributionSheet.classList.add('hidden');
+  });
+
+  contributionSheet.addEventListener('click', (e) => {
+    if (e.target === contributionSheet) {
+      contributionSheet.classList.add('hidden');
+    }
+  });
+
+  submitContribution.addEventListener('click', () => {
+    alert('¡Gracias speedrunner! Tu entrada ha sido enviada a los moderadores de WikiSpeed.');
+    contributionSheet.classList.add('hidden');
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-primary-container transition-colors group" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-primary-container transition-colors group" data-path="personajes" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Personajes</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-primary-container transition-colors group" data-path="medios" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Medios</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-primary-container transition-colors group relative" data-path="lore-y-mas" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Lore &amp; Más</span><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_8px_rgba(105,207,255,0.8)]"></span></a></div></nav></body></html>

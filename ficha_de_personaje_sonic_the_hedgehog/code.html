@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Volver" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary-container active:scale-95 transition-transform shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="WikiSpeed Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Detalle De Artículo</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Compartir artículo" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Sub-header quick actions & breadcrumb / favorite toggle -->
+<div class="px-gutter pt-space-md pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="text-primary-container font-headline-sm text-headline-sm">#001</span>
+<span>•</span>
+<span class="tracking-wider uppercase">Archivo Central</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Marcar como favorito" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary-container active:scale-90 transition-transform" id="favBtn" onclick="toggleFavorite()">
+<span class="material-symbols-outlined text-[20px]" id="favIcon" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+<button aria-label="Descargar Ficha" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary-fixed active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Hero Profile Banner Card -->
+<div class="px-gutter mb-space-lg">
+<div class="relative w-full rounded-xl bg-surface-container-high overflow-hidden shadow-lg">
+<!-- Glow ambient backdrop -->
+<div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-44 h-44 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none"></div>
+<div class="relative p-space-lg flex flex-col">
+<!-- Badge row -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+            Canon Principal
+          </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-secondary-container font-label-sm text-label-sm font-semibold">
+            ★ Era Clásica & Moderna
+          </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+            Debut: 1991
+          </span>
+</div>
+<!-- Identity Names -->
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight">
+          Sonic the Hedgehog
+        </h2>
+<p class="font-label-md text-label-md text-primary-fixed-dim">
+          ソニック・ザ・ヘッジホッグ <span class="text-outline-variant">•</span> The Blue Blur / El Destello Azul
+        </p>
+<!-- Dynamic Character Portrait -->
+<div class="relative w-full h-64 mt-space-md rounded-lg overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Dynamic 3D cinematic action render of Sonic the Hedgehog sprinting at supersonic velocity, deep cyan electric trail behind him, shimmering 3D golden power rings floating in mid-air, dark sci-fi navy and electric cyan ambient backlighting, high detail, studio game art quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDAwCwE3SMGmdRmahlubk4ktLkNXtn-lnlbqfee6W06ZCnflTpII2bQXZFRGd5GWdOWnP4uEFPy6HaqHgUWzAEDULYqcgPDCweXFQcWT0zCvkZg0Efaue2rlTqhqRJ9TL7y7aSamLIuWjI-WK8EZOlI-o9p2OBvJCJ7FZwoktDIiEvn_VvHweEnOozOlnJTGE8a0qYv5tY8i2GyCWD0FwJHRCDlI2jIAxHJ7Ctn1E"/>
+<!-- Ring overlay counter pill -->
+<div class="absolute bottom-3 left-3 px-space-md py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center gap-space-xs text-secondary-container shadow-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">RING ENERGY: 100%</span>
+</div>
+<div class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center gap-1 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span class="font-label-sm text-label-sm font-bold">MACH 1+</span>
+</div>
+</div>
+<p class="mt-space-md font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Un erizo antropomórfico dotado del don de la velocidad supersónica. De espíritu libre, amante de la aventura y defensor intransigente de la paz contra los planes tiránicos del Dr. Ivo "Eggman" Robotnik.
+        </p>
+</div>
+</div>
+</div>
+<!-- Quick Info Data Table (WikiDex Style) -->
+<div class="px-gutter mb-space-lg">
+<div class="w-full rounded-xl bg-surface-container p-space-md shadow-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-high/60 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-space-xs text-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span class="font-headline-sm text-headline-sm">Ficha Técnica Oficial</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SEGA Archive</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs text-body-sm">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Especie</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Erizo común</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Edad / Género</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">15 años / Masculino</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Altura & Peso</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">100 cm | 35 kg</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Alineación</span>
+<span class="font-body-md text-body-md font-semibold text-secondary-fixed">Bien Neutral (Libertad)</span>
+</div>
+<div class="col-span-2 bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Habilidad Principal</span>
+<span class="font-body-md text-body-md text-primary-fixed-dim">Supervelocidad Hipersónica & Spin Attack</span>
+</div>
+<div class="col-span-2 bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Creadores Originales</span>
+<span class="font-body-md text-body-md text-on-surface">Naoto Ohshima, Yuji Naka, Hirokazu Yasuhara</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Combat & Ability Stat Meters -->
+<div class="px-gutter mb-space-lg">
+<div class="w-full rounded-xl bg-surface-container-high p-space-lg shadow-md">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">equalizer</span>
+          Parámetros de Rendimiento
+        </h3>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary-container">
+          CLASE S+
+        </span>
+</div>
+<!-- Stat Bars -->
+<div class="flex flex-col gap-space-md">
+<!-- Velocidad -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">bolt</span> Velocidad
+            </span>
+<span class="text-primary-container font-bold">100 / MAX (Supersónica)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-fixed-dim to-secondary-container w-full"></div>
+</div>
+</div>
+<!-- Agilidad -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">sync</span> Agilidad & Reflejos
+            </span>
+<span class="text-on-surface font-semibold">95%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-primary-container w-[95%]"></div>
+</div>
+</div>
+<!-- Resistencia -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">shield</span> Resistencia / Durabilidad
+            </span>
+<span class="text-on-surface font-semibold">80%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-tertiary-container w-[80%]"></div>
+</div>
+</div>
+<!-- Fuerza Física -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">fitness_center</span> Potencia de Impacto
+            </span>
+<span class="text-on-surface font-semibold">65%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full rounded-full bg-outline w-[65%]"></div>
+</div>
+</div>
+</div>
+<!-- Movimientos Clave -->
+<div class="mt-space-lg pt-space-md bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider block mb-space-xs">Técnicas Insignia</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-variant text-on-surface font-label-md text-label-md">Spin Dash</span>
+<span class="px-space-sm py-1 rounded bg-surface-variant text-on-surface font-label-md text-label-md">Homing Attack</span>
+<span class="px-space-sm py-1 rounded bg-surface-variant text-on-surface font-label-md text-label-md">Boost Supersónico</span>
+<span class="px-space-sm py-1 rounded bg-surface-variant text-secondary-container font-label-md text-label-md">Chaos Control</span>
+<span class="px-space-sm py-1 rounded bg-surface-variant text-on-surface font-label-md text-label-md">Light Speed Attack</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Segmented Navigation Tabs (Matching wireframe tree) -->
+<div class="px-gutter mb-space-md">
+<div class="flex overflow-x-auto gap-space-xs pb-1 no-scrollbar">
+<button class="tab-button whitespace-nowrap px-space-md py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-all shadow-sm" id="tab-games" onclick="switchTab('games')">
+        Juegos Clave
+      </button>
+<button class="tab-button whitespace-nowrap px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold transition-all" id="tab-comics" onclick="switchTab('comics')">
+        Cómics & Lore
+      </button>
+<button class="tab-button whitespace-nowrap px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold transition-all" id="tab-media" onclick="switchTab('media')">
+        Películas & Series
+      </button>
+<button class="tab-button whitespace-nowrap px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold transition-all" id="tab-voice" onclick="switchTab('voice')">
+        Doblaje & Trivia
+      </button>
+</div>
+</div>
+<!-- Tab Content: Videojuegos (Default) -->
+<div class="tab-panel px-gutter flex flex-col gap-space-sm mb-space-lg" id="content-games">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Apariciones Destacadas en Videojuegos</span>
+<span class="font-label-sm text-label-sm text-outline">5 títulos clave</span>
+</div>
+<!-- Game 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Retro Sega Genesis pixel art style cover art of the original 1991 Sonic the Hedgehog, vivid green hills and blue checkerboard patterns, iconic game cover." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1dKuzHS2iwVx6bQQMtfyE5JRsHlAlgExpkmnhxJzOneQOtsjKF8iC35_z0AMFQLHVgBD1Q8MRcG4L4s94x-DmvN5yMuwf11bhFiHpm-7j2VsdiC2Vd96qG54OWm0ZGVnYQOnhZ1nI1EtmOK7xNkEtxRLUXcDCDIuYEePmKJyeELyPqIIWZebqCwEk7FLI-XV5sT_jLNrimzYpakh3M7VcPeC9zq1XEuEjNywSax4"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic the Hedgehog (1991)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sega Mega Drive / Genesis • Debut</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary-container font-label-sm text-label-sm shrink-0">Génesis</span>
+</div>
+<!-- Game 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sonic Adventure 2 battle cover art with Sonic and Shadow facing in opposite directions, dynamic dreamcast era artwork, bold city escape style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjnxtaP_DxI1KDNpusblu0uS_QkgwtS1CBWjN9QjhenAVmhYKxZ1e_nOtJOcIC0ycQzbbZlixL0wWM1I-MujRuMV-2RMEY8qczJvRp1EdjctALMEtdcQHFoqEz_09jzp5D1DMQPgUGMTcSjtV45A0Vh5bIE2P_y3pvcYadgEtPhaa5Y_EpQR4yXxjCEY4rad4knEyN_lloAliT4Wr5lskdfcAOCV9WXlpEtRntQ_c"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic Adventure 2</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dreamcast / GameCube • Introducción de Shadow</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary-fixed font-label-sm text-label-sm shrink-0">3D Moderno</span>
+</div>
+<!-- Game 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sonic Frontiers open world landscape artwork with ancient futuristic stone ruins, cyber technology towers and blue speed trails over lush fields." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiglvVcD7Gmmk1W0j9evMp0PQRCP2_1co9BSdA_6b_BsyC6lyTbpOKoLwnLxP6FfPThqeL-iBmWPR_bgAu5Zr_YxDk1B54xgGzSnF8i3PparQRw-XqIL-84yP5axqpGOmDkj0meWn48Ecd-OWDGylXeXmbBMoiYc6kysC5aXB1B_gH6OIj2gf2ZbdBDcygkcr_RCSuXUUJuC0Dnk-Htv3RZP0enZz95saNBiEdMrA"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic Frontiers</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Multiplataforma • Zonas Abiertas & Combate</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shrink-0">Nuevo Estilo</span>
+</div>
+<!-- Game 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0">
+<div class="w-full h-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">sports_esports</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic X Shadow Generations</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2024 • Edición Definitiva & Campaña Dual</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface font-label-sm text-label-sm shrink-0">Reciente</span>
+</div>
+</div>
+<!-- Tab Content: Comics (Hidden by default) -->
+<div class="tab-panel hidden px-gutter flex flex-col gap-space-sm mb-space-lg" id="content-comics">
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+<h4 class="font-headline-sm text-headline-sm">IDW Publishing Canon</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Continuidad oficial supervisada por Ian Flynn tras los sucesos de Sonic Forces. Incluye sagas monumentales como el brote del <strong class="text-error">Virus Metálico</strong> (Metal Virus Saga) y los Zombots.
+      </p>
+<div class="flex gap-space-xs flex-wrap mt-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Edición 2018 - Presente</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-secondary-container font-label-sm text-label-sm">Canon Actual</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<h4 class="font-headline-sm text-headline-sm">Archie Comics (No Canónico / Continuidad Clásica)</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Publicación histórica de más de 290 números y múltiples spin-offs que introdujo a los Freedom Fighters (Sally Acorn, Bunnie Rabbot) y la versión cósmica ultra-poderosa <strong class="text-secondary-fixed">Archie Sonic</strong>.
+      </p>
+<div class="flex gap-space-xs flex-wrap mt-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-label-sm">1993 - 2017 (290 Números)</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-error font-label-sm text-label-sm">Universo Alternativo</span>
+</div>
+</div>
+</div>
+<!-- Tab Content: Multimedia & Cine (Hidden by default) -->
+<div class="tab-panel hidden px-gutter flex flex-col gap-space-sm mb-space-lg" id="content-media">
+<div class="p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<div class="w-16 h-20 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Cinematic movie poster visual of Sonic the Hedgehog movie trilogy, live action realistic CGI hedgehog with glowing blue electric quills in Green Hills Montana." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5XcNo9bzK1X9Ljn6nudZwCILjYkGv4FlrOcRGxdYWGQtA4vzJZrR8KX2_cZ_ssNHzfNuklUAw_7711PJ1rI8synHMnBPj-vEFGzAu1zajlbVG2NknONkepKbJtI5WVCz3Zn14SjfgxG1Ce46XQHVHtLns-fCUck_fnyLYeNCWieabnzfqg7mVC3JTfCgZEB1wgqd1L6CHPetYhKVKuiRLaArifasrXhi9vr0BuwI"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase">Paramount Pictures</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Sonic the Hedgehog 1, 2 & 3</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Adaptación cinematográfica taquillera con Jim Carrey como Dr. Robotnik y Keanu Reeves debutando como Shadow.
+        </p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<div class="w-16 h-20 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sonic Prime animated multiverse visual, shattered prismatic glass with alternate versions of Sonic in dystopian and pirate dimensions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBm9lIfzWsVhXNg79e_6ERNQRluKic-Qv1P33Q03uAdUnk1S5MABs6bQFUMCE_3KUe0k8CaTgZnOt4m7ErY7wJ-lWv8mK8mF-VmY3GziRexwjzFhiw6cNVpIA47rpNyvVihk3zF7V1ZZegbyeLiEYLzVtWdcgqMQ6IEAL68PCCiap1JCOpkcl2FJ8VwgS6kbi_Mp4XZXsMRmreEzulS9Dt89sAmM1c_V0ql7BwdwA"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-primary uppercase">Netflix Animation</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Sonic Prime (2022 - 2024)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Sonic fractura el Prisma Paradoja, navegando a través del Shatterverse para salvar a sus amigos.
+        </p>
+</div>
+</div>
+</div>
+<!-- Tab Content: Doblaje & Curiosidades (Hidden by default) -->
+<div class="tab-panel hidden px-gutter flex flex-col gap-space-md mb-space-lg" id="content-voice">
+<!-- Reparto de Voces -->
+<div class="w-full rounded-xl bg-surface-container p-space-md">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">record_voice_over</span>
+        Actores de Doblaje Oficiales
+      </h4>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Japonés (Principal)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Jun'ichi Kanemaru</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1998 - Presente</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Inglés (Juegos / Cine)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Roger Craig Smith</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ben Schwartz (Películas)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Castellano (España)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Ángel de Gracia</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Voz habitual en juegos</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Español Latino</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Marc Winslow</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Jorge Roig Jr. / Luisito C.</span>
+</div>
+</div>
+</div>
+<!-- Curiosidades / Trivia Wiki -->
+<div class="w-full rounded-xl bg-surface-container-high p-space-md">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">lightbulb</span>
+        Curiosidades del Personaje
+      </h4>
+<ul class="flex flex-col gap-space-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Origen del color:</strong> El tono azul cobalto fue seleccionado minuciosamente para coincidir con el logo corporativo de SEGA de 1991.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Inspiración del calzado:</strong> Las zapatillas rojas con hebilla dorada se inspiraron en las botas del álbum <em>Bad</em> de Michael Jackson y los colores de Santa Claus.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Incapacidad de nadar:</strong> Yuji Naka creía erróneamente que los erizos reales no sabían nadar, razón por la cual Sonic se hunde en el agua en sus videojuegos.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Transformaciones Canónicas (Super Forms Showcase) -->
+<div class="px-gutter mb-space-lg">
+<div class="w-full rounded-xl bg-surface-container p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">auto_awesome</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Transformaciones & Formas</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Chaos Energy</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- Super Sonic -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container mb-space-xs">
+<span class="material-symbols-outlined text-[24px]">electric_bolt</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary-container">Super Sonic</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">7 Esmeraldas Chaos</span>
+</div>
+<!-- Hyper Sonic -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[24px]">flare</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">Hyper Sonic</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Súper Esmeraldas</span>
+</div>
+<!-- Darkspine Sonic -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-tertiary mb-space-xs">
+<span class="material-symbols-outlined text-[24px]">dark_mode</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Darkspine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Anillos del Secreto</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Non-Canon & Friends Card (From sketch bottom block) -->
+<div class="px-gutter">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Personajes & Variantes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ver versiones alternas y No-Canon</span>
+</div>
+</div>
+<button aria-label="Explorar universo expandido" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Scripting -->
+<script>
+  function switchTab(tabKey) {
+    // Hide all tab panels
+    const panels = document.querySelectorAll('.tab-panel');
+    panels.forEach(p => p.classList.add('hidden'));
+
+    // Remove active styling on all tabs
+    const tabs = document.querySelectorAll('.tab-button');
+    tabs.forEach(t => {
+      t.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      t.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    // Activate selected tab
+    const activePanel = document.getElementById('content-' + tabKey);
+    if (activePanel) {
+      activePanel.classList.remove('hidden');
+    }
+
+    const activeBtn = document.getElementById('tab-' + tabKey);
+    if (activeBtn) {
+      activeBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      activeBtn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+    }
+  }
+
+  let isFavorite = false;
+  function toggleFavorite() {
+    isFavorite = !isFavorite;
+    const favIcon = document.getElementById('favIcon');
+    if (favIcon) {
+      favIcon.style.fontVariationSettings = isFavorite ? "'FILL' 1" : "'FILL' 0";
+    }
+  }
+</script></main></body></html>

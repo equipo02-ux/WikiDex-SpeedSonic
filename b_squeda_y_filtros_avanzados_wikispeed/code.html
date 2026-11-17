@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_search" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_2px_12px_rgba(0,0,0,0.35)]"><div class="h-16 px-gutter flex items-center gap-space-sm"><button aria-label="Cerrar o volver atrás" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary-container active:scale-95 transition-transform shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">close</span></button><div class="flex-1 flex items-center bg-surface-container rounded-full px-3 py-1.5 gap-space-xs focus-within:ring-2 focus-within:ring-primary-container transition-all"><span class="material-symbols-outlined text-primary-container text-[20px] shrink-0">search</span><input autofocus="" class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md outline-none border-none py-1" id="omni-search-input" placeholder="Buscar personajes, zonas, juegos..." type="search"/><button aria-label="Limpiar búsqueda" class="w-8 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-90 transition-transform shrink-0" onclick="const el = document.getElementById('omni-search-input'); if(el){ el.value=''; el.focus(); }"><span class="material-symbols-outlined text-[18px]">cancel</span></button></div><button aria-label="Limpiar todos los filtros" class="h-11 px-2 flex items-center justify-center font-label-md text-label-md text-secondary-container hover:text-secondary active:scale-95 transition-transform shrink-0">Limpiar</button></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Sub-header & Real-time Live Metrics -->
+<section class="px-gutter pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-wide">24 coincidencias encontradas</span>
+</div>
+<!-- Selector Ordenación -->
+<div class="relative flex items-center bg-surface-container-high rounded-full px-2.5 py-1">
+<span class="material-symbols-outlined text-[16px] text-primary mr-1">sort</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface outline-none appearance-none pr-3 cursor-pointer">
+<option class="bg-surface-container-high text-on-surface" value="rel">Relevancia</option>
+<option class="bg-surface-container-high text-on-surface" value="crono">Cronológico</option>
+<option class="bg-surface-container-high text-on-surface" value="alfa">Alfabético</option>
+</select>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant absolute right-1.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Active Pills Filter Horizontal Scroll -->
+<div class="flex items-center gap-space-xs overflow-x-auto pt-space-xs pb-1 scrollbar-none">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline shrink-0 mr-1">Activos:</span>
+<button class="inline-flex items-center gap-1 bg-surface-container-highest text-primary-container px-2.5 py-1 rounded-full text-label-md font-label-md active:scale-95 transition-all shadow-sm shrink-0">
+<span>Canon Principal</span>
+<span class="material-symbols-outlined text-[14px] text-primary">close</span>
+</button>
+<button class="inline-flex items-center gap-1 bg-surface-container-highest text-secondary-container px-2.5 py-1 rounded-full text-label-md font-label-md active:scale-95 transition-all shadow-sm shrink-0">
+<span>Era Moderna</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">close</span>
+</button>
+<button class="inline-flex items-center gap-1 bg-surface-container-highest text-tertiary px-2.5 py-1 rounded-full text-label-md font-label-md active:scale-95 transition-all shadow-sm shrink-0">
+<span>Hedgehogs</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">close</span>
+</button>
+<button class="inline-flex items-center gap-0.5 text-secondary-fixed-dim px-2 py-1 text-label-md font-label-md hover:underline shrink-0">
+        Borrar todos
+      </button>
+</div>
+</section>
+<!-- Panel de Filtros Colapsables & Tags Rápidos -->
+<section class="px-gutter flex flex-col gap-space-md mt-space-xs">
+<!-- Filtro 1: Categoría / Tipo de Archivo -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between mb-space-sm cursor-pointer" onclick="const p = document.getElementById('filter-categories'); p.classList.toggle('hidden');">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px]">folder_special</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Tipo de Archivo</span>
+<span class="bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm px-1.5 py-0.5 rounded-full">6</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_less</span>
+</div>
+<div class="flex flex-wrap gap-1.5" id="filter-categories">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg font-bold flex items-center gap-1 shadow-sm">
+<span>Personajes</span>
+<span class="text-label-sm opacity-80">(120)</span>
+</button>
+<button class="bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-2.5 py-1.5 rounded-lg flex items-center gap-1">
+<span>Videojuegos</span>
+<span class="text-label-sm opacity-70">(45)</span>
+</button>
+<button class="bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-2.5 py-1.5 rounded-lg flex items-center gap-1">
+<span>Cómics</span>
+<span class="text-label-sm opacity-70">(700+)</span>
+</button>
+<button class="bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-2.5 py-1.5 rounded-lg flex items-center gap-1">
+<span>Series &amp; Películas</span>
+<span class="text-label-sm opacity-70">(12)</span>
+</button>
+<button class="bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-2.5 py-1.5 rounded-lg flex items-center gap-1">
+<span>Curiosidades</span>
+<span class="text-label-sm opacity-70">(34)</span>
+</button>
+<button class="bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-2.5 py-1.5 rounded-lg flex items-center gap-1">
+<span>Doblaje</span>
+<span class="text-label-sm opacity-70">(50)</span>
+</button>
+</div>
+</div>
+<!-- Filtro 2: Estatus Canónico & Eras (2 Columnas densas) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Canon Filter -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Estatus Canónico</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high cursor-pointer select-none">
+<span class="font-label-md text-label-md text-primary font-semibold">Canon SEGA / Sonic Team</span>
+<input checked="" class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg bg-surface-container cursor-pointer select-none">
+<span class="font-label-md text-label-md text-on-surface-variant">Archie Comics (Pre-SGW)</span>
+<input class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg bg-surface-container cursor-pointer select-none">
+<span class="font-label-md text-label-md text-on-surface-variant">IDW Publishing Canon</span>
+<input class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg bg-surface-container cursor-pointer select-none">
+<span class="font-label-md text-label-md text-on-surface-variant">Cine Paramount</span>
+<input class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Era Histórica Filter -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-primary-container text-[18px]">history</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Línea Temporal / Era</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<button class="w-full text-left p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex justify-between items-center">
+<span>Era Clásica (1991-1998)</span>
+<span class="text-label-sm text-outline">Genesis</span>
+</button>
+<button class="w-full text-left p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex justify-between items-center">
+<span>Era Aventura (1998-2005)</span>
+<span class="text-label-sm text-outline">Dreamcast</span>
+</button>
+<button class="w-full text-left p-2 rounded-lg bg-surface-container-high text-secondary-container font-label-md text-label-md flex justify-between items-center font-bold">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+              Era Moderna / Boost (2006+)
+            </span>
+<span class="material-symbols-outlined text-[16px] text-secondary-container">check</span>
+</button>
+<button class="w-full text-left p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex justify-between items-center">
+<span>Era Abierta (Frontiers)</span>
+<span class="text-label-sm text-outline">Actual</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Filtro 3: Alineación, Rol y Atributos de Combate -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">bolt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Atributos &amp; Habilidades de Combate</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Metadatos Wiki</span>
+</div>
+<!-- Subsección Alineación y Tipo -->
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="text-label-sm font-label-sm text-outline-variant mr-1">TIPO:</span>
+<button class="bg-surface-container-highest text-primary font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+          Speed Type
+        </button>
+<button class="bg-surface-container text-on-surface-variant font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">flight</span>
+          Fly / Tech
+        </button>
+<button class="bg-surface-container text-on-surface-variant font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span>
+          Power Type
+        </button>
+</div>
+<!-- Tags de Poderes Especiales -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="text-label-sm font-label-sm text-outline-variant mr-1 self-center">PODER:</span>
+<label class="bg-surface-container-high px-2.5 py-1 rounded-md text-label-md font-label-md text-primary-container flex items-center gap-1.5 cursor-pointer">
+<input checked="" class="accent-primary-container w-3.5 h-3.5 rounded" type="checkbox"/>
+          Chaos Control
+        </label>
+<label class="bg-surface-container-high px-2.5 py-1 rounded-md text-label-md font-label-md text-secondary-container flex items-center gap-1.5 cursor-pointer">
+<input class="accent-secondary-container w-3.5 h-3.5 rounded" type="checkbox"/>
+          Super Forma
+        </label>
+<label class="bg-surface-container-high px-2.5 py-1 rounded-md text-label-md font-label-md text-on-surface-variant flex items-center gap-1.5 cursor-pointer">
+<input class="accent-primary w-3.5 h-3.5 rounded" type="checkbox"/>
+          Boost Supersónico
+        </label>
+<label class="bg-surface-container-high px-2.5 py-1 rounded-md text-label-md font-label-md text-on-surface-variant flex items-center gap-1.5 cursor-pointer">
+<input class="accent-primary w-3.5 h-3.5 rounded" type="checkbox"/>
+          Spin Dash
+        </label>
+</div>
+</div>
+</section>
+<!-- Live Results Preview Section Header -->
+<section class="px-gutter pt-space-lg pb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]">travel_explore</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Resultados en Tiempo Real</h2>
+</div>
+<span class="bg-surface-container-highest text-primary font-label-md text-label-md px-2 py-0.5 rounded-full">
+      Query: "Shadow"
+    </span>
+</section>
+<!-- Live Results Stream (4 Tarjetas Fieles a WikiDex) -->
+<div class="px-gutter flex flex-col gap-space-md mt-space-xs">
+<!-- Tarjeta 1: Personaje Principal (Shadow) -->
+<article class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition-shadow">
+<div class="flex flex-row">
+<div class="w-28 sm:w-36 shrink-0 relative bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center min-h-[140px]" data-alt="High quality dynamic anime rendered 3D render of Shadow the Hedgehog posing with glowing crimson eyes and golden inhibitor rings glowing in the dark neon shadows, futuristic high-tech laboratory background, atmospheric dark blue and crimson rim lighting, detailed game key art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwXuRC2xkAVGd0IbmwQlcirhCKkU3igP5Faiz0L8TPNkn44Cs7Zzd1FgLvw4PQRiqsIDMggNVGPm8t4wZKCP2deLOYBcaw-C458JyKfK3w3jGQh3XGtKu1iIT1zAwiQhcqPJSe6YhMCRsB4ijuAkA1IYc22TNrZOg6BMlOnwxq9x8w5QgEBJ_zYUUGVVR2yqnQ_Id4QLtpCKJFijJoxOLbP-TBB_-8mDS4GGt4j8E"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-1.5 py-0.5 rounded text-label-sm font-label-sm text-secondary-container font-mono">
+            #007
+          </div>
+</div>
+<div class="flex-1 p-space-md flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="bg-primary/20 text-primary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold uppercase">
+                Canon Principal
+              </span>
+<span class="text-secondary-container flex items-center text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px] mr-0.5">star</span> S+ Tier
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Shadow the Hedgehog</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              La Forma de Vida Suprema creada por Gerald Robotnik en la Colonia Espacial ARK. Maestro absoluto del Chaos Control.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 border-t-0 bg-surface-container-high/40 -mx-space-md -mb-space-md px-space-md py-1.5">
+<span class="text-label-sm font-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">offline_bolt</span> Speed / Chaos User
+            </span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant hover:text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Tarjeta 2: Videojuego Clásico -->
+<article class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg">
+<div class="flex flex-row">
+<div class="w-28 sm:w-36 shrink-0 relative bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center min-h-[130px]" data-alt="Official cover art style of Shadow the Hedgehog video game with dark industrial ruins, a shattered black gun weapon, chaos emerald glowing intensely with bright yellow and cyan aura, dark retro gaming cover 2005 aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm1EG9mrZ3uMhFeM-UHwJxenSXtznKhATc1FImegvFbIDwrTnzA-nU4sxLeXQlAd-roHAQnKWpJQwQQrqFKAk51HxIgru9ulvyHamTAA0Alby9NC0siHJ8pddUcr9GRbN9Zi5XbnYQFiUkc1mz27kqJk4sxD5dp8B3MohWBDyUubcEYQWy4_phQyHR7QRfq4flasvILd3RSV12s3K2JHxh0gXSB9Jg7eY2uxj1wJY"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-1.5 py-0.5 rounded text-label-sm font-label-sm text-tertiary">
+            2005
+          </div>
+</div>
+<div class="flex-1 p-space-md flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1 flex-wrap">
+<span class="bg-secondary-container/20 text-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+                Juego Canónico
+              </span>
+<span class="text-outline text-label-sm font-label-sm">PS2 / GCN / Xbox</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Shadow the Hedgehog</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Título en tercera persona con múltiples rutas de moralidad (Héroe, Oscuro, Neutral) y armamento de asalto contra Black Doom.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-high/40 -mx-space-md -mb-space-md px-space-md py-1.5">
+<span class="text-label-sm font-label-sm text-on-surface-variant">
+              10 Finales • Sonic Team
+            </span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">arrow_forward</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Tarjeta 3: Cómic IDW -->
+<article class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg">
+<div class="flex flex-row">
+<div class="w-28 sm:w-36 shrink-0 relative bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center min-h-[130px]" data-alt="Comic book panel style illustration of Shadow the Hedgehog facing infected Zombot hordes under a stormy sky, neon cyan electric sparks, dramatic high action graphic novel artwork with sharp line work and vibrant color highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzd4NTthw9ISPTrhWCPHt_rkSAogXo8Wb03m5puTllejZYaBg0rxkaGY2g_XDoP8UpyEn35SX5HvxQ9We5C4vQD4ykIzdkzfGoErH3-seGqu1a734Bss8phMDR5yOlGjh8Ehc5pBdZHtQQYX-_rnGviN8aRCwk8ySUUjoRUI_MVqresXtFAfzEaMutVuCXxuMVPnbZtXq2pjUn51RKd6kt0ioKdcbsem5AzrdgbZY"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-1.5 py-0.5 rounded text-label-sm font-label-sm text-primary font-bold">
+            IDW #19
+          </div>
+</div>
+<div class="flex-1 p-space-md flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="bg-surface-container-highest text-tertiary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold">
+                Canon IDW Publishing
+              </span>
+<span class="text-error text-label-sm font-label-sm font-medium">Metal Virus Saga</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">La Caída de Shadow: Crisis Zombot</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Capítulo dramático donde el orgullo de la Forma de Vida Suprema se enfrenta a la infección robótica del Dr. Eggman y Starline.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-high/40 -mx-space-md -mb-space-md px-space-md py-1.5">
+<span class="text-label-sm font-label-sm text-outline">
+              Guion: Ian Flynn • Arte: Tracy Yardley
+            </span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">arrow_forward</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Tarjeta 4: Película Paramount Live-Action -->
+<article class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg">
+<div class="flex flex-row">
+<div class="w-28 sm:w-36 shrink-0 relative bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center min-h-[130px]" data-alt="Cinematic hyper-realistic 3D rendered movie still of Shadow the Hedgehog hovering with rocket shoes over a futuristic city street at night, glowing red energy trails, Keanu Reeves voice energy, cinematic rain reflections and anamorphic lens flares" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH4pA2J7vMqkt53znC0SJCNSqP3nkMjWIOEhCTgjVbyzyLvD8z3UfQYRA1ilY84tQ655reprg2najJpIlNu9WtZ7N89KwmW6LkGj5btEdrBk5NMyC8117PndNqnFH0myDaiKoIqSSZA5OBhXmTjodGfB9j4uEKr_2WROFkctEREU2ErvA6wtYHppqTtdffypOJt9jt2EYVTvW-ZVkPPGGESuYA0YBj_8e8IWpnJdQ"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-1.5 py-0.5 rounded text-label-sm font-label-sm text-secondary font-mono">
+            DIC 2024
+          </div>
+</div>
+<div class="flex-1 p-space-md flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="bg-surface-container-highest text-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+                Paramount Cine
+              </span>
+<span class="text-primary-container text-label-sm font-label-sm">Live-Action Film</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic the Hedgehog 3</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Debut de Shadow en la gran pantalla con la voz estelar de Keanu Reeves, desafiando a Team Sonic en Tokio y ARK.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-high/40 -mx-space-md -mb-space-md px-space-md py-1.5">
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">movie</span> Dir: Jeff Fowler
+            </span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">arrow_forward</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Barra Inferior Flotante de Acción de Filtros (Fixed Thumb Zone) -->
+<div class="fixed bottom-3 left-0 right-0 px-gutter z-40 max-w-lg mx-auto">
+<div class="bg-surface-container-lowest/95 backdrop-blur-xl p-2 rounded-2xl shadow-2xl flex items-center gap-2">
+<!-- Botón Secundario Guardar Búsqueda -->
+<button class="h-12 w-12 rounded-xl bg-surface-container-high hover:bg-surface-bright active:scale-95 transition-transform flex items-center justify-center text-on-surface shrink-0" title="Guardar búsqueda personalizada">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">bookmark_add</span>
+</button>
+<!-- Botón Principal "Sonic Dash" Acción de Resultados -->
+<button class="flex-1 h-12 rounded-xl bg-primary-container hover:bg-primary-fixed-dim text-on-primary-fixed font-headline-sm text-headline-sm flex items-center justify-center gap-2 uppercase tracking-wide font-extrabold active:scale-95 transition-transform shadow-[0_0_16px_rgba(105,207,255,0.4)]">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Ver 24 Resultados</span>
+</button>
+</div>
+</div>
+</div></main></body></html>

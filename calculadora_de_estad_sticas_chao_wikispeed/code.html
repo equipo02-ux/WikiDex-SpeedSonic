@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>body { min-height: max(884px, 100dvh); }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Volver" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary-container active:scale-95 transition-transform shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="WikiSpeed Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Calculadora De Estadísticas Chao</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Compartir artículo" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Header Temático / Introducción WikiSpeed -->
+<div class="px-gutter pt-4 pb-2 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+        Herramienta Técnica • SA2: Battle / SADX
+      </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-label-sm font-bold">
+        v3.4
+      </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+      Calculadora de Estadísticas & Evolución Chao
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Simula el crecimiento de atributos (Nivel 1 a 99), grados genéticos heredados (E a S), balance moral e impacto de frutas/drives.
+    </p>
+</div>
+<!-- Tarjeta Interactiva Chao Live Studio -->
+<div class="px-gutter mt-3">
+<div class="relative bg-surface-container-low rounded-xl p-space-lg shadow-xl overflow-hidden">
+<!-- Glow ambiental dinámico en fondo -->
+<div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-secondary-container/15 blur-3xl transition-colors duration-500 pointer-events-none" id="alignment-aura"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<!-- Visualización Chao & Avatar -->
+<div class="flex items-center gap-space-md">
+<div class="relative w-24 h-24 rounded-xl bg-surface-container flex items-center justify-center shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Digital concept art close-up of a cute, smooth Chao creature from Sonic Adventure 2 with glossy cyan texture, large expressive black eyes with white shine, a glowing golden floating halo orbe hovering over its head, soft neon cyan and violet studio lighting against a dark deep space navy backdrop, WikiSpeed 3D render style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbq0xw2pUeG0EAvk3ympJbEq5pzdlahJHeaoPi2iBKKokql5MOhSKorakKN8WWrrM8KZYa0Tu7y-b39yN0k1d9RGjUqVvuK9u0kU6czeR4tzhDGyUa-Dqu6S-G9QWRFZRTj-KFSwHkwpbTJ9MO6zaZsKl_E1pEohHBe7TlyKemSR0MJO4CA48Bjr7Keld_YlmRbPW9Lxvbt1UtSs_UrmGwoJtFZht3ddjGA599jH8"/>
+<!-- Halo flotante dinámico -->
+<div class="absolute top-1 right-2 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[9px] shadow-sm flex items-center gap-0.5 font-bold transition-all" id="halo-indicator">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>HALO</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1 justify-center">
+<span class="font-label-sm text-on-surface-variant tracking-wider uppercase">Nombre del Espécimen</span>
+<div class="flex items-center gap-space-xs mt-0.5">
+<input class="w-full bg-surface-container-high text-on-surface font-headline-sm text-headline-sm px-2.5 py-1 rounded-lg focus:outline-none focus:bg-surface-bright transition-all" id="chao-name-input" maxlength="16" type="text" value="Sonic Jr."/>
+<button aria-label="Editar nombre" class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<!-- Ciclos de Vida / Reencarnación -->
+<div class="flex items-center gap-1.5 mt-2">
+<span class="font-label-sm text-primary-fixed-dim">Ciclo:</span>
+<div class="flex gap-1" id="reincarnation-chips">
+<button class="cycle-pill px-2 py-0.5 rounded-md font-label-sm text-on-primary bg-primary-container font-bold shadow-sm active:scale-95 transition-all" onclick="setCycle(1)">Gen 1</button>
+<button class="cycle-pill px-2 py-0.5 rounded-md font-label-sm text-on-surface-variant bg-surface-container-high active:scale-95 transition-all" onclick="setCycle(2)">Gen 2</button>
+<button class="cycle-pill px-2 py-0.5 rounded-md font-label-sm text-on-surface-variant bg-surface-container-high flex items-center gap-0.5 active:scale-95 transition-all" onclick="setCycle(3)">
+<span class="material-symbols-outlined text-[12px] text-secondary-fixed">workspace_premium</span>
+                  Chaos
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Selector de Alineación Moral -->
+<div class="pt-2 flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-on-surface-variant tracking-wider uppercase">Alineación Moral (Garden Affinity)</span>
+<span class="font-label-md text-secondary-fixed font-bold" id="alignment-state-label">Hero (+75%)</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 bg-surface-container-lowest p-1 rounded-xl">
+<button class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-secondary-container text-on-secondary-container font-label-md transition-all font-bold shadow-md active:scale-95" id="align-hero-btn" onclick="setAlignment('hero')">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">light_mode</span>
+              Hero
+            </button>
+<button class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md transition-all active:scale-95" id="align-neutral-btn" onclick="setAlignment('neutral')">
+<span class="material-symbols-outlined text-[16px]">radio_button_checked</span>
+              Neutral
+            </button>
+<button class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md transition-all active:scale-95" id="align-dark-btn" onclick="setAlignment('dark')">
+<span class="material-symbols-outlined text-[16px]">dark_mode</span>
+              Dark
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Matriz de Grados Genéticos & Multiplicadores -->
+<div class="px-gutter mt-5 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">genetics</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Matriz Genética & Multiplicadores</h3>
+</div>
+<span class="font-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">
+        Lvl 1 - 99
+      </span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl text-body-sm text-on-surface-variant flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0">info</span>
+<span>El grado genético dicta el crecimiento por nivel. Los grados S rinden hasta <strong>+30 pts/lvl</strong>, mientras que los grados E aportan <strong>+8 pts/lvl</strong>.</span>
+</div>
+<!-- Lista de los 5 Atributos Principales -->
+<div class="flex flex-col gap-2.5 mt-1">
+<!-- 1. NATACIÓN (SWIM) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2 shadow-sm" id="stat-row-swim">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">pool</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Natación (Swim)</div>
+<div class="font-label-sm text-primary text-[10px]">Agilidad acuática & Buceo</div>
+</div>
+</div>
+<!-- Grado Selector Pills -->
+<div class="flex gap-1 bg-surface-container-lowest p-0.5 rounded-lg" data-stat="swim">
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('swim', 'E', 8)">E</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('swim', 'D', 12)">D</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('swim', 'C', 16)">C</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-primary bg-primary font-bold" onclick="setGrade('swim', 'B', 20)">B</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('swim', 'A', 25)">A</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-secondary-fixed" onclick="setGrade('swim', 'S', 30)">S</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<!-- Stepper de Nivel -->
+<div class="flex items-center gap-1.5">
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('swim', -5)">-5</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('swim', -1)">-</button>
+<span class="w-14 text-center font-headline-sm text-on-surface" id="lvl-swim">Lvl 48</span>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('swim', 1)">+</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('swim', 5)">+5</button>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-primary-container" id="pts-swim">1,120 <span class="font-label-sm text-on-surface-variant">/ 2,400</span></div>
+</div>
+</div>
+<!-- Progress Track -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-300" id="bar-swim" style="width: 48%;"></div>
+</div>
+</div>
+<!-- 2. VUELO (FLY) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2 shadow-sm" id="stat-row-fly">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">flight</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Vuelo (Fly)</div>
+<div class="font-label-sm text-secondary-fixed text-[10px]">Planeo & Rango Aéreo</div>
+</div>
+</div>
+<div class="flex gap-1 bg-surface-container-lowest p-0.5 rounded-lg" data-stat="fly">
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('fly', 'E', 8)">E</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('fly', 'D', 12)">D</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('fly', 'C', 16)">C</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('fly', 'B', 20)">B</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('fly', 'A', 25)">A</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-secondary bg-secondary-container font-bold shadow-sm" onclick="setGrade('fly', 'S', 30)">S</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('fly', -5)">-5</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('fly', -1)">-</button>
+<span class="w-14 text-center font-headline-sm text-on-surface" id="lvl-fly">Lvl 82</span>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('fly', 1)">+</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('fly', 5)">+5</button>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-secondary-container" id="pts-fly">2,460 <span class="font-label-sm text-on-surface-variant">/ 3,000</span></div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full transition-all duration-300" id="bar-fly" style="width: 82%;"></div>
+</div>
+</div>
+<!-- 3. CARRERA (RUN) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2 shadow-sm" id="stat-row-run">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">sprint</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Carrera (Run)</div>
+<div class="font-label-sm text-primary text-[10px]">Aceleración en Chao Races</div>
+</div>
+</div>
+<div class="flex gap-1 bg-surface-container-lowest p-0.5 rounded-lg" data-stat="run">
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('run', 'E', 8)">E</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('run', 'D', 12)">D</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('run', 'C', 16)">C</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('run', 'B', 20)">B</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-primary bg-primary font-bold" onclick="setGrade('run', 'A', 25)">A</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-secondary-fixed" onclick="setGrade('run', 'S', 30)">S</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('run', -5)">-5</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('run', -1)">-</button>
+<span class="w-14 text-center font-headline-sm text-on-surface" id="lvl-run">Lvl 64</span>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('run', 1)">+</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('run', 5)">+5</button>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-primary-container" id="pts-run">1,600 <span class="font-label-sm text-on-surface-variant">/ 2,600</span></div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-300" id="bar-run" style="width: 64%;"></div>
+</div>
+</div>
+<!-- 4. FUERZA (POWER) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2 shadow-sm" id="stat-row-power">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">sports_mma</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Fuerza (Power)</div>
+<div class="font-label-sm text-error text-[10px]">Daño de impacto en Chao Karate</div>
+</div>
+</div>
+<div class="flex gap-1 bg-surface-container-lowest p-0.5 rounded-lg" data-stat="power">
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('power', 'E', 8)">E</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('power', 'D', 12)">D</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-primary bg-primary font-bold" onclick="setGrade('power', 'C', 16)">C</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('power', 'B', 20)">B</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('power', 'A', 25)">A</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-secondary-fixed" onclick="setGrade('power', 'S', 30)">S</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('power', -5)">-5</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('power', -1)">-</button>
+<span class="w-14 text-center font-headline-sm text-on-surface" id="lvl-power">Lvl 30</span>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('power', 1)">+</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('power', 5)">+5</button>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-on-surface" id="pts-power">480 <span class="font-label-sm text-on-surface-variant">/ 2,000</span></div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-outline rounded-full transition-all duration-300" id="bar-power" style="width: 30%;"></div>
+</div>
+</div>
+<!-- 5. RESISTENCIA (STAMINA) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-2 shadow-sm" id="stat-row-stamina">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">nutrition</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Resistencia (Stamina)</div>
+<div class="font-label-sm text-secondary text-[10px]">Nutrición frutal & Salud</div>
+</div>
+</div>
+<div class="flex gap-1 bg-surface-container-lowest p-0.5 rounded-lg" data-stat="stamina">
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('stamina', 'E', 8)">E</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('stamina', 'D', 12)">D</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('stamina', 'C', 16)">C</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant" onclick="setGrade('stamina', 'B', 20)">B</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-primary bg-primary font-bold" onclick="setGrade('stamina', 'A', 25)">A</button>
+<button class="grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-secondary-fixed" onclick="setGrade('stamina', 'S', 30)">S</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('stamina', -5)">-5</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('stamina', -1)">-</button>
+<span class="w-14 text-center font-headline-sm text-on-surface" id="lvl-stamina">Lvl 52</span>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('stamina', 1)">+</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high text-primary flex items-center justify-center active:scale-90 font-label-md" onclick="adjustLevel('stamina', 5)">+5</button>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-secondary-fixed" id="pts-stamina">1,300 <span class="font-label-sm text-on-surface-variant">/ 2,600</span></div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full transition-all duration-300" id="bar-stamina" style="width: 52%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Simulador de Alimentación & Entrenador (Drives / Animales) -->
+<div class="px-gutter mt-5 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">science</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Simulador de Alimentación & Drives</h3>
+</div>
+<button class="font-label-sm text-on-surface-variant hover:text-primary active:scale-95 transition-all" onclick="resetTrainingDrives()">
+        Limpiar
+      </button>
+</div>
+<!-- Píldoras de suministros rápidos -->
+<div class="grid grid-cols-2 gap-2">
+<button class="bg-surface-container-low hover:bg-surface-container p-2.5 rounded-xl text-left flex items-center gap-2 active:scale-95 transition-all shadow-sm" onclick="applyDrive('swim', 10, 'Swim Drive (+10)')">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">battery_charging_full</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-on-surface truncate">+10 Drive Amarillo</div>
+<div class="font-label-sm text-primary text-[10px]">+10 Natación</div>
+</div>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container p-2.5 rounded-xl text-left flex items-center gap-2 active:scale-95 transition-all shadow-sm" onclick="applyDrive('run', 10, 'Drive Verde (+10)')">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-on-surface truncate">+10 Drive Verde</div>
+<div class="font-label-sm text-primary-container text-[10px]">+10 Carrera</div>
+</div>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container p-2.5 rounded-xl text-left flex items-center gap-2 active:scale-95 transition-all shadow-sm" onclick="applyAnimal('fly', 15, 'fly_penguin', 'Pingüino Marino (+15 Vuelo)')">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">pets</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-on-surface truncate">+5 Pingüino / Pájaro</div>
+<div class="font-label-sm text-secondary-fixed text-[10px]">+15 Vuelo</div>
+</div>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container p-2.5 rounded-xl text-left flex items-center gap-2 active:scale-95 transition-all shadow-sm" onclick="applyFruit('hero', 8, 'Fruta Hero (+Afinidad)')">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-on-surface truncate">+3 Frutas Hero</div>
+<div class="font-label-sm text-secondary-fixed text-[10px]">+Stamina & Hero</div>
+</div>
+</button>
+</div>
+<!-- Live impact forecast ribbon -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">trending_up</span>
+<span class="font-label-md text-on-surface truncate" id="training-summary-txt">
+          Inyección estimada: +40 Vuelo, +15 Stamina, +4% Hero
+        </span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary-fixed font-label-sm shrink-0">
+        Live Sync
+      </span>
+</div>
+</div>
+<!-- Proyección de Evolución y Predicción Morfológica -->
+<div class="px-gutter mt-5 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Predicción Morfológica</h3>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+<!-- 1st evolution forecast -->
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[24px]">clock_loader_40</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-primary-fixed uppercase tracking-wider">Pronóstico de 1ª Evolución</span>
+<span class="font-label-sm text-secondary-fixed font-bold">100% Certeza</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+            Hero Fly Chao
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Alas celestes translúcidas tipo libélula, bola de halo angelical radiante y tonalidad pastel blanca/dorada.
+          </p>
+</div>
+</div>
+<!-- Separador tonal -->
+<div class="w-full h-px bg-surface-container-highest"></div>
+<!-- 2nd evolution forecast -->
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-primary-fixed uppercase tracking-wider">Pronóstico de 2ª Evolución</span>
+<span class="font-label-sm text-primary-container font-bold">Subtipo Dominante</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+            Subtipo Corredor / Speed Runner
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Espinas traseras alargadas y pies con aerodinámica estilizada inspirada en Sonic the Hedgehog.
+          </p>
+</div>
+</div>
+<!-- Chao Tournament Eligibility -->
+<div class="bg-surface-container p-3 rounded-lg flex flex-col gap-2">
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">emoji_events</span>
+          Aptitud de Torneo & Competición
+        </div>
+<div class="grid grid-cols-2 gap-2 text-body-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span>
+<span>Copa Esmeralda (Races)</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span>
+<span>Rango Maestro (Karate)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tip Informativo WikiDex -->
+<div class="px-gutter mt-4">
+<div class="bg-surface-container-high/60 rounded-xl p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 mt-0.5">school</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>Nota canónica de WikiSpeed:</strong> Al reencarnar (luego de consumir fruta suficiente y alcanzar el capullo rosado), el Chao conserva el <strong>10%</strong> de sus puntos netos heredados y tiene un 50% de probabilidad de mejorar un grado genético mediante cruce asistido.
+      </p>
+</div>
+</div>
+<!-- Acciones Rápidas & Utilidades -->
+<div class="px-gutter mt-5 flex flex-col gap-space-sm">
+<!-- Botón Principal Cian Eléctrico -->
+<button class="w-full h-13 py-3 px-4 rounded-full bg-primary-container text-on-primary-fixed font-label-lg tracking-wide uppercase flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20 active:scale-95 transition-all" id="save-simulation-btn" onclick="saveSimulationNotice()">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Guardar Simulación en Perfil</span>
+</button>
+<!-- Botones Secundarios -->
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 rounded-xl bg-surface-container-low text-on-surface font-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-sm" onclick="resetAllStats()">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Restablecer</span>
+</button>
+<button class="py-2.5 px-3 rounded-xl bg-surface-container-low text-on-surface font-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-sm" onclick="exportChaoCode()">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+<span>Exportar Chao</span>
+</button>
+</div>
+<!-- Guía Wiki Externa -->
+<button class="py-3 px-4 rounded-xl bg-surface-container-low text-primary font-label-md flex items-center justify-between active:scale-95 transition-all shadow-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Ver Guía Completa de Genética Chao en WikiSpeed</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Toast Notification Overlay -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-full bg-surface-bright text-on-surface font-label-md flex items-center gap-2 shadow-2xl opacity-0 pointer-events-none transition-all duration-300" id="toast-notify">
+<span class="material-symbols-outlined text-primary-container text-[18px]" id="toast-icon">check_circle</span>
+<span id="toast-text">Simulación guardada en tu archivo Chao</span>
+</div>
+</div>
+<script>
+  // Estado Reactivo Local del Chao Calculator
+  const statsState = {
+    swim: { lvl: 48, grade: 'B', mult: 20, max: 2400 },
+    fly: { lvl: 82, grade: 'S', mult: 30, max: 3000 },
+    run: { lvl: 64, grade: 'A', mult: 25, max: 2600 },
+    power: { lvl: 30, grade: 'C', mult: 16, max: 2000 },
+    stamina: { lvl: 52, grade: 'A', mult: 25, max: 2600 }
+  };
+
+  let alignment = 'hero';
+  let chaoCycle = 1;
+
+  function showToast(text, icon = 'check_circle') {
+    const toast = document.getElementById('toast-notify');
+    const toastTxt = document.getElementById('toast-text');
+    const toastIcon = document.getElementById('toast-icon');
+    if (!toast) return;
+    toastTxt.innerText = text;
+    toastIcon.innerText = icon;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none');
+      toast.classList.remove('opacity-100');
+    }, 2400);
+  }
+
+  function adjustLevel(stat, delta) {
+    const cur = statsState[stat];
+    let next = cur.lvl + delta;
+    if (next < 1) next = 1;
+    if (next > 99) next = 99;
+    cur.lvl = next;
+
+    const lvlEl = document.getElementById(`lvl-${stat}`);
+    if (lvlEl) lvlEl.innerText = `Lvl ${next}`;
+
+    const pts = Math.min(cur.max, Math.round(next * cur.mult * 1.15));
+    const ptsEl = document.getElementById(`pts-${stat}`);
+    if (ptsEl) ptsEl.innerHTML = `${pts.toLocaleString()} <span class="font-label-sm text-on-surface-variant">/ ${cur.max.toLocaleString()}</span>`;
+
+    const barEl = document.getElementById(`bar-${stat}`);
+    if (barEl) barEl.style.width = `${Math.min(100, Math.round((pts / cur.max) * 100))}%`;
+  }
+
+  function setGrade(stat, grade, mult) {
+    statsState[stat].grade = grade;
+    statsState[stat].mult = mult;
+
+    const row = document.querySelector(`[data-stat="${stat}"]`);
+    if (row) {
+      const btns = row.querySelectorAll('.grade-btn');
+      btns.forEach(b => {
+        b.className = 'grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-surface-variant';
+        if (b.innerText === grade) {
+          if (grade === 'S') {
+            b.className = 'grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-secondary bg-secondary-container font-bold shadow-sm';
+          } else {
+            b.className = 'grade-btn px-1.5 py-0.5 rounded text-[11px] font-label-sm text-on-primary bg-primary font-bold';
+          }
+        }
+      });
+    }
+    adjustLevel(stat, 0);
+    showToast(`Grado de ${stat.toUpperCase()} actualizado a [${grade}]`, 'upgrade');
+  }
+
+  function setAlignment(type) {
+    alignment = type;
+    const heroBtn = document.getElementById('align-hero-btn');
+    const neutralBtn = document.getElementById('align-neutral-btn');
+    const darkBtn = document.getElementById('align-dark-btn');
+    const label = document.getElementById('alignment-state-label');
+    const aura = document.getElementById('alignment-aura');
+    const halo = document.getElementById('halo-indicator');
+
+    // Reset classes
+    [heroBtn, neutralBtn, darkBtn].forEach(btn => {
+      btn.className = "flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md transition-all active:scale-95";
+    });
+
+    if (type === 'hero') {
+      heroBtn.className = "flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-secondary-container text-on-secondary-container font-label-md transition-all font-bold shadow-md active:scale-95";
+      label.innerText = "Hero (+75%)";
+      label.className = "font-label-md text-secondary-fixed font-bold";
+      aura.className = "absolute -top-12 -right-12 w-44 h-44 rounded-full bg-secondary-container/20 blur-3xl transition-colors duration-500 pointer-events-none";
+      halo.style.display = "flex";
+    } else if (type === 'neutral') {
+      neutralBtn.className = "flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-primary-container text-on-primary-fixed font-label-md transition-all font-bold shadow-md active:scale-95";
+      label.innerText = "Neutral (0%)";
+      label.className = "font-label-md text-primary-container font-bold";
+      aura.className = "absolute -top-12 -right-12 w-44 h-44 rounded-full bg-primary-container/20 blur-3xl transition-colors duration-500 pointer-events-none";
+      halo.style.display = "flex";
+    } else {
+      darkBtn.className = "flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-error-container text-on-error-container font-label-md transition-all font-bold shadow-md active:scale-95";
+      label.innerText = "Dark (-80%)";
+      label.className = "font-label-md text-error font-bold";
+      aura.className = "absolute -top-12 -right-12 w-44 h-44 rounded-full bg-error-container/25 blur-3xl transition-colors duration-500 pointer-events-none";
+      halo.style.display = "none";
+    }
+    showToast(`Alineación Chao cambiada a ${type.toUpperCase()}`, 'sync');
+  }
+
+  function setCycle(cycle) {
+    chaoCycle = cycle;
+    const pills = document.querySelectorAll('.cycle-pill');
+    pills.forEach((p, idx) => {
+      if (idx + 1 === cycle) {
+        p.className = 'cycle-pill px-2 py-0.5 rounded-md font-label-sm text-on-primary bg-primary-container font-bold shadow-sm active:scale-95 transition-all';
+      } else {
+        p.className = 'cycle-pill px-2 py-0.5 rounded-md font-label-sm text-on-surface-variant bg-surface-container-high active:scale-95 transition-all';
+      }
+    });
+    showToast(`Ciclo Chao ajustado a: Generación ${cycle}`);
+  }
+
+  function applyDrive(stat, pts, name) {
+    adjustLevel(stat, 2);
+    const summary = document.getElementById('training-summary-txt');
+    if (summary) summary.innerText = `Consumido: ${name}. Nivel +2 en ${stat.toUpperCase()}`;
+    showToast(`+${pts} pts en ${stat.toUpperCase()}`);
+  }
+
+  function applyAnimal(stat, pts, icon, name) {
+    adjustLevel(stat, 3);
+    const summary = document.getElementById('training-summary-txt');
+    if (summary) summary.innerText = `Abrazo animal: ${name}. Impulso aéreo otorgado.`;
+    showToast(`Animal otorgado (+${pts} pts)`);
+  }
+
+  function applyFruit(type, staminaPts, name) {
+    adjustLevel('stamina', 3);
+    const summary = document.getElementById('training-summary-txt');
+    if (summary) summary.innerText = `Fruta consumida: ${name}. +Stamina & Afecto incrementado.`;
+    showToast(`Fruta Hero consumida (+Stamina)`);
+  }
+
+  function resetTrainingDrives() {
+    const summary = document.getElementById('training-summary-txt');
+    if (summary) summary.innerText = 'Suministros en reposo. Selecciona frutas o drives.';
+    showToast('Registro de alimentación limpiado');
+  }
+
+  function resetAllStats() {
+    ['swim', 'fly', 'run', 'power', 'stamina'].forEach(stat => {
+      statsState[stat].lvl = 1;
+      adjustLevel(stat, 0);
+    });
+    showToast('Estadísticas restablecidas a Nivel 1', 'history');
+  }
+
+  function saveSimulationNotice() {
+    const name = document.getElementById('chao-name-input').value || 'Chao';
+    showToast(`Ficha de "${name}" guardada en Perfil WikiSpeed`, 'cloud_done');
+  }
+
+  function exportChaoCode() {
+    const code = `WKS-CHAO-${Math.floor(1000 + Math.random() * 9000)}-SA2B`;
+    navigator.clipboard?.writeText(code);
+    showToast(`Código exportado: ${code}`, 'content_copy');
+  }
+</script></main></body></html>

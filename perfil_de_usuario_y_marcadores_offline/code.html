@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>body{min-height:max(884px, 100dvh);}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="WikiSpeed Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md tracking-tight text-primary-container truncate leading-none">WikiSpeed</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Perfil De Usuario</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Buscar en la wiki" class="w-11 h-11 flex items-center justify-center rounded-full text-primary-container hover:text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Ver mi perfil" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary-container active:scale-95 transition-transform" data-path="perfil-de-usuario" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-transparent group-hover:ring-primary-container transition-all"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Header Perfil Hero Bento Card -->
+<section class="px-margin pt-space-md pb-space-xs">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-xl shadow-surface-container-lowest/60">
+<!-- Glow ambiental decorativo Sonic Ring / Kinetic Flare -->
+<div class="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-36 h-36 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Top row: Avatar + Identidad + Acciones -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<!-- Avatar con halo de velocidad y rango S -->
+<div class="relative shrink-0">
+<div class="w-16 h-16 rounded-full bg-surface-bright p-1 shadow-[0_0_16px_rgba(105,207,255,0.35)] flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="Stylized portrait avatar of a cool cybernetic two-tailed fox archivist wearing futuristic high-tech visor, glowing cyan and yellow neon lighting, game concept art style, deep midnight blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBMA9cPERxF0x0n228tHpoFsmnN2wBHVcSkQvsbr1lw_kwr1hQum0XDw0S5M-8fnxewJZJMYd4BBSCyPCb_LjfY32pK8_A2cD0BYMTEUf9BmQKeYfLzCSJeE8mIAU4njd0HQay_QiW2DFhnB4ykJUj511QrbECgqRmhT-PE9kTqibcCUZqAF4Bc1OgLMmVJiphM55sSHhnyRKthK6BMI8iSssqAJjMYb_XOp2YBfY"/>
+</div>
+<span class="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary font-headline-sm text-[11px] leading-tight font-extrabold shadow-md">
+                RANGO S
+              </span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight truncate">MilesMaster92</h1>
+<span class="material-symbols-outlined text-[17px] text-primary-container" title="Archivista Verificado">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Archivista de Mobius • Nivel 14</p>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">Base Central Conectada</span>
+</div>
+</div>
+</div>
+<button aria-label="Editar Perfil" class="w-10 h-10 rounded-full bg-surface-container-high hover:bg-surface-bright active:scale-95 text-primary-container flex items-center justify-center transition-all shadow-sm shrink-0" id="btn-edit-profile">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Metric Chips Grid -->
+<div class="grid grid-cols-3 gap-space-xs mt-space-xs">
+<div class="rounded-lg bg-surface-container p-space-sm flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold">34</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Aportes Wiki</span>
+</div>
+<div class="rounded-lg bg-surface-container p-space-sm flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Favoritos</span>
+</div>
+<div class="rounded-lg bg-surface-container p-space-sm flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">1.2 GB</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Offline Guardado</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Módulo de Sincronización & Almacenamiento Offline -->
+<section class="px-margin py-space-xs">
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">cloud_sync</span>
+<span class="font-label-lg text-label-lg text-on-surface">Almacenamiento Local Wiki</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold">1.2 / 4.0 GB (30%)</span>
+</div>
+<!-- Barra de almacenamiento visual estilo Sonic Boost Gauge -->
+<div class="w-full h-2.5 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary-container transition-all duration-500 rounded-l-full" style="width: 22%;" title="Fichas de Lore (900 MB)"></div>
+<div class="h-full bg-secondary-container transition-all duration-500" style="width: 8%;" title="Cómics & Páginas (300 MB)"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-[11px]">
+<span>32 fichas completas + 4 cómics HQ</span>
+<button class="text-error hover:underline flex items-center gap-0.5 font-label-sm text-label-sm" id="btn-purge-cache">
+<span class="material-symbols-outlined text-[14px]">delete_sweep</span> Limpiar caché
+        </button>
+</div>
+<!-- Acciones de Sincronización rápida -->
+<div class="pt-space-xs flex items-center justify-between gap-space-sm">
+<button class="flex-1 h-9 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform shadow-[0_0_12px_rgba(105,207,255,0.25)]" id="btn-sync-all">
+<span class="material-symbols-outlined text-[17px]">bolt</span>
+<span>SINCRONIZAR FICHAS</span>
+</button>
+<label class="flex items-center gap-2 cursor-pointer select-none bg-surface-container px-3 py-1.5 rounded-full">
+<input checked="" class="sr-only peer" id="toggle-wifi" type="checkbox"/>
+<div class="w-7 h-4 bg-surface-bright peer-checked:bg-secondary-container rounded-full relative transition-colors">
+<div class="w-3 h-3 bg-on-secondary-container rounded-full absolute top-0.5 left-0.5 peer-checked:translate-x-3 transition-transform"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Solo Wi-Fi</span>
+</label>
+</div>
+</div>
+</section>
+<!-- Pestañas Principales (Segmented Navigation) -->
+<section class="px-margin pt-space-sm pb-space-xs">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="tab-btn px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all shadow-md shadow-primary-container/20">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span>Favoritos (42)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px]">offline_pin</span>
+<span>Descargas (36)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Historial</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Mis Notas (7)</span>
+</button>
+</div>
+</section>
+<!-- Filtro por Categorías (Horizontal Pill Bar) -->
+<section class="px-margin py-space-xs">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar">
+<button class="cat-pill px-3 py-1 rounded-full bg-surface-bright text-primary font-label-sm text-label-sm shrink-0">Todo (42)</button>
+<button class="cat-pill px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shrink-0">Personajes (18)</button>
+<button class="cat-pill px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shrink-0">Juegos (12)</button>
+<button class="cat-pill px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shrink-0">Cómics (8)</button>
+<button class="cat-pill px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shrink-0">Lore & Betas (4)</button>
+</div>
+</section>
+<!-- Lista de Fichas Guardadas y Offline Cards -->
+<section class="px-margin pt-space-xs pb-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Entradas Guardadas</span>
+<span class="font-label-sm text-label-sm text-primary-container">Orden: Guardado reciente</span>
+</div>
+<!-- Card 1: Sonic The Hedgehog (Ficha Personaje Canon) -->
+<article class="relative rounded-xl bg-surface-container p-space-md shadow-md flex gap-space-md items-center">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Sonic the Hedgehog iconic dynamic running pose, blue motion blur streak, high resolution vibrant modern Sega render with bright cyan glow and dark navy environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF9xpXS_gEend5O9C1QROCj2waOoB0y64WehmbV6D0T_Bs-eLNbs3N_4a6BHfF8-Sv4vxdo8F7NCc-mLk6sSLT5cgmiUwIXzZAB18zeA5So2kBBKfG6yNHrSIxdgPQE038zlR4tBx48DCiAOOBjZGIML_TP2U5VsH2bRMPOUUpxf1jyvkKTSPEcKv78qJ0Zbz-sC3X7jFTJQNEDU19lqrHzM0c7_UmdF4_f5bXStM"/>
+<span class="absolute top-1 left-1 px-1 rounded bg-secondary-container text-on-secondary font-headline-sm text-[9px] font-black">#001</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-1.5 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-[9px] uppercase tracking-wider">Canon Principal</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-label-sm text-[9px] uppercase tracking-wider">Clase S+</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Sonic the Hedgehog</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">El Erizo Legendario • Héroe de Mobius</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-emerald-400 font-label-sm text-[10px]">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Offline (18 MB)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Ayer</span>
+</div>
+</div>
+<button aria-label="Opciones de ficha" class="w-8 h-8 rounded-full text-on-surface-variant hover:text-primary-container hover:bg-surface-bright flex items-center justify-center shrink-0 self-start">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</article>
+<!-- Card 2: Sonic Adventure 2 (Videojuego) -->
+<article class="relative rounded-xl bg-surface-container p-space-md shadow-md flex gap-space-md items-center">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Sonic Adventure 2 dramatic split cover composition with Sonic and Shadow facing opposing directions, city escape backdrop, retro dreamcast aesthetic, moody blue and yellow illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCs6h8YyzfamrLtrTPsNonupOrfYW-pnEl_pET7sySKnx_ZkeHbn_vMxXAHJu7AwJw-eFx0gCShYMeVsPBcvI1FQZv5W24ymDZ6ZeBgLGdUuEp0XfrYJBAgAFBjkDPg0bAFm7rbTm-uvq8RwpEJOCq-x0j5yu1rCIYZdB36t8Ah58rpLdCAtAz0dZ512YoIdACHfhoXWbb6x4wtVNNXQGqPzSmZmh80HnlJTDOv3A"/>
+<span class="absolute top-1 left-1 px-1 rounded bg-surface-container-highest text-tertiary-fixed font-headline-sm text-[9px] font-bold">2001</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-1.5 py-0.5 rounded-full bg-surface-bright text-tertiary font-label-sm text-[9px] uppercase tracking-wider">Dreamcast / Era 3D</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Sonic Adventure 2</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Guía completa de 180 Emblemas y Chao Garden</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-emerald-400 font-label-sm text-[10px]">
+<span class="material-symbols-outlined text-[13px]">download_done</span>
+<span>Offline (42 MB)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Hace 3d</span>
+</div>
+</div>
+<button aria-label="Opciones de ficha" class="w-8 h-8 rounded-full text-on-surface-variant hover:text-primary-container hover:bg-surface-bright flex items-center justify-center shrink-0 self-start">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</article>
+<!-- Card 3: IDW Comic #19 (Cómic / Metal Virus) -->
+<article class="relative rounded-xl bg-surface-container p-space-md shadow-md flex gap-space-md items-center">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Comic book cover illustration featuring dark metallic liquid zombot infection spreading, comic ink lineart style, neon teal and silver metallic highlights, sonic lore art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcnVbt--1UdhJynAI0DlDMzPnfd_AAAf9STEHrubPmcJ9T9MYJM9toQO0XYB6T8NMYDa0-3yJP8dd4qnlORWgapRPHTcqfr1nDit5NBMMx6DVuXmDeOtqQmrIWD1vo3Q43dgtQF_n2td2095ZuLLZWN7u1anKYWVPS-iQNi2iQGlc3mKgqtgR3ovsn6Z4oKzUs2GH6cnetu_9WZI4PwfnjofR6Fqm1w95BPZ19F9o"/>
+<span class="absolute top-1 left-1 px-1 rounded bg-error-container text-on-error-container font-headline-sm text-[9px] font-bold">IDW</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-1.5 py-0.5 rounded-full bg-error-container/30 text-error font-label-sm text-[9px] uppercase tracking-wider">Metal Virus Saga</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Sonic the Hedgehog #19</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Crisis en Windmill Village • 32 Páginas HQ</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-emerald-400 font-label-sm text-[10px]">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Offline (85 MB)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Hace 1 sem</span>
+</div>
+</div>
+<button aria-label="Opciones de ficha" class="w-8 h-8 rounded-full text-on-surface-variant hover:text-primary-container hover:bg-surface-bright flex items-center justify-center shrink-0 self-start">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</article>
+<!-- Card 4: Shadow the Hedgehog -->
+<article class="relative rounded-xl bg-surface-container p-space-md shadow-md flex gap-space-md items-center">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Shadow the Hedgehog intense profile portrait with glowing crimson red eyes and chaos spear sparks, dark shadows, sleek black quills with crimson streaks, cinematic gaming lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCip7GVcf-3YNfJJAK4LSABGkS_ErJYugaIWI2Lwo539CBbM_ExLqJIOciZPrvPpXJR8JYIuFZpavsJnK8xCXSTr_m3h8eDRGvY2tZ9cEdD82UXZRkS39FK9hZsJdIL-Vbmu4dorEcvtVxi4ErETYRIOy5KoAHuH5bfHjDj-RYtNijp4DrEn5MtGYWG1eVdOv5uKJYc2zsHHBy_BaEu6N0ynZZRY5H27mRkQ_kIehU"/>
+<span class="absolute top-1 left-1 px-1 rounded bg-secondary-container text-on-secondary font-headline-sm text-[9px] font-black">#007</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-1.5 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-[9px] uppercase tracking-wider">Proyecto Shadow</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Shadow the Hedgehog</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">La Forma de Vida Suprema • G.U.N.</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-emerald-400 font-label-sm text-[10px]">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Offline (16 MB)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">25 Oct</span>
+</div>
+</div>
+<button aria-label="Opciones de ficha" class="w-8 h-8 rounded-full text-on-surface-variant hover:text-primary-container hover:bg-surface-bright flex items-center justify-center shrink-0 self-start">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</article>
+<!-- Card 5: Lore / Betas "Madonna & Feel the Rabbit" -->
+<article class="relative rounded-xl bg-surface-container p-space-md shadow-md flex gap-space-md items-center">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden shadow-inner flex items-center justify-center bg-gradient-to-br from-surface-container-highest to-surface-container">
+<span class="material-symbols-outlined text-secondary-container text-[36px]">auto_stories</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-label-sm text-[9px] uppercase tracking-wider">Prototipos 1990</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Madonna & Feel the Rabbit</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Conceptos descartados del Sonic Team original</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-emerald-400 font-label-sm text-[10px]">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Texto puro (1.4 MB)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">12 Oct</span>
+</div>
+</div>
+<button aria-label="Opciones de ficha" class="w-8 h-8 rounded-full text-on-surface-variant hover:text-primary-container hover:bg-surface-bright flex items-center justify-center shrink-0 self-start">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</article>
+</section>
+<!-- Colecciones Personalizadas / Listas de Lectura -->
+<section class="px-margin pt-space-xs pb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">folder_special</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mis Listas de Archivo</h2>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary-container hover:bg-surface-bright font-label-sm text-label-sm flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[15px]">add</span>
+<span>Nueva Lista</span>
+</button>
+</div>
+<!-- Cards de Colección (Horizontal Scroll o Grid Compacto) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Colección 1 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-md group cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-bright flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed bg-surface-container-highest px-2 py-0.5 rounded-full">14 fichas</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">Canon Cómics IDW</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Desde Neo Metal hasta Urban Warfare</p>
+</div>
+</div>
+<!-- Colección 2 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-md group cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-bright flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed bg-surface-container-highest px-2 py-0.5 rounded-full">6 temas</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">Sonido Masato Nakamura</h3>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Chips YM2612 y demos originales</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Preferencias de Lectura y Ajustes Rápidos del Lector -->
+<section class="px-margin pt-space-xs pb-space-lg">
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">settings_suggest</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Preferencias de Lectura Offline</h2>
+</div>
+<div class="flex flex-col gap-space-sm divide-y-0">
+<!-- Ajuste 1: Modo Lectura Nocturna -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Modo Nocturno Dark Cyan</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Ajusta contraste para maratones de lectura</span>
+</div>
+<div class="w-10 h-6 bg-primary-container rounded-full relative cursor-pointer flex items-center px-0.5">
+<div class="w-5 h-5 bg-on-primary rounded-full transition-transform translate-x-4"></div>
+</div>
+</div>
+<!-- Ajuste 2: Tamaño de Fuente Enciclopédica -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Tamaño de Fuente Lore</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">14px (Estándar Cómodo)</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container rounded-lg p-1">
+<button class="w-7 h-7 rounded text-on-surface-variant hover:text-primary font-headline-sm text-sm flex items-center justify-center">A-</button>
+<button class="w-7 h-7 rounded bg-surface-bright text-primary font-headline-sm text-sm flex items-center justify-center">A+</button>
+</div>
+</div>
+<!-- Ajuste 3: Auto-descarga de Actualizaciones -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Alertas de Expansión de Canon</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Notificar cuando una ficha guardada se actualice</span>
+</div>
+<div class="w-10 h-6 bg-surface-bright rounded-full relative cursor-pointer flex items-center px-0.5">
+<div class="w-5 h-5 bg-on-surface-variant rounded-full transition-transform translate-x-0"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interacción: Cambio dinámico de chips de categorías
+  document.querySelectorAll('.cat-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.cat-pill').forEach(p => {
+        p.classList.remove('bg-surface-bright', 'text-primary');
+        p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      pill.classList.add('bg-surface-bright', 'text-primary');
+    });
+  });
+
+  // Micro-interacción: Cambio de pestañas principales
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-md', 'shadow-primary-container/20');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-md', 'shadow-primary-container/20');
+    });
+  });
+
+  // Feedback de sincronización rápida
+  const syncBtn = document.getElementById('btn-sync-all');
+  if (syncBtn) {
+    syncBtn.addEventListener('click', () => {
+      const originalHtml = syncBtn.innerHTML;
+      syncBtn.disabled = true;
+      syncBtn.innerHTML = '<span class="material-symbols-outlined text-[17px] animate-spin">refresh</span><span>SINCRONIZANDO...</span>';
+      setTimeout(() => {
+        syncBtn.innerHTML = '<span class="material-symbols-outlined text-[17px]">done_all</span><span>¡TODO ACTUALIZADO!</span>';
+        setTimeout(() => {
+          syncBtn.innerHTML = originalHtml;
+          syncBtn.disabled = false;
+        }, 1800);
+      }, 1200);
+    });
+  }
+
+  // Notificación de limpieza de caché
+  const purgeBtn = document.getElementById('btn-purge-cache');
+  if (purgeBtn) {
+    purgeBtn.addEventListener('click', () => {
+      if (confirm('¿Deseas purgar el caché temporal sin eliminar tus favoritos descargados?')) {
+        alert('Caché temporal optimizado: 180 MB liberados con éxito.');
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container [&_.nav-indicator]:opacity-100 [&_.nav-indicator]:scale-100"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="wikispeed---inicio" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5 truncate">Inicio</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="marcadores-y-guardados" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5 truncate">Guardados</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="lectura-offline" href="#"><span class="material-symbols-outlined text-[22px]">download_for_offline</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5 truncate">Offline</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-all group relative text-primary-container [&_.nav-indicator]:opacity-100 [&_.nav-indicator]:scale-100" data-path="perfil-de-usuario" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5 truncate">Perfil</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a></div></nav></body></html>

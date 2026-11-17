@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="WikiSpeed Logo" class="h-8 w-auto object-contain shrink-0 drop-shadow-[0_0_8px_rgba(105,207,255,0.4)]" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md tracking-tight text-primary-container truncate leading-none">WikiSpeed</span><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider truncate">Medios</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Buscar en la wiki" class="w-11 h-11 flex items-center justify-center rounded-full text-primary-container hover:text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cambiar idioma o apariencia" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[20px]">translate</span></button><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center ml-space-xs shadow-[0_0_10px_rgba(105,207,255,0.4)]"><span class="material-symbols-outlined text-on-primary-fixed text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Intro & Hero Bar -->
+<section class="px-margin pt-space-lg pb-space-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-primary-fixed">ARCHIVO MULTIMEDIA · UNIVERSO EXPANDIDO</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight flex items-center justify-between">
+        Cómics &amp; Series de Sonic
+        <span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_10px_#69cfff]"></span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Guía enciclopédica de publicaciones impresas, adaptaciones cinematográficas, series animadas y continuidades alternativas de SEGA.
+      </p>
+</div>
+<!-- Segmented Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-space-xs -mx-margin px-margin no-scrollbar">
+<button class="filter-tab px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-[0_0_12px_rgba(105,207,255,0.35)] transition-transform active:scale-95">
+        Todos
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95">
+        Cómics
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95">
+        Películas
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95">
+        Series TV
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95">
+        Cortos &amp; Especiales
+      </button>
+</div>
+</section>
+<!-- Interactive Search & Tags Utility -->
+<section class="px-margin pb-space-lg flex flex-col gap-space-sm">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-primary-container text-[20px]">search</span>
+<input class="w-full bg-surface-container-high text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-11 pr-10 py-3 rounded-lg focus:outline-none focus:bg-surface-variant transition-colors" placeholder="Buscar cómic, arco argumental, serie o temporada..." type="text"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Quick Franchise Filter Chips -->
+<div class="flex items-center gap-1.5 overflow-x-auto -mx-margin px-margin py-0.5 no-scrollbar">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-primary-fixed font-label-sm text-label-sm shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+        Canon IDW
+      </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0">
+        Archie Comics
+      </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0">
+        Fleetway UK
+      </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary-fixed-dim font-label-sm text-label-sm shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary-container">movie</span>
+        Paramount Cine
+      </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0">
+        Animación Clásica
+      </span>
+</div>
+</section>
+<!-- Featured Spotlight Card (IDW Sonic) -->
+<section class="px-margin pb-space-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">stars</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed">Destacado del Archivo</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed bg-surface-container px-2 py-0.5 rounded">Canon Actual</span>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container-high shadow-xl flex flex-col">
+<!-- Media Header Image -->
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Dynamic comic book illustration of Sonic the Hedgehog speeding through Neo Metal Sonic ruins alongside Tangle the Lemur and Whisper the Wolf, vibrant cyan energy trails and golden sparks, modern IDW publication visual style, moody deep navy night background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5i290B4CJoohxBaTsXpIBLV97baei16wfc7SmzpsygfDUn5Y43kyZji_z2jtS3mmqx06fgJ3BpbgjeTbOurI8UppN9YjaPX7-3OEa3R9-uJbTEMMaYC02CEkFmlVFOCRwI6k7QzSwPpKRaciuArIvpF-GB2XWIGAn4eOk5P3n_pNUG6ZFoNslp0g_pq9V_dWYVb8rv_ooSM9kdlGEO5EBV5VkNYLSycyhJzXMMig"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-surface-container-high/60 to-transparent"></div>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary-container font-label-sm text-label-sm">
+            IDW PUBLISHING
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+            2018 - PRESENTE
+          </span>
+</div>
+</div>
+<!-- Content Block -->
+<div class="p-space-lg flex flex-col gap-space-md -mt-6 relative z-10">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+            Sonic the Hedgehog (IDW)
+          </h2>
+<p class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">
+            Continuidad Oficial Post-Sonic Forces
+          </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Secuela canónica directa de los acontecimientos de <span class="text-primary font-semibold">Sonic Forces</span>. Explora la devastadora plaga del <span class="text-error font-medium">Metal Virus</span>, la resistencia de los Restauradores y la aparición estelar de personajes icónicos como Surge the Tenrec, Kitsunami, Tangle y Whisper.
+        </p>
+<!-- Dynamic Stat Meter / Metrics Row -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container p-2.5 rounded-lg text-center">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">75+</span>
+<span class="font-label-sm text-label-sm text-outline">Entregas</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold">14</span>
+<span class="font-label-sm text-label-sm text-outline">Miniseries</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">Ian Flynn</span>
+<span class="font-label-sm text-label-sm text-outline">Guionista</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 py-2.5 px-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-[0_0_12px_rgba(105,207,255,0.3)] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">library_books</span>
+            Explorar Arcos
+          </button>
+<button class="py-2.5 px-4 rounded-full bg-surface-variant text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">bookmark</span>
+            Guía Lectura
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section: Comics Universe -->
+<section class="px-margin pb-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">auto_stories</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+          Cómics por Editorial &amp; Era
+        </h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">4 Series Históricas</span>
+</div>
+<!-- Cards Grid -->
+<div class="flex flex-col gap-space-md">
+<!-- Archie Comics Card -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="flex gap-space-md p-space-md">
+<div class="w-24 h-32 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Retro comic book cover art featuring Sonic and Princess Sally Acorn confronting Dr. Ivo Robotnik in a grim industrial Eggman Empire setting, classic Archie Comics early 2000s detailed cel animation coloring with high electric blue contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwWzqLSCFFA6b_mGS1RggDG-chmpYIDPEpTVKb-r7SGEQwOn1MHNdWtV2aIByYNMMuiOZZVQ3_Ktrbbqc6BZAp5iBUvC36A7rj1JCmQJeo8gXJoqq8ukfm0SER5XT3j6yHpiCUH_emL6xzN3_YgR4bswyMU3MmcCnxaqod2atzuOFUqhR5smOyj5sWmoCJ34f_-4yYLXTg1XKWrpWHGQACm2ueocPchrnE3z8HkuY"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-sm text-label-sm text-secondary-fixed">
+              290 #
+            </span>
+</div>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">Archie Comics</span>
+<span class="font-label-sm text-label-sm text-outline">1993 - 2017</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                Sonic the Hedgehog (Archie)
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                El cómic basado en videojuegos más longevo según el récord Guinness. Desarrolló el lore de Mobius, los Freedom Fighters y la Super Genesis Wave.
+              </p>
+</div>
+<div class="flex items-center gap-1 mt-2 text-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">timeline</span>
+<span>Arcos: Mecha Sally · Mobius 25 Years Later</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high px-space-md py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">290 números regulares + Sonic Universe</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">arrow_forward</span>
+</div>
+</div>
+<!-- Fleetway UK Card -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="flex gap-space-md p-space-md">
+<div class="w-24 h-32 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="British vintage comic illustration featuring the maniacal, spiral red-eyed Super Sonic with raw yellow lightning bursting around his spikes, dark gritty UK 90s comic book cover style from Fleetway Editions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0hNyXwf9F5koffbW-nOQj7uMTZqRdNYoO9Bovd62FTYuGXMt8W79kM1NHl-foSjUHrMS7J62HfrEZLkFBmJhQZfK5J7A8wNIHu2E12bizii9gu6kbtWqN3wVRuhnVaxyRdQgzmtQa9xN4w74uWpSSteXgTlWUeJfD_ys9_92z4e1mUXCWKMltEm0MxR6vOC8VrVECHMaWatbqxy8eUr87Pnqnv8u-ymQY2w7zqr0"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-sm text-label-sm text-error">
+              223 #
+            </span>
+</div>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Fleetway UK</span>
+<span class="font-label-sm text-label-sm text-outline">1993 - 2002</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                Sonic the Comic (STC)
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Publicación británica de culto. Reconocida por introducir a la temible versión berserker y psicopática de Super Sonic y a Tekno the Canary.
+              </p>
+</div>
+<div class="flex items-center gap-1 mt-2 text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Canon: Super Sonic Malvado · Kintobor</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high px-space-md py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Colección quincenal británica completa</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">arrow_forward</span>
+</div>
+</div>
+<!-- CoroCoro / Manga SEGA Card -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="flex gap-space-md p-space-md">
+<div class="w-24 h-32 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Retro 90s Japanese shonen manga page illustration showing Nicky transform into Sonic the Hedgehog, expressive clean black and white ink lines with tones, published in CoroCoro Comic, authentic early SEGA manga aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCETp1BeLPY6nuPSBz5ljPZTFX1VFxgTg9qtRsNqNx_8PuUTN7_WGp-RkeiDzV3zetetw36I1_IAvUCASVXjdxM1rxHE731aMmY997djKUo-xr9NILqbcweadMPWGi7woV5EGeZaPwxol51T-fTq6gZxOt34PIwITfmsPDyR8-q_dtBheBpvufjDE97V4ApUbv0_r4Jq2_xbYWalh0O6kBeB1-YfN9_OvIlk4-L0S0"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-sm text-label-sm text-primary-container">
+              Manga
+            </span>
+</div>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-tertiary-fixed font-label-sm text-label-sm">Shogakukan</span>
+<span class="font-label-sm text-label-sm text-outline">1992 - 1994</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                Manga de Sonic (CoroCoro)
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                La primera adaptación impresa. Sonic es el alter ego heroico del tímido erizo Nicky. Primera aparición histórica de Charmy Bee y Amy Rose en diseño prototipo.
+              </p>
+</div>
+<div class="flex items-center gap-1 mt-2 text-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span>Debut: Nicky Parlouzer · Origen Manga</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high px-space-md py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">5 Tomos Tankōbon compilatorios</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Paramount Cinematic Universe Section -->
+<section class="px-margin pb-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">theaters</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+          Universo Cinematográfico Paramount
+        </h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+        Live-Action
+      </span>
+</div>
+<!-- Cinematic Feature Card -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-xl flex flex-col">
+<div class="relative w-full h-48">
+<img class="w-full h-full object-cover" data-alt="Cinematic movie poster visual of Sonic, Tails, and Knuckles standing ready in Green Hills, while the silhouette of Shadow the Hedgehog looms with crimson aura against a stormy red-and-gold night sky, Hollywood live-action CGI cinematic realism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_YVfYgGZxqrUfsvIV6IHA2QTjbBo_fsHQmrSOYIgjJdSFsXRQ1puKi27t0v3oqE8QOWqInqYcdusqmJJb1ZNaZRyXqRdUZn7PgegcZEWKK8xnseBv6KfNlLNEhGf25iLa1SISIVxCkbE4Ofu_dClQgsYwMKJTnS3jxp07yTRR_iNy-K2J_cjzQOkulkWqLUkAtnUbsDugEANS5eIz7GcAcEtodLyTD6pD45XRH74"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/30"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface drop-shadow-md">
+            Trilogía Central &amp; Spin-Offs
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/80 text-primary-container font-label-sm text-label-sm">
+            $725M+ Global Box Office
+          </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Film Timeline List -->
+<div class="flex flex-col gap-space-xs">
+<!-- Sonic 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sonic the Hedgehog (2020)</span>
+<span class="font-body-sm text-body-sm text-outline truncate">El origen en Green Hills y el Dr. Robotnik (Jim Carrey)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed shrink-0">$319M</span>
+</div>
+<!-- Sonic 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sonic the Hedgehog 2 (2022)</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Llegada de Tails, Knuckles y la Master Emerald</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed shrink-0">$405M</span>
+</div>
+<!-- Knuckles Series -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">TV</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Knuckles (Paramount+, 2024)</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Miniserie de 6 episodios centrada en Wade Whipple</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed shrink-0">6 Eps</span>
+</div>
+<!-- Sonic 3 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-6 h-6 rounded-full bg-error text-on-error flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sonic the Hedgehog 3 (2024)</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Debut de Shadow the Hedgehog (voz: Keanu Reeves)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-error shrink-0">Estreno</span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-full bg-surface-variant text-primary-fixed font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+          Ver Ficha Técnica de la Saga Cinematográfica
+        </button>
+</div>
+</div>
+</section>
+<!-- Television & Animation Compendium -->
+<section class="px-margin pb-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">live_tv</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+          Series Animadas
+        </h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">5 Producciones</span>
+</div>
+<!-- Horizontal Carousel-like Dense List -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Sonic Prime -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="3D CGI character render of Sonic jumping through a shattered prism dimension into New Yoke City, colorful neon cyber multiversal aesthetic from Sonic Prime animation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmd0eP9175bxPzhvjT87HwYkjhX7CYzIFwvuFpc5gV3CJj9zX3wA8aT3s4sOlTlQ62kwUEWNk3ZacZFLTFs-dE74LIYqPMURvmgawQpeafjWFzYzLOjeHjR77rrgl8MyjrF6pPuz8ZFVwoXWmzRbcFdhVc1F5f2MkzoZibGUdbM_acCvUEIuJY9Kl0d9aTyoAQVtG5gwzN9OPy3tu7WmtwvZxDBVtpnEjkNBb0i4k"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic Prime</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-primary-fixed font-label-sm text-label-sm">2022-2024</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Netflix · WildBrain (3 Temporadas, 23 Eps)</span>
+<span class="font-label-sm text-label-sm text-primary-container">El Fragmentoverso (Shatterverse) y Chaos Council</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0">chevron_right</span>
+</div>
+<!-- Sonic X -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Anime cel art of Sonic alongside Chris Thorndyke and Tails aboard the Tornado II over Station Square, vibrant Japanese anime style from TMS Entertainment Sonic X." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPCULGWG3Y3m9hofzWO6SDkMrCxqnywp-W21f0RCrjo6gWUKGRZzfny-VNveNexsxqjgnZuURG7G4Zzrn8_ExmI9LO5H0JUnmeLHlUresQNfMbdIBf-IUhnEGMAKkSfCGlNTdvEHnH7lUqWg9XtsU68_Q-GplvI7l--ABNVdHCI9IlO_mdoEmPcqzXZap5RxyCVkTriuV00ZQzgvxyT-0adI_o_Jz71F1WsOOPI1A"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic X</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary-fixed font-label-sm text-label-sm">2003-2006</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">TMS Entertainment · Anime (78 Episodios)</span>
+<span class="font-label-sm text-label-sm text-secondary-container">Adaptación Sonic Adventure 1 &amp; 2 + Metarex</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0">chevron_right</span>
+</div>
+<!-- Sonic the Hedgehog SatAM -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Grim retro animation still of Knothole village hideout at night with Sally Acorn holding Nicole handheld computer while Sonic scouts the perimeter, dark Saturday morning cartoon palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgQU0NcrwxG9kmZ3T2fVk-8N_PuBXYdmaXqdngtREODqwz5caR4CzyqTAN3zeQlbCuqiIylzNovsPKEEiZAsDPdF0UmefECDpRVWGVu0TWR24OqOoSVGrkjbF2iuH3-QVeV-HHymraahVtGeI_6iHix-GBH5qTMFOFXFKk33L05NKULazu2GJj4pBgcKPSCi4egG9L5m8PD2MHhMbtSk5h_sZLbuEGKgnW1xEP02Q"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic SatAM</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-tertiary-fixed font-label-sm text-label-sm">1993-1994</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">DiC Entertainment (2 Temporadas, 26 Eps)</span>
+<span class="font-label-sm text-label-sm text-tertiary">Tono oscuro · Los Freedom Fighters de Knothole</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0">chevron_right</span>
+</div>
+<!-- Sonic Boom -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="3D cartoon still of Sonic wearing his sports tape and brown scarf alongside giant Knuckles relaxing on the tropical Seaside Island beach, bright comedic lighting from Sonic Boom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe1SrbqSfjgCWCXjIx7KyCit0cYgnebWVRmv5FkNJxxJssmHV66bSfuCyOzDFp8597zDvPaENmReKXD7EhZ_qhbfjmholtdqh-itT_6eNvi_SNVQ9DBGYK39tRlO9bYWicAWo_8MvMcy01DWqrdCqIGTAeDrNVfB0OkPGxBRH38HkYwF-Jk5u9fPo0aeTnmqAX8wQrGQVYSTBGGwAQnRMCUSWNLz8_D3gyOVW7ZzA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sonic Boom</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-outline font-label-sm text-label-sm">2014-2017</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ouido! / Cartoon Network (104 Episodios)</span>
+<span class="font-label-sm text-label-sm text-outline">Comedia satírica · Seaside Island · Sticks the Badger</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0">chevron_right</span>
+</div>
+<!-- Adventures of Sonic AoSTH -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Zany 1993 slapstick cartoon still of Sonic pulling faces at Scratch and Grounder robots with cartoon dynamite and Chili Dogs flying, colorful chaotic animated series." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQFg5FchvmEKeaemCmpJ5K5RWpi1xHZ3gtGTfMRdRcBJjSi1CyJXbLN6Td8z4HSb5YkswqfytusoPD1C8BwbMnVR2WNFbzh_GNQE8ELH1nY0Wn-eZN7E-qhgKtYgnZvoTJBUymczmOW8tY-8RLLrlD8K8qDo0k_ZSqao8DDGLZNasUtdYDAaaYL23QqTjBuQMFaRV30nyFkkNPrmY2QR_62iAPAyE99IouV_FO5aM"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Aventuras de Sonic (AoSTH)</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-outline font-label-sm text-label-sm">1993</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">DiC Entertainment (65 Episodios)</span>
+<span class="font-label-sm text-label-sm text-outline">Humor slapstick absurdo · Scratch, Grounder &amp; Coconuts</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Interactive Timeline & Canon Comparator -->
+<section class="px-margin pb-space-xl flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-high flex flex-col gap-space-md shadow-xl relative overflow-hidden">
+<!-- Ambient Glow Decor -->
+<div class="absolute -right-12 -top-12 w-36 h-36 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">GUÍA DE CONTINUIDADES</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+          ¿Cómo se conecta el canon con los juegos?
+        </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          El canon oficial de SEGA clasifica las obras en tres ramas principales de coherencia cronológica:
+        </p>
+</div>
+<!-- Quick Comparison Pillars -->
+<div class="grid grid-cols-3 gap-2 text-left">
+<div class="bg-surface-container p-2.5 rounded-lg flex flex-col gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#69cfff]"></span>
+<span class="font-label-md text-label-md text-primary-fixed font-bold leading-tight">Canon Principal</span>
+<span class="font-body-sm text-body-sm text-outline">Videojuegos principales + Cómics IDW Publishing.</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-lg flex flex-col gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container shadow-[0_0_8px_#fdd000]"></span>
+<span class="font-label-md text-label-md text-secondary-fixed font-bold leading-tight">Universo Cine</span>
+<span class="font-body-sm text-body-sm text-outline">Películas de Paramount y la serie Knuckles.</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-lg flex flex-col gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#cce2ff]"></span>
+<span class="font-label-md text-label-md text-tertiary font-bold leading-tight">Continuidad Clásica</span>
+<span class="font-body-sm text-body-sm text-outline">Archie Comics (Pre-Wave), SatAM y Fleetway.</span>
+</div>
+</div>
+<!-- Call to Action Button -->
+<button class="w-full py-3 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-[0_0_16px_rgba(105,207,255,0.35)] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+        Ver Cronología Completa de Medios
+      </button>
+</div>
+</section>
+<!-- Community Contribution Prompt / Micro-Delight -->
+<section class="px-margin pb-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface">¿Falta algún número o especial?</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Contribuye al archivo enciclopédico de la comunidad WikiSpeed.</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</section>
+</div>
+<script>
+  // Tab Switcher Interaction for Micro-Delight
+  document.querySelectorAll('.filter-tab').forEach((tab) => {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.filter-tab').forEach((el) => {
+        el.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-[0_0_12px_rgba(105,207,255,0.35)]');
+        el.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      this.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      this.classList.add('bg-primary-container', 'text-on-primary', 'shadow-[0_0_12px_rgba(105,207,255,0.35)]');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container font-semibold [&amp;_.nav-indicator]:opacity-100 [&amp;_.nav-indicator]:scale-100"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="wikispeed---inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Inicio</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="personajes" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Personajes</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 transition-all group relative text-primary-container font-semibold [&amp;_.nav-indicator]:opacity-100 [&amp;_.nav-indicator]:scale-100" data-path="medios" href="#"><span class="material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Medios</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="lore-y-mas" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Lore &amp; Más</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a></div></nav></body></html>

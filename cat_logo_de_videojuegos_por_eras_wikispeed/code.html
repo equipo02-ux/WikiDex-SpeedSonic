@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="WikiSpeed Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md tracking-tight text-primary-container truncate leading-none">WikiSpeed</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Inicio</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Buscar en la wiki" class="w-11 h-11 flex items-center justify-center rounded-full text-primary-container hover:text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cambiar idioma o apariencia" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[20px]">translate</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- ENCABEZADO DE SECCIÓN / HERO DE CONTENIDO -->
+<div class="px-gutter pt-space-md pb-space-lg flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[18px]">sports_esports</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim">Base de Datos Canónica</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Archivos Centrales</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-display-lg-mobile text-display-lg-mobile tracking-tight text-primary">Videojuegos de Sonic</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Catálogo cronológico oficial, eras históricas, plataformas clave y fichas técnicas de jugabilidad.</p>
+</div>
+<!-- Píldora de contador y estado global -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<div class="flex items-center gap-1.5 bg-surface-container-high px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">token</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">45+ Títulos Canónicos</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[14px]">timeline</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1991 — Presente</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-tertiary text-[14px]">speed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Eras Mayores</span>
+</div>
+</div>
+</div>
+<!-- SELECTOR DE VISTA HORIZONTAL SCROLLABLE & OMNI-FILTRO -->
+<div class="sticky top-16 z-40 bg-surface/95 backdrop-blur-md pb-space-sm pt-space-xs flex flex-col gap-space-xs shadow-md">
+<!-- Pestañas horizontales -->
+<div class="flex overflow-x-auto gap-space-xs px-gutter pb-1 no-scrollbar scroll-smooth" id="era-tab-bar">
+<button class="era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary-fixed shadow-[0_0_12px_rgba(105,207,255,0.4)]" onclick="filterEra('all', this)">
+        Todas las Eras
+      </button>
+<button class="era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterEra('clasica', this)">
+        Clásica (1991-98)
+      </button>
+<button class="era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterEra('adventure', this)">
+        Adventure / 3D (1998-05)
+      </button>
+<button class="era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterEra('boost', this)">
+        Moderna / Boost (2006-21)
+      </button>
+<button class="era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterEra('openzone', this)">
+        Abierta / Frontiers (2022+)
+      </button>
+<button class="era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="filterEra('spinoffs', this)">
+        Spin-Offs &amp; Carreras
+      </button>
+</div>
+<!-- Buscador compacto y selector de plataforma -->
+<div class="px-gutter flex items-center gap-space-xs">
+<div class="relative flex-1 flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-primary-container text-[18px]">search</span>
+<input class="w-full bg-surface-container-high rounded-xl pl-9 pr-8 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-variant transition-colors" id="gameSearchInput" oninput="searchGames(this.value)" placeholder="Buscar juego, jefe, mecánica..." type="text"/>
+<button class="hidden absolute right-2.5 text-on-surface-variant hover:text-primary" id="clearBtn" onclick="clearSearch()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<button class="h-9 px-3 rounded-xl bg-surface-container flex items-center gap-1.5 text-on-surface-variant hover:text-primary active:scale-95 transition-all" onclick="togglePlatformDrawer()">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">tune</span>
+<span class="font-label-sm text-label-sm font-bold uppercase hidden xs:inline">Filtro</span>
+</button>
+</div>
+</div>
+<!-- RESUMEN EVOLUTIVO RÁPIDO (TIMELINE MINI VISTA) -->
+<div class="px-gutter my-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">insights</span>
+<span class="font-headline-sm text-headline-sm text-primary">Línea Evolutiva de Motores</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-secondary-fixed">1991 - 2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Desde el salto pixel-perfect de 16-bits hasta el Hedgehog Engine 2 y simulaciones de Open-Zone.</p>
+<!-- Mini visualización de barras -->
+<div class="grid grid-cols-4 gap-1.5 mt-2">
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-secondary-container"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">16-Bit Mega</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-primary-fixed-dim"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dreamcast 3D</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-primary-container"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hedgehog 1</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-tertiary-fixed"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hedgehog 2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CONTENEDOR DE CATÁLOGO GENERAL -->
+<div class="flex flex-col gap-space-xl px-gutter pb-space-xl" id="gamesContainer">
+<!-- ============================================== -->
+<!-- BLOQUE 1: ERA CLÁSICA (1991 - 1998) -->
+<!-- ============================================== -->
+<section class="era-section flex flex-col gap-space-md" data-era="clasica">
+<!-- Banner de la Era -->
+<div class="bg-surface-container-high rounded-xl p-space-md relative overflow-hidden shadow-md">
+<div class="relative z-10 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary font-bold tracking-wider uppercase">Era 01 • Orígenes</span>
+<span class="font-label-md text-label-md text-secondary-fixed">1991 — 1998</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary pt-1">Era Clásica: El Destello Azul</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La consolidación del plataformeo de ultra-velocidad en Mega Drive, el nacimiento del Spin Dash y la mitología de las Esmeraldas del Caos.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">videogame_asset</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Sega Mega Drive / Genesis • Master System • Sega CD</span>
+</div>
+</div>
+</div>
+<!-- Tarjetas de juegos Era Clásica -->
+<div class="flex flex-col gap-space-md">
+<!-- Sonic 1 (1991) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic the hedgehog 1991 genesis green hill zone">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Classic Sonic the Hedgehog dashing past a giant checkerboard loop in iconic Green Hill Zone under a bright blue sky, vibrant Sega Genesis retro style with lush green hills and golden rings glistening in mid-air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJpAhb3Xo6z35QTSPkDS7qyRSgt5tf7mfLioSzkBMxafCqpZN87Ni3MF9XysB8AM1d31XjQcoLWs2svNTxg1U4dHOdK0sL9_7ZTLP9USHP2IPuZHaycIzc6aQb-F0m9qh1MJ-o_pkq1mONoVxpUf8CjeNl_tTirAT6RMVAyHJSXCssGJCrUV5gpN29mFZiLNwH1uf5YnisOyIp7j3P8xD5Iw0sT8ZutqqBon010vc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary-container text-[14px]">stars</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Debut Histórico</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              1991
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic the Hedgehog</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Sega Mega Drive / Genesis • 16-Bit</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">verified</span>
+<span class="font-label-md text-label-md text-secondary">Canónico</span>
+</div>
+</div>
+<!-- Ficha técnica concisa -->
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Hito Jugable</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Inercia &amp; Loop-de-loops</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Artefactos</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">6 Esmeraldas del Caos</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Zona Legendaria</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Green Hill Zone</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Antagonista</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Dr. Ivo Robotnik (Eggman)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El nacimiento del icono veloz de Sega. Revolucionó los videojuegos mediante física basada en aceleración, curvas parabólicas y el rescate de animalitos de South Island.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Música: Masato Nakamura (DREAMS COME TRUE)</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic 2 (1992) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic the hedgehog 2 tails spin dash super sonic death egg chemical plant">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sonic and Tails sprinting side by side through Chemical Plant Zone, glowing neon blue pipes, yellow hazardous fluid, retro pixel-art aesthetic filled with energetic speed lines and golden sparks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEimMz6QUAepATl9LgvPT5VmzWx-6WE8i_EedL4L-wOZxI1YSGby6a9ilWVrWD2HQAEz_g7b7bWgLkD2nsHwfPLG3S6HZq5K0DvvkbRUDBDsePIPz_STKOZ6FVECO25ArUiI5PscA79bgfYuPMeojGBCcgzMJDY9aMps8HqAHk_6OG4y-BsCLkxrnXGtuw3pHyuR9b7noiTvCGwtoOndYgVyV21_g-vLjmF4MS21A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary-container text-[14px]">bolt</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Llegada de Tails &amp; Super Sonic</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              1992
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic the Hedgehog 2</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Sega Mega Drive / Genesis</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">star</span>
+<span class="font-label-md text-label-md text-secondary">Obra Maestra</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Mecánica Clave</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Spin Dash instantáneo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Transformación</span>
+<span class="font-body-sm text-body-sm text-secondary-container font-bold">Super Sonic (7 Esmeraldas)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Coprotagonista</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Miles "Tails" Prower</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Fortaleza Final</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Death Egg</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Elevó el listón con el cooperativo para 2 jugadores, la inolvidable Chemical Plant y la introducción del Mecha Sonic y la base orbital Death Egg.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Nivel icónico: Chemical Plant Zone</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic CD (1993) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic cd 1993 metal sonic amy rose little planet stardust speedway time travel">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sonic racing furiously against Metal Sonic on a neon highway in Stardust Speedway during the Bad Future, with Dr. Robotnik charging a laser behind them, dramatic anime cyberpunk aesthetic with deep purples and high contrast cyan trails." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIxgOjtyo7X4ZuBxjl49Rveo_RCdLKcZv-du-vhMcsE3FmMEfrRCcvzxMcQfrTMNmfM_P2wBGvIgaAyvzES9iS15W4_owcnl8_BxhCwVzbgGOp7vgrc4oMfE_xFtbmUGUGcSVTg5jw3xY-kdXEKLMOCfGOj7iRw4L2SfdLEjcPKezmIjKnPYKdzoh887qD5zlmKPMAL0MsMOgSOKFYr8ctiXTH4hv3K76K4IfuBNk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Viajes Temporales</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              1993
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic CD</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Sega CD / Mega-CD • Multiplataforma</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-[16px]">disc_full</span>
+<span class="font-label-md text-label-md text-primary">CD Audio</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Mecánica Central</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Past / Present / Future</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Debuts Mayores</span>
+<span class="font-body-sm text-body-sm text-primary-container font-medium">Metal Sonic &amp; Amy Rose</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Escenario</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Little Planet &amp; Time Stones</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Clímax Legendario</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Carrera Stardust Speedway</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Con una intro animada por Toei Animation y bandas sonoras legendarias (JP vs US). El jugador debía alterar el flujo del tiempo para liberar Little Planet del yugo robótico.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Tema: Sonic - You Can Do Anything</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic 3 & Knuckles (1994) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic 3 knuckles lock on technology hyper sonic angel island master emerald">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-bold">Lock-On</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1994</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Sonic the Hedgehog 3 &amp; Knuckles</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Sega Mega Drive • Cartucho Acoplable</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">diamond</span>
+<span class="font-label-md text-label-md text-secondary">Super Emeralds</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La cumbre de los 16 bits. La unión de dos cartuchos creó la mayor aventura clásica jamás concebida: 14 zonas, debut de Knuckles the Echidna, Angel Island y la forma definitiva: Hyper Sonic.</p>
+<div class="grid grid-cols-2 gap-2 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Poder Absoluto</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold">Hyper Sonic / Hyper Knuckles</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nuevas Habilidades</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Insta-Shield &amp; Escudos Elementales</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guardián de la Master Emerald</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic Mania Plus (Homenaje) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic mania plus 2017 classic homage tee lopes mighty ray drop dash">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container text-on-primary-fixed font-bold">Clásico Moderno</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2017 / 2018</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Sonic Mania Plus</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Christian Whitehead • PagodaWest Games</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">military_tech</span>
+<span class="font-label-md text-label-md text-secondary">91 Metascore</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El tributo definitivo creado por fans y bendecido por Sega. Añadió el Drop Dash, los Hard-Boiled Heavies y reincorporó a Mighty the Armadillo y Ray the Flying Squirrel.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Drop Dash introducido al canon</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform">
+<span>Explorar</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- BLOQUE 2: ERA AVENTURA & DREAMCAST (1998 - 2005) -->
+<!-- ============================================== -->
+<section class="era-section flex flex-col gap-space-md" data-era="adventure">
+<!-- Banner de la Era -->
+<div class="bg-surface-container-high rounded-xl p-space-md relative overflow-hidden shadow-md">
+<div class="relative z-10 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-fixed-dim text-on-primary font-bold tracking-wider uppercase">Era 02 • Lore Profundo</span>
+<span class="font-label-md text-label-md text-primary-fixed">1998 — 2005</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary pt-1">Era Aventura: La Revolución 3D</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Narrativas cinematográficas entrelazadas, banda sonora rock vocal de Crush 40, crianza de Chao y la génesis de Shadow the Hedgehog.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">sports_esports</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Sega Dreamcast • Nintendo GameCube • PlayStation 2 • Xbox</span>
+</div>
+</div>
+</div>
+<!-- Tarjetas Era Adventure -->
+<div class="flex flex-col gap-space-md">
+<!-- Sonic Adventure (1998) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic adventure 1998 dreamcast station square chao garden perfect chaos crush 40 open your heart">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sonic standing on the edge of a skyscraper overlooking the bustling night city of Station Square, rain lashing against the glass, giant water monster Perfect Chaos looming in the background, late 90s Sega Dreamcast graphics vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0dq9TCtuBEelCIjM93FEwaRHPRKjNHHyyVIsPT5d0CBHvh3UQPkTYK_mZikDmy0LiR-wkKvlWNX0t3KLGHGHa7QeyoGlfOyUyhiOSYgR2tfYw2PjWgv-a8RtDkA_E8rU1XcL9_GdVl5aPHLXy_GG8aZOX-i-iqxA0o-JNlFECQKyEUQAaYmRQ5OfX1QKFhm3ucVvPVCDOLtdkYvRYVH8OV_x4eF9hhOzDQkBhcxU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[14px]">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Salto al 3D Real</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              1998
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic Adventure</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Sega Dreamcast • Sonic Adventure DX</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">egg</span>
+<span class="font-label-md text-label-md text-secondary">Chao Garden</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estructura Narrativa</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">6 personajes jugables</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Némesis Antiguo</span>
+<span class="font-body-sm text-body-sm text-primary-container font-medium">Chaos &amp; Tikal (Tribu Equidna)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Campos de Aventura</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Station Square / Mystic Ruins</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Canción Principal</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">"Open Your Heart" (Crush 40)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El salto definitivo a tres dimensiones. Introdujo el sistema de detección libre por radar con Knuckles, la pesca con Big the Cat, disparos con E-102 Gamma y el simulador de crianza Chao.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Director: Takashi Iizuka</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic Adventure 2 (2001) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic adventure 2 battle 2001 shadow the hedgehog rouge live and learn hero dark ark maria robotnik">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sonic and Shadow the Hedgehog locked in an epic mid-air grind showdown high above Space Colony ARK, earth shining beneath them, red and gold lightning clashing with blue supersonic aura, cinematic Y2K game art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9bI2sUskuYNxSZVuuzPiiqJRpn1qJ1hidOFbY0C_TfjZYz_OIBk5WtYE86btp3w2TNIp0dc9KSN7vUgyRCBJv4fLEoXrCayVd2_rmi-XMvPJU825aYdCmK40YKXxa6bmTTaZYGWyNohPzsAmjT81ST-Iv5lp3bv-qxaZTUA3LgJhqcCLOUtIU1W5CE42oNWZNBB6b3ePVqd5K40-6Y-jQpUOiTdltFMhjVI8JlMc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary-container text-[14px]">swords</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Hero vs. Dark</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              2001
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic Adventure 2 / Battle</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Dreamcast • GameCube • Multiplataforma</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">military_tech</span>
+<span class="font-label-md text-label-md text-secondary">180 Emblemas</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Debuts Históricos</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim font-bold">Shadow &amp; Rouge the Bat</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Clímax en la ARK</span>
+<span class="font-body-sm text-body-sm text-secondary-container font-bold">Super Sonic &amp; Super Shadow</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Banda Sonora</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">"Live &amp; Learn" (Crush 40)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nivel Apertura</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">City Escape (San Francisco)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Celebró el décimo aniversario con la rivalidad definitiva. Escisiones entre la luz y la oscuridad, Ciudad en Escape con snowboard urbano, la tragedia del Proyecto Shadow y el Cañón Eclipse.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Incluye Chao Karate y modo Versus</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic Heroes (2003) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic heroes 2003 team sonic team dark team rose team chaotix metal madness speed fly power">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-primary-fixed font-bold">Tríos Dinámicos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2003</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Sonic Heroes</h3>
+<span class="font-label-sm text-label-sm text-primary-container">PlayStation 2 • GameCube • Xbox • PC</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-[16px]">groups</span>
+<span class="font-label-md text-label-md text-primary">4 Equipos</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Primera entrega multiplataforma masiva tras la salida del hardware de Sega. Sistema de tres roles simultáneos: Velocidad (Sonic/Shadow/Amy/Espio), Vuelo (Tails/Rouge/Cream/Charmy) y Fuerza (Knuckles/Omega/Big/Vector).</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary-fixed-dim">Team Sonic</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-error">Team Dark</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-secondary">Team Rose</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-tertiary">Team Chaotix</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-tertiary">Jefe final: Metal Overlord</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform">
+<span>Explorar</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Shadow the Hedgehog (2005) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="shadow the hedgehog 2005 black doom guns vehicles dark hero neutral branch endings">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-bold">Spin-Off Canónico</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2005</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Shadow the Hedgehog</h3>
+<span class="font-label-sm text-label-sm text-primary-container">PlayStation 2 • GameCube • Xbox</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">alt_route</span>
+<span class="font-label-md text-label-md text-secondary">10 Finales</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sistema de alineación moral (Hero, Dark, Neutral), uso de armamento de fuego y vehículos terrestres y aéreos. Concluye la saga del pasado de Shadow frente a los alienígenas Black Arms y Black Doom.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Tema: "I Am... All of Me"</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform">
+<span>Explorar</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- BLOQUE 3: ERA MODERNA & BOOST (2006 - 2021) -->
+<!-- ============================================== -->
+<section class="era-section flex flex-col gap-space-md" data-era="boost">
+<!-- Banner de la Era -->
+<div class="bg-surface-container-high rounded-xl p-space-md relative overflow-hidden shadow-md">
+<div class="relative z-10 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-fixed font-bold tracking-wider uppercase">Era 03 • Supersónica</span>
+<span class="font-label-md text-label-md text-primary">2006 — 2021</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary pt-1">Era Boost: La Máxima Aceleración</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Llegada del Hedgehog Engine, velocidad Mach 1 sostenida mediante el Turbo Boost, transición 3D/2D fluida y la introducción de los poderes Wisp.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">speed</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">PlayStation 3/4 • Xbox 360/One • Wii/Wii U • PC • Switch</span>
+</div>
+</div>
+</div>
+<!-- Tarjetas Era Moderna & Boost -->
+<div class="flex flex-col gap-space-md">
+<!-- Sonic Unleashed (2008) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic unleashed 2008 hedgehog engine werehog dark gaia chip boost daytime windmill isle">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sonic the Hedgehog bursting forward in high-speed Boost mode kicking up glowing blue dust along the sunlit Greek coastal architecture of Apotos Windmill Isle, Hedgehog Engine photorealistic global illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsq5CAJbOLu_reC1yb52nsKBluZinT4KXF-uuXF5NmdxOd1jLQgWpPs-hQ84w48cvhQeBzYqypMDm4Z9ISod_mpcbi3yDeygqbR8FD8dqi0vxZcJZ9x3Qyxebr5j_uJvZ15CMNv6dfA9CBD_4PVYh30sgT0TVmzj9vs6lQ8xFI_07F3DQfFe_PfgrMHh4JIAW2OGhBrOjklzfT8hWZQpO6Zd8ozu5l_nICsHpkgGU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[14px]">rocket_launch</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Invento del Boost</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              2008
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic Unleashed</h3>
+<span class="font-label-sm text-label-sm text-primary-container">PS3 • Xbox 360 • Wii • Sonic World Adventure</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">wb_sunny</span>
+<span class="font-label-md text-label-md text-secondary">Día / Noche</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Motor Técnico</span>
+<span class="font-body-sm text-body-sm text-primary-container font-medium">Hedgehog Engine 1 (Global Illumination)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Dualidad Jugable</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Daytime Boost &amp; Night Werehog</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Aliado &amp; Dios Primordial</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Chip (Light Gaia) vs Dark Gaia</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nivel Insignia</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Windmill Isle (Apotos)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estableció la fórmula moderna del Sonic moderno: drift, quick step, turbo con energía de anillos y transiciones dinámicas entre tercera persona y perspectiva lateral de alta velocidad.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Tema: "Endless Possibility"</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic Colors (2010) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic colors ultimate 2010 wisps wii tropical resort reach for the stars laser drill">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary font-bold">Poderes Wisps</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2010 / 2021 (Ultimate)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Sonic Colors</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Nintendo Wii • Switch • PS4 • PC</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">palette</span>
+<span class="font-label-md text-label-md text-secondary">Wisps</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ambientado en el increíble Parque de Atracciones Interestelar del Dr. Eggman. Presentó a los Wisps (Cyan Laser, Yellow Drill, Orange Rocket), criaturas alienígenas que transforman las rutas del juego.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Himno: "Reach for the Stars"</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform">
+<span>Explorar</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic Generations (2011) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic generations 2011 20th anniversary classic sonic modern sonic time eater city escape green hill">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Classic Sonic and Modern Sonic running side by side through a brilliant white spacetime rift, dissolving fragments of Green Hill, Chemical Plant, and Rooftop Run floating in deep navy background with glowing cyan clocks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWIjuLqcPmK1dy3elEFViQ8HjXMjJraZufKvW35u21tUT-LalYvebXJ1Abwn-xcdFd0wi-OV_t7eCZ_1i9Gb6Sazs6jyof-Ecu7psIgJauLVAgn5AO2v3vHd32az2en2k9Hu0eF5LafP2riH_g4WKeBIoix_JZOJYGG376KsRAQJW76Wwqv3OhiJjGN3-5Cp9au_7E9uFUVylUrv9aKISiWYwbLrdml_2MHtWWsm0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary-container text-[14px]">celebration</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">20° Aniversario</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              2011
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic Generations</h3>
+<span class="font-label-sm text-label-sm text-primary-container">PS3 • Xbox 360 • PC • 3DS</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">history_edu</span>
+<span class="font-label-md text-label-md text-secondary">Tributo Clásico</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estructura Doble</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Act 1 (Clásico 2D) / Act 2 (Moderno 3D)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Némesis Espacio-Temporal</span>
+<span class="font-body-sm text-body-sm text-primary-container font-medium">Time Eater (Eggman x Robotnik)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Zonas Recreadas</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">9 mundos históricos desde 1991 a 2010</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Calificación Promedio</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold">85/100 Aclamado</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La mayor celebración de la historia de la saga. Unió al Sonic rechoncho de 16-bits con el Sonic espigado moderno para restaurar el espacio y tiempo devorado por el Time Eater.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Director: Hiroshi Miyamoto</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic Forces (2017) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic forces 2017 avatar resistance infinite phantom ruby fist bump">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-primary font-bold">Avatar Custom</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2017</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Sonic Forces</h3>
+<span class="font-label-sm text-label-sm text-primary-container">PlayStation 4 • Xbox One • Switch • PC</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-[16px]">tune</span>
+<span class="font-label-md text-label-md text-on-surface">Wispon</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Eggman conquista el 99% del planeta con la ayuda del Rubí Fantasma y el nuevo villano Infinite. La Resistencia recluta a un Avatar novato personalizable equipado con armas Wispon.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Tema: "Fist Bump" (feat. Douglas Robb)</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform">
+<span>Explorar</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- BLOQUE 4: ERA ABIERTA (2022 - ACTUALIDAD) -->
+<!-- ============================================== -->
+<section class="era-section flex flex-col gap-space-md" data-era="openzone">
+<!-- Banner de la Era -->
+<div class="bg-surface-container-high rounded-xl p-space-md relative overflow-hidden shadow-md">
+<div class="relative z-10 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary font-bold tracking-wider uppercase">Era 04 • La Nueva Fórmula</span>
+<span class="font-label-md text-label-md text-secondary-fixed">2022 — Presente</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary pt-1">Era Abierta: Open-Zone &amp; Ciberespacio</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Exploración continua en archipiélagos monumentales, combate acrobático con árboles de habilidades y portales al Ciberespacio ancestral.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">public</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">PlayStation 5 • Xbox Series X/S • Switch • PC • Multi-Gen</span>
+</div>
+</div>
+</div>
+<!-- Tarjetas Era Abierta -->
+<div class="flex flex-col gap-space-md">
+<!-- Sonic Frontiers (2022) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic frontiers 2022 open zone starfall islands cyberspace titans super sonic kronos island koco sage">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Super Sonic glowing in brilliant yellow gold hovering in stormy sky confronting the gargantuan cyber-titan Giganto atop Kronos Island with ancient ruins, intense sci-fi fantasy atmosphere in dark navy and electric blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCca7dSARSxJAC6avZGlyLyG-ULYRmAxb9OyoT_LKo9FhYz1qsS2W3DxPQttEV_hSj554UUNO-xPlc7sla-twcBOlD3nl2tXkM6K6xOcm1R-uBWXCkZznMn_0Do31tpbZTB9YBvEoorTwWjb0xjZDLHzYBso1PK5h-2dsgIWAGIN-0avcYXD0Ykd9A61kAhoEUUwR8_w4VUR1cl_HqNw9m9_HOq3xqq6DBHkcNRWpY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary-container text-[14px]">public</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Open-Zone Original</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              2022
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic Frontiers</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Sonic Team • Morio Kishimoto</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">military_tech</span>
+<span class="font-label-md text-label-md text-secondary">4M+ Ventas</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Localización</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Starfall Islands (5 Islas)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Mecánica de Combate</span>
+<span class="font-body-sm text-body-sm text-primary-container font-medium">Cyloop, Parrying &amp; Skill Tree</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Jefes Colosales</span>
+<span class="font-body-sm text-body-sm text-secondary-container font-bold">Titanes: Giganto, Wyvern, Knight</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Banda Sonora</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Tomoya Ohtani &amp; ONE OK ROCK</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La evolución estructural más trascendental en dos décadas. Libertad de desplazamiento total sobre raíles cinéticos, micro-puzles, recolección de Kocos y batallas con Super Sonic en metalcore apoteósico.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Incluye actualización The Final Horizon</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic X Shadow Generations (2024) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic x shadow generations 2024 doom powers black doom space colony ark white space remastered">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Shadow the Hedgehog unleashing black and crimson Doom wings in mid-flight above an eerie white void city with clock towers and red laser grid, intense modern action key art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtVLuuDXvZbyIVEf-c-aRePdoMatPnn1iSIVFSu0Bzs0tyhx8YsngjpgwwLkW4cYRy4kdK1y1tcx-wlfDqahbflaWnoWoX_jht2_1l7gRu4DqPsLxbbUVJsLkPfJu5ad2hILarrzueq9fddVPgGjh-dswQORg5xjzcTIqPqeEIac3jbiGo5M2_3dK8-nnMvTh2PNmgQ1dFL5I8djKSbDqqnqyvbSVwJFQJK6DTyFs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-error text-[14px]">dark_mode</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Campaña Dual Completa</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-md font-label-sm text-label-sm text-primary">
+              2024
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Sonic X Shadow Generations</h3>
+<span class="font-label-sm text-label-sm text-primary-container">PS5 • Xbox Series • Switch • PC</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">auto_awesome</span>
+<span class="font-label-md text-label-md text-secondary">Lanzamiento Élite</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 my-1 bg-surface-container p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nueva Campaña</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Shadow Generations (Inédito)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nuevas Habilidades</span>
+<span class="font-body-sm text-body-sm text-error font-bold">Poderes Doom (Spear, Wings, Surf)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Espacio Blanco</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Hub Open-Zone interactivo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Remaster</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Sonic Generations 4K 60FPS con Drop Dash</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lanzado en el "Año de Shadow". Ofrece la remasterización definitiva de Generations clásico y una aventura en paralelo centrada en Shadow con poderes oscuros y narrativa de María Robotnik.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Incluye animaciones prólogo Dark Beginnings</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-sm">
+<span>Ver Ficha</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Sonic Superstars (2023) -->
+<article class="game-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col" data-title="sonic superstars 2023 naoto ohshima trip the sungazer northstar islands chaos emerald powers co-op">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container text-on-primary-fixed font-bold">Plataformeo 2.5D</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Sonic Superstars</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Multiplataforma • Co-op 4 Jugadores</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">group</span>
+<span class="font-label-md text-label-md text-secondary">Cooperativo</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vuelta al estilo clásico pero modelado en tres dimensiones, con diseño de personajes a cargo del co-creador original Naoto Ohshima, debut de Trip the Sungazer y nuevos poderes individuales de las Esmeraldas.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Sonic, Tails, Knuckles &amp; Amy jugables</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform">
+<span>Explorar</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- BLOQUE 5: SUB-SAGAS Y SPIN-OFFS DESTACADOS -->
+<!-- ============================================== -->
+<section class="era-section flex flex-col gap-space-md" data-era="spinoffs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">sports_motorsports</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Spin-Offs &amp; Carreras</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ramas Alternativas</span>
+</div>
+<!-- Cuadrícula 2 Columnas para Spin-offs -->
+<div class="grid grid-cols-2 gap-gutter-sm">
+<!-- Sonic & All-Stars Racing Transformed -->
+<div class="game-card bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5 shadow-sm" data-title="sonic all stars racing transformed sumo digital kart boat plane">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container font-bold">Carreras</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2012</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight">All-Stars Racing Transformed</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Vehículos mutables entre coche de pista, lancha rápida y caza aéreo con icónicas pistas de Sega.</p>
+<div class="mt-auto pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Sumo Digital</span>
+<span class="material-symbols-outlined text-primary-container text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Sonic Riders -->
+<div class="game-card bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5 shadow-sm" data-title="sonic riders babylon rogues extreme gear jet wave storm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">Extreme Gear</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2006</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Sonic Riders (Trilogía)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Tablas aerodeslizadoras propulsadas por turbulencia de aire, debut de los Babylon Rogues (Jet, Wave, Storm).</p>
+<div class="mt-auto pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Sonic Team</span>
+<span class="material-symbols-outlined text-primary-container text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Mario & Sonic Juegos Olímpicos -->
+<div class="game-card bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5 shadow-sm" data-title="mario sonic olympic games tokyo beijing nintendo sega crossover">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold">Crossover</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2007-2019</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Mario &amp; Sonic en los JJ.OO.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Histórica alianza entre Nintendo y Sega reuniendo a las dos mayores leyendas en disciplinas olímpicas.</p>
+<div class="mt-auto pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Nintendo / Sega</span>
+<span class="material-symbols-outlined text-primary-container text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Sonic Chronicles: The Dark Brotherhood -->
+<div class="game-card bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5 shadow-sm" data-title="sonic chronicles dark brotherhood bioware rpg nocturnus clan shade the echidna nds">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container font-bold">RPG Táctico</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2008</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Sonic Chronicles</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">RPG desarrollado por BioWare para Nintendo DS. Combate por turnos táctiles y el clan Nocturnus.</p>
+<div class="mt-auto pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">BioWare</span>
+<span class="material-symbols-outlined text-primary-container text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ESTADO VACÍO EN BÚSQUEDA SIN COINCIDENCIAS -->
+<div class="hidden px-gutter py-space-xl flex flex-col items-center text-center gap-space-sm" id="noResultsState">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-secondary-container shadow-md">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">No se encontraron títulos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">Prueba a buscar por nombre en inglés, plataforma (Dreamcast, Genesis) o mecánicas como "Wisps" o "Boost".</p>
+</div>
+<button class="mt-2 px-4 py-2 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md active:scale-95 transition-transform shadow-md" onclick="clearSearch()">
+      Restablecer Filtros
+    </button>
+</div>
+<!-- PANEL / DRAWER INFERIOR DE FILTRADO POR PLATAFORMA (INTERACTIVO) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-sm hidden flex-col justify-end transition-opacity duration-300" id="platformDrawer">
+<div class="bg-surface-container-high rounded-t-2xl p-gutter flex flex-col gap-space-md shadow-2xl max-h-[707px] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">tune</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Filtrar por Sistema</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="togglePlatformDrawer()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="p-2.5 rounded-xl bg-surface-container text-left flex items-center justify-between hover:bg-surface-variant active:scale-95 transition-all" onclick="filterByPlatform('Genesis')">
+<span class="font-label-md text-label-md text-on-surface">Sega Mega Drive</span>
+<span class="font-label-sm text-label-sm text-primary-container">16-Bit</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container text-left flex items-center justify-between hover:bg-surface-variant active:scale-95 transition-all" onclick="filterByPlatform('Dreamcast')">
+<span class="font-label-md text-label-md text-on-surface">Dreamcast</span>
+<span class="font-label-sm text-label-sm text-primary-container">128-Bit</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container text-left flex items-center justify-between hover:bg-surface-variant active:scale-95 transition-all" onclick="filterByPlatform('GameCube')">
+<span class="font-label-md text-label-md text-on-surface">GameCube / Wii</span>
+<span class="font-label-sm text-label-sm text-secondary-container">Nintendo</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container text-left flex items-center justify-between hover:bg-surface-variant active:scale-95 transition-all" onclick="filterByPlatform('PlayStation')">
+<span class="font-label-md text-label-md text-on-surface">PlayStation (PS2-PS5)</span>
+<span class="font-label-sm text-label-sm text-primary">Sony</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container text-left flex items-center justify-between hover:bg-surface-variant active:scale-95 transition-all" onclick="filterByPlatform('Xbox')">
+<span class="font-label-md text-label-md text-on-surface">Xbox Ecosystem</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Microsoft</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container text-left flex items-center justify-between hover:bg-surface-variant active:scale-95 transition-all" onclick="filterByPlatform('Switch')">
+<span class="font-label-md text-label-md text-on-surface">Nintendo Switch</span>
+<span class="font-label-sm text-label-sm text-secondary-container">Híbrida</span>
+</button>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface-variant text-center active:scale-95 transition-transform" onclick="clearSearch(); togglePlatformDrawer();">
+          Limpiar Filtros
+        </button>
+<button class="flex-1 py-2.5 rounded-xl bg-primary-container font-label-md text-label-md text-on-primary-fixed text-center active:scale-95 transition-transform font-bold" onclick="togglePlatformDrawer()">
+          Aplicar
+        </button>
+</div>
+</div>
+</div>
+<!-- SCRIPT DE MICRO-INTERACTIVIDAD Y FILTRADO RÁPIDO EN CLIENTE -->
+<script>
+    function filterEra(eraName, btnElement) {
+      // Activar estilo de tab
+      const tabs = document.querySelectorAll('.era-tab');
+      tabs.forEach(tab => {
+        tab.className = 'era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface';
+      });
+      btnElement.className = 'era-tab shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary-fixed shadow-[0_0_12px_rgba(105,207,255,0.4)]';
+
+      // Mostrar/ocultar secciones
+      const sections = document.querySelectorAll('.era-section');
+      sections.forEach(sec => {
+        if (eraName === 'all' || sec.getAttribute('data-era') === eraName) {
+          sec.style.display = 'flex';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+      checkResultsCount();
+    }
+
+    function searchGames(query) {
+      const q = query.trim().toLowerCase();
+      const clearBtn = document.getElementById('clearBtn');
+      if (q.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      const cards = document.querySelectorAll('.game-card');
+      cards.forEach(card => {
+        const text = (card.getAttribute('data-title') + ' ' + card.innerText).toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Verificar si hay eras enteras vacías
+      const sections = document.querySelectorAll('.era-section');
+      sections.forEach(sec => {
+        const visibleCards = sec.querySelectorAll('.game-card[style*="display: flex"], .game-card:not([style*="display: none"])');
+        // Si no hay cards visibles dentro de la sección
+        let hasVisible = false;
+        sec.querySelectorAll('.game-card').forEach(c => {
+          if (c.style.display !== 'none') hasVisible = true;
+        });
+        if (!hasVisible && q.length > 0) {
+          sec.style.display = 'none';
+        } else if (hasVisible) {
+          sec.style.display = 'flex';
+        }
+      });
+
+      checkResultsCount();
+    }
+
+    function filterByPlatform(platform) {
+      const input = document.getElementById('gameSearchInput');
+      input.value = platform;
+      searchGames(platform);
+      togglePlatformDrawer();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('gameSearchInput');
+      input.value = '';
+      searchGames('');
+      // Restablecer todas las eras
+      const firstTab = document.querySelector('.era-tab');
+      if (firstTab) filterEra('all', firstTab);
+    }
+
+    function checkResultsCount() {
+      const cards = document.querySelectorAll('.game-card');
+      let visibleCount = 0;
+      cards.forEach(card => {
+        if (card.style.display !== 'none' && card.closest('.era-section').style.display !== 'none') {
+          visibleCount++;
+        }
+      });
+
+      const noResults = document.getElementById('noResultsState');
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+
+    function togglePlatformDrawer() {
+      const drawer = document.getElementById('platformDrawer');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        drawer.classList.add('flex');
+      } else {
+        drawer.classList.add('hidden');
+        drawer.classList.remove('flex');
+      }
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container [&amp;_.nav-indicator]:opacity-100 [&amp;_.nav-indicator]:scale-100"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Inicio</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="personajes" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Personajes</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="medios" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Medios</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="lore-y-mas" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Lore &amp; Más</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a></div></nav></body></html>

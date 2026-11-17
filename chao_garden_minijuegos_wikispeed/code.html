@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="WikiSpeed Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md tracking-tight text-primary-container truncate leading-none">WikiSpeed</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Inicio</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Buscar en la wiki" class="w-11 h-11 flex items-center justify-center rounded-full text-primary-container hover:text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cambiar idioma o apariencia" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[20px]">translate</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- SECCIÓN CABECERA TEMÁTICA -->
+<header class="px-margin pt-space-lg pb-space-md flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs self-start px-space-md py-1 rounded-full bg-surface-container-high text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">pets</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Minijuegos &amp; Crianza • Adventure Series</span>
+</div>
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">Chao Garden &amp; Minijuegos</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Compendio técnico de crianza genética, alineación moral Hero/Dark, Mercado Negro del Kindergarten y los minijuegos icónicos de la saga.
+      </p>
+</div>
+<!-- Píldoras de filtrado interactivo -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs -mx-margin px-margin">
+<button class="chao-filter-btn px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-md transition-all active:scale-95" onclick="filterChaoSection('all', this)">
+        Todo
+      </button>
+<button class="chao-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95" onclick="filterChaoSection('gardens', this)">
+        Jardines
+      </button>
+<button class="chao-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95" onclick="filterChaoSection('evolution', this)">
+        Evolución &amp; Alineación
+      </button>
+<button class="chao-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95" onclick="filterChaoSection('stats-items', this)">
+        Animales &amp; Frutas
+      </button>
+<button class="chao-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95" onclick="filterChaoSection('market', this)">
+        Mercado Negro
+      </button>
+<button class="chao-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all active:scale-95" onclick="filterChaoSection('tournaments', this)">
+        Karate &amp; Carreras
+      </button>
+</div>
+</header>
+<!-- CONTENEDOR PRINCIPAL FLUIDO -->
+<div class="px-margin flex flex-col gap-space-xl pb-space-lg">
+<!-- SECCIÓN 1: RESUMEN DE LOS TRES JARDINES -->
+<section class="flex flex-col gap-space-md" data-section="gardens">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">nature</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Santuarios de Crianza (SA2B)</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-secondary-container">3 Biomas</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Neutral Chao Garden -->
+<article class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative h-32 w-full bg-cover bg-center" data-alt="Chao Garden neutral from Sonic Adventure 2 with lush green hills, clear waterfall pool, ancient stone ruins, sunny blue sky, cheerful atmosphere, hyper-detailed rendering in sonic blue and emerald green palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxHPLeB9bhxG5ONiSw3_rbrqsdPkXaHmzKRhyz50hdRZgalZV2y2lV-cIxsol7c7uiP9XKaAWYsLE1ZcftLLmdUfkkahbwyYPZrIzUVOaESML_DYTDX0ds-92J76GoqqO_7CbBYs452DFFsW0PYm8nOC5rf9rK6dhX6VMlTITN-Du7qn_l0b76V2Z5ZQrQEDEZHzoa3FCtqat8IA8tq8UIq9u4-TLIVCcjHIhQ95s')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-primary font-label-sm text-label-sm">
+              Chao World Central
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Jardín Neutral</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Atmósfera templada y equilibrada con un estanque natural, puente de piedra y orilla accesible para infantes nadadores. Es el nexo inicial del Chao Kindergarten.
+            </p>
+<div class="mt-space-xs flex items-center gap-space-xs text-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">water_drop</span>
+<span>Árboles estándar • Sin sesgo moral</span>
+</div>
+</div>
+</article>
+<!-- Hero Garden -->
+<article class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative h-32 w-full bg-cover bg-center" data-alt="Hero Garden Chao paradise from Sonic Adventure 2 with cloud platforms, classical white marble columns, tranquil turquoise fountains, divine golden sunlight, serene celestial ambiance, cyan highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsVN0s-4hLaaUIhpc0SL8seD2IJtUZ3uyNQdTW74vIYzb98uhJT-p5Cy3L9FSFv3TdrGQDTw_FUlvQ2-tDrId-Sk0lL6hjoQ2_1g03C3MsJ0USHBz8OjJPuTlG4uqNEKR_kO_4be6njOo3VnbieWhq8n-yuRBZ0tEFxMcY-QkwNtBVn9MbO7fhb_Rt7H-MDV6fkAbPhPE9ym86tq1229bWNZheGa7fNAE5yXRtEwI')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-secondary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span> Paraíso Celeste
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-secondary">Hero Garden</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-secondary-container">Desbloqueo: 1 Hero Chao</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Construido sobre nubes luminosas y mármol etéreo. Fomenta temperamentos dóciles y pacíficos. Contiene Hero Fruits exclusivas que aceleran la purificación espiritual.
+            </p>
+</div>
+</article>
+<!-- Dark Garden -->
+<article class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative h-32 w-full bg-cover bg-center" data-alt="Dark Garden from Sonic Adventure 2 with blood-red and purple glowing lava pools, tombstones, twisted dark trees, gloomy mist, neon crimson and obsidian ambiance, moody sonic game aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHiuMhURSakX-leAt8j2D9dC8LL8_QOVRyDmhfJcBYoU5wBz04uimodQBYO4gBp_UiPUTw2GvktweaduMPKEHCA05DcWYWz2AJUkVTLKdXib4_w4RCWAB5XDld2ujxD_VDCGQDiyjIUfu57BRNCl0UiaI6GhuzY2lchCtJCUz7YCLr5_vg3o6eyKPmLdNkjQBTHYTpYa3lmGcPSmTZAOmUsYYAjNt8Z58XgPFxLGo')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-error font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">local_fire_department</span> Caverna Infernal
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-error">Dark Garden</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-error">Desbloqueo: 1 Dark Chao</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Caverna con ríos de magma carmesí, criptas y niebla oscura. Estimula personalidades traviesas e hiperreactivas. Produce frutos picantes con nutrientes de ataque.
+            </p>
+</div>
+</article>
+</div>
+</section>
+<!-- SECCIÓN 2: ÁRBOL EVOLUTIVO & GENÉTICA -->
+<section class="flex flex-col gap-space-md" data-section="evolution">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">account_tree</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Matriz Genética &amp; Evolución</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary">Capullo Nvl. 1</span>
+</div>
+<!-- Explicador visual de Primera Transformación -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Alrededor de los 3-5 años Chao de vida in-game, la criatura entra en un capullo protector. Su fisonomía final dependerá de la afinidad con los cuidadores y las habilidades entrenadas:
+        </p>
+<!-- Tríada de Alineación -->
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary-container shadow-inner mb-1">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary">Hero</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Sonic / Tails</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">Halo radiante</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container shadow-inner mb-1">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary-container">Neutral</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Equilibrado</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Bola flotante</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-error shadow-inner mb-1">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-error">Dark</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Shadow / Rouge</span>
+<span class="font-label-sm text-label-sm text-error mt-1">Orbe de púa</span>
+</div>
+</div>
+<!-- 5 Ramas Secundarias -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Subtipo Morfológico</span>
+<div class="grid grid-cols-2 gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-container"></span> Nadador (Orejas aletas)</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span> Volador (Alas extendidas)</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container"></span> Corredor (Puntas dinámicas)</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-error"></span> Fuerte (Cuernos robustos)</div>
+</div>
+</div>
+</div>
+<!-- Chao Raros & Especiales -->
+<div class="flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Variantes Míticas &amp; Chaos Chao</h3>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Light Chaos Chao -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-md shadow-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-high text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">all_inclusive</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Chaos Chao (Inmortal)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-secondary-container">Rango S</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Requiere 2 reencarnaciones previas y alimentar al Chao con los 21 animales diferentes del juego sin Chaos Drives. Nunca vuelve a reencarnar ni morir.
+              </p>
+</div>
+</div>
+<!-- Shiny Two-Tone & Omochao -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-md shadow-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-high text-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">flare</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary">Shiny Two-Tone Chao</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Cruce genético entre un Chao monocromático del Mercado Negro y un Chao Regular. Presenta reflejos prismáticos translúcidos con destellos de velocidad.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 3: MECÁNICAS DE CRIANZA, STATS & ALIMENTACIÓN -->
+<section class="flex flex-col gap-space-md" data-section="stats-items">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">bar_chart</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Atributos &amp; Dieta</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">Grados E → S</span>
+</div>
+<!-- Tabla de Stats con Meters -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-secondary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pool</span> Natación (Swim)
+            </span>
+<span class="text-on-surface-variant">Grado A • Multiplicador x2.4</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container to-secondary-container h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">flutter_dash</span> Vuelo (Fly)
+            </span>
+<span class="text-on-surface-variant">Grado S • Multiplicador x3.0</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container to-secondary-container h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sprint</span> Carrera (Run)
+            </span>
+<span class="text-on-surface-variant">Grado S • Multiplicador x3.0</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container to-secondary-container h-full rounded-full" style="width: 86%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span> Fuerza (Power)
+            </span>
+<span class="text-on-surface-variant">Grado B • Multiplicador x1.8</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-error h-full rounded-full" style="width: 62%"></div>
+</div>
+</div>
+</div>
+<!-- Guía de Animales y Chaos Drives -->
+<div class="flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Familias de Animales &amp; Chaos Drives</h3>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Amarillos Swim -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[16px]">waves</span>
+<span class="font-label-md text-label-md">Natación (Amarillo)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Foca, Pingüino, Nutria</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">G.U.N. Drive Amarillo</span>
+</div>
+<!-- Morados Fly -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">paragliding</span>
+<span class="font-label-md text-label-md">Vuelo (Morado)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Loro, Pavo Real, Golondrina</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">G.U.N. Drive Violeta</span>
+</div>
+<!-- Verdes Run -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span class="font-label-md text-label-md">Carrera (Verde)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Guepardo, Conejo, Jabalí</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">G.U.N. Drive Verde</span>
+</div>
+<!-- Rojos Power -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[16px]">sports_martial_arts</span>
+<span class="font-label-md text-label-md">Fuerza (Rojo)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Gorila, Oso, Tigre</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">G.U.N. Drive Rojo</span>
+</div>
+</div>
+<!-- Místicos / Fantasma -->
+<div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">auto_fix_high</span>
+<div>
+<span class="font-label-md text-label-md text-primary">Animales Místicos / Fantasma</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dragón, Murciélago, Esqueleto canino. Eliminan patas o dotan alas de fuego.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Frutas y Botánica -->
+<div class="bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">nutrition</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Alimentación &amp; Huerto</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Cada fruta consumida sacia el hambre y sube los puntos de Estamina (Stamina).
+        </p>
+<div class="grid grid-cols-2 gap-space-xs mt-space-xs">
+<div class="bg-surface-container p-space-xs rounded font-body-sm text-body-sm">
+<strong class="text-secondary">Hero Fruit:</strong> +Hero afín, +Stamina
+          </div>
+<div class="bg-surface-container p-space-xs rounded font-body-sm text-body-sm">
+<strong class="text-error">Dark Fruit:</strong> +Dark afín, +Stamina
+          </div>
+<div class="bg-surface-container p-space-xs rounded font-body-sm text-body-sm">
+<strong class="text-primary-container">Smart Fruit:</strong> Fomenta inteligencia en clases
+          </div>
+<div class="bg-surface-container p-space-xs rounded font-body-sm text-body-sm">
+<strong class="text-secondary-fixed">Strong Fruit:</strong> Regenera energía rápido
+          </div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 4: MERCADO NEGRO & CHAO KINDERGARTEN -->
+<section class="flex flex-col gap-space-md" data-section="market">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">storefront</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Mercado Negro &amp; Kindergarten</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-secondary-container">Anillos Requeridos</span>
+</div>
+<!-- Tarjeta Mercado Negro -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container">Tienda Secreta del Aula Principal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Accesible tras recolectar emblemas en niveles Adventure.</span>
+</div>
+<span class="px-space-xs py-1 rounded bg-secondary-container text-on-secondary font-label-sm text-label-sm">VIP</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs mt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">egg</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Huevos Metálicos y Joya</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Oro, Plata, Rubí, Zafiro, Esmeralda</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary-container font-bold">500 - 50,000 ˚</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">shield</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Cascarones de Cabeza</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calabazas de Halloween, Cono vial, Maceta</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary-container font-bold">2,000 ˚</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">music_note</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Instrumentos y Juguetes</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pelotas saltarinas, sonajeros, cascabeles</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary-container font-bold">1,000 - 8,000 ˚</span>
+</div>
+</div>
+</div>
+<!-- Salón de Clases Kindergarten -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Clases Académicas Chao</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Inscribe a tus Chao para desbloquear animaciones exclusivas en el jardín:
+        </p>
+<div class="grid grid-cols-2 gap-space-xs mt-space-xs">
+<div class="bg-surface-container-high p-space-xs rounded flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[16px]">draw</span> Arte &amp; Bocetos
+          </div>
+<div class="bg-surface-container-high p-space-xs rounded flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[16px]">celebration</span> Danza de Ritmo
+          </div>
+<div class="bg-surface-container-high p-space-xs rounded flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[16px]">mic</span> Coro &amp; Canto
+          </div>
+<div class="bg-surface-container-high p-space-xs rounded flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[16px]">piano</span> Clarinete / Flauta
+          </div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 5: COMPETICIONES, KARATE & MINIJUEGOS DE LA SAGA -->
+<section class="flex flex-col gap-space-md" data-section="tournaments">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">emoji_events</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Estadio &amp; Minijuegos</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-secondary-container">Chao Stadium</span>
+</div>
+<!-- Chao Races -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Chao Races (Carreras Oficiales)</h3>
+<span class="font-label-sm text-label-sm text-secondary-container font-bold">5 Copas Joya</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Pistas con secciones combinadas de nado contracorriente, trepado por acantilados escarpados, vuelos intermedios y aceleración terrestre. El uso del botón de animación recarga la energía en las rectas.
+        </p>
+<div class="flex items-center gap-space-xs flex-wrap mt-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-primary-container font-label-sm text-label-sm">Perla</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-primary-container font-label-sm text-label-sm">Amatista</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-primary-container font-label-sm text-label-sm">Zafiro</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-primary-container font-label-sm text-label-sm">Rubí</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-secondary-container font-label-sm text-label-sm">Esmeralda</span>
+</div>
+</article>
+<!-- Chao Karate -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-error">Chao Karate (SA2: Battle)</h3>
+<span class="font-label-sm text-label-sm text-error font-bold">Dojo Ring-Out</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Duelos en dojo circular. La barra de 'Zeal' determina la iniciativa de ataque; la Stamina mantiene la barra de guardia activa frente a patadas y golpes giratorios de rivales como Chaosky o Flash.
+        </p>
+<div class="grid grid-cols-4 gap-space-xs text-center font-label-sm text-label-sm mt-space-xs">
+<div class="bg-surface-container-high p-1 rounded text-on-surface">Novato</div>
+<div class="bg-surface-container-high p-1 rounded text-on-surface">Amateur</div>
+<div class="bg-surface-container-high p-1 rounded text-primary-container">Pro</div>
+<div class="bg-surface-container-high p-1 rounded text-secondary-container font-bold">Maestro</div>
+</div>
+</article>
+<!-- Otros Minijuegos de la Franquicia -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Minijuegos Spin-Off Célebres</span>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[18px] mt-0.5">casino</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Casino Park &amp; Bingo Highway (Sonic Heroes)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Flippers gigantes de pinball, líneas de apuestas con slots y aceleradores de caída libre.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">skateboarding</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Extreme Gear Trick Arenas (Sonic Riders)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acrobacias aéreas, reabastecimiento de tanques de aire y saltos de rampa de turbulencia.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BANNER COMUNITARIO WIKISPEED -->
+<div class="bg-surface-container-high p-space-md rounded-xl flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">¿Tienes un Chao Raro?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sube sus estadísticas y linaje genético a la base de datos comunitaria.</span>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow transition-transform active:scale-95">
+        Aportar
+      </button>
+</div>
+</div>
+<!-- SCRIPT PARA FILTRADO INTERACTIVO LOCAL -->
+<script>
+    function filterChaoSection(sectionKey, clickedBtn) {
+      // Manejar estado de botones
+      document.querySelectorAll('.chao-filter-btn').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      clickedBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      clickedBtn.classList.add('bg-primary-container', 'text-on-primary');
+
+      // Filtrar secciones
+      const sections = document.querySelectorAll('section[data-section]');
+      sections.forEach(sec => {
+        if (sectionKey === 'all' || sec.getAttribute('data-section') === sectionKey) {
+          sec.style.display = 'flex';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+    }
+
+    // Asegurar que Lore & Más figure activo en la barra inferior
+    document.addEventListener("DOMContentLoaded", () => {
+      const loreNav = document.querySelector('nav a[data-path="lore-y-mas"]');
+      if (loreNav) {
+        document.querySelectorAll('nav a').forEach(a => {
+          a.classList.remove('text-primary-container');
+          a.classList.add('text-on-surface-variant');
+          const ind = a.querySelector('.nav-indicator');
+          if (ind) {
+            ind.classList.remove('opacity-100', 'scale-100');
+            ind.classList.add('opacity-0', 'scale-50');
+          }
+        });
+        loreNav.classList.add('text-primary-container');
+        loreNav.classList.remove('text-on-surface-variant');
+        const indicator = loreNav.querySelector('.nav-indicator');
+        if (indicator) {
+          indicator.classList.add('opacity-100', 'scale-100');
+          indicator.classList.remove('opacity-0', 'scale-50');
+        }
+      }
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container [&amp;_.nav-indicator]:opacity-100 [&amp;_.nav-indicator]:scale-100"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Inicio</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="personajes" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Personajes</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="medios" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Medios</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="lore-y-mas" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Lore &amp; Más</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a></div></nav></body></html>

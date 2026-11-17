@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="WikiSpeed Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md tracking-tight text-primary-container truncate leading-none">WikiSpeed</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Inicio</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Buscar en la wiki" class="w-11 h-11 flex items-center justify-center rounded-full text-primary-container hover:text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cambiar idioma o apariencia" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[20px]">translate</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8 space-y-5">
+<!-- Search & Filter OmniBar -->
+<section class="px-gutter pt-2">
+<div class="relative flex items-center w-full">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-primary-container">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-24 rounded-xl bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-colors shadow-sm" id="wiki-search-input" placeholder="Buscar en WikiSpeed (ej. Shadow, Frontiers, IDW...)" type="search"/>
+<div class="absolute right-2 flex items-center space-x-1">
+<button aria-label="Limpiar búsqueda" class="hidden w-7 h-7 rounded-full bg-surface-variant text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all active:scale-90" id="clear-search-btn">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<button aria-label="Filtros rápidos" class="h-8 px-2.5 rounded-lg bg-surface-variant text-primary font-label-sm text-label-sm uppercase flex items-center space-x-1 hover:bg-surface-bright active:scale-95 transition-transform" id="filter-trigger">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="hidden xs:inline">Filtro</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Hero Welcome Banner -->
+<section class="px-gutter">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low p-space-lg shadow-md">
+<div class="absolute -right-10 -top-10 w-36 h-36 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/10 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+            v2.4 Live
+          </span>
+<div class="flex items-center space-x-1 bg-surface-variant/80 rounded-full px-1.5 py-0.5">
+<button class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-fixed font-label-sm text-label-sm shadow-xs">ES</button>
+<button class="px-2 py-0.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">EN</button>
+</div>
+</div>
+<div class="space-y-1">
+<h1 class="font-headline-md text-headline-md text-primary-container tracking-tight">
+            Tu Enciclopedia de Alta Velocidad
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+            El archivo definitivo en español sobre el universo, cronología y secretos de Sonic the Hedgehog.
+          </p>
+</div>
+<!-- Wiki Metrics Chips -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest/70 backdrop-blur-sm">
+<span class="font-headline-sm text-headline-sm text-primary-container leading-none">850+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 uppercase">Artículos</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest/70 backdrop-blur-sm">
+<span class="font-headline-sm text-headline-sm text-secondary-container leading-none">120+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 uppercase">Fichas</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest/70 backdrop-blur-sm">
+<span class="font-headline-sm text-headline-sm text-tertiary leading-none">45+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 uppercase">Juegos</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Shortcuts Grid (Based on sketch) -->
+<section class="px-gutter space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="w-1.5 h-4 rounded-full bg-primary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Exploración Principal</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">4 Pilares</span>
+</div>
+<div class="grid grid-cols-2 gap-gutter-sm">
+<!-- 1. Juegos de Sonic -->
+<a class="group relative overflow-hidden rounded-xl bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high active:scale-[0.98] transition-all shadow-sm" href="#">
+<div class="flex items-start justify-between mb-3">
+<div class="w-9 h-9 rounded-lg bg-primary/20 flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">sports_esports</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container group-hover:translate-x-0.5 transition-all text-[18px]">arrow_forward</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface group-hover:text-primary-container transition-colors block">Juegos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight block mt-0.5">Clásica, Dreamcast y Moderna</span>
+</div>
+<div class="mt-2.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-variant text-on-surface font-label-sm text-label-sm">45 Títulos</span>
+</div>
+</a>
+<!-- 2. Cómics de Sonic -->
+<a class="group relative overflow-hidden rounded-xl bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high active:scale-[0.98] transition-all shadow-sm" href="#">
+<div class="flex items-start justify-between mb-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary-container group-hover:translate-x-0.5 transition-all text-[18px]">arrow_forward</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface group-hover:text-secondary-container transition-colors block">Cómics</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight block mt-0.5">IDW, Archie y Fleetway</span>
+</div>
+<div class="mt-2.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-variant text-on-surface font-label-sm text-label-sm">700+ Números</span>
+</div>
+</a>
+<!-- 3. Películas y Series -->
+<a class="group relative overflow-hidden rounded-xl bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high active:scale-[0.98] transition-all shadow-sm" href="#">
+<div class="flex items-start justify-between mb-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary group-hover:bg-tertiary-container group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[20px]">movie</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-tertiary group-hover:translate-x-0.5 transition-all text-[18px]">arrow_forward</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface group-hover:text-tertiary transition-colors block">Películas & TV</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight block mt-0.5">Paramount, Prime y X</span>
+</div>
+<div class="mt-2.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-variant text-on-surface font-label-sm text-label-sm">Cine & Serie</span>
+</div>
+</a>
+<!-- 4. Personajes de Sonic -->
+<a class="group relative overflow-hidden rounded-xl bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high active:scale-[0.98] transition-all shadow-sm" href="#">
+<div class="flex items-start justify-between mb-3">
+<div class="w-9 h-9 rounded-lg bg-surface-variant flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-0.5 transition-all text-[18px]">arrow_forward</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors block">Personajes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight block mt-0.5">Fichas técnicas y lore</span>
+</div>
+<div class="mt-2.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-variant text-on-surface font-label-sm text-label-sm">120 Perfiles</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Featured Article (Destacado del Día) -->
+<section class="px-gutter space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="w-1.5 h-4 rounded-full bg-secondary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Artículo Destacado</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+        Del Día
+      </span>
+</div>
+<article class="overflow-hidden rounded-xl bg-surface-container shadow-sm flex flex-col">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Sonic the Hedgehog running at hyper speed through the digital cyber space aesthetic of Sonic Frontiers, electric neon turquoise light streams, towering ancient alien monoliths under an emerald alien sky, cinematic lighting, ultra-detailed gaming concept art, rich deep navy shadows with bright cyan sparks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2v9sqaBiXryJuYWQAaUJ8-12kAMKCoafh_rmRxSqbkZ9Rt6r4C9w19JkFoOq3TF-bCwks6xMpU1rd0P6vaIFA0w3WcnWiUd1yioE0LLEHWoGCkGzq1YTnJa7tPBT0OXAevyTeLJZmAO-CEfwsN9M6tRwLe4flmh7tWGZWjLLorvNs0fq146iqIikqDTh3fs8RpSc51FYIS6bLerZxPYyakQIHJ8fzvSyE6aRGvSo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-fixed font-label-sm text-label-sm shadow-sm">
+            Era Abierta
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm">
+            Canon Principal
+          </span>
+</div>
+<div class="absolute bottom-2 right-3 flex items-center space-x-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+<span>14.8k lecturas</span>
+</div>
+</div>
+<div class="p-space-md space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-snug">
+          Sonic Frontiers: El Ciberespacio y las Islas Starfall
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Análisis completo de la tecnología de los Ancestros, las memorias digitales de Green Hill y Chemical Plant, y el despertar de The End en la cronología contemporánea.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>Lectura: 8 min</span>
+</div>
+<button class="h-9 px-4 rounded-full bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider flex items-center space-x-1 active:scale-95 transition-transform shadow-sm">
+<span>Leer Ficha</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Popular Characters Horizontal Scroller -->
+<section class="space-y-2.5">
+<div class="px-gutter flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="w-1.5 h-4 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Personajes Populares</h2>
+</div>
+<a class="font-label-sm text-label-sm text-primary-container hover:text-primary uppercase tracking-wider flex items-center" href="#">
+        Ver Roster
+        <span class="material-symbols-outlined text-[14px] ml-0.5">chevron_right</span>
+</a>
+</div>
+<!-- Scroller -->
+<div class="flex gap-3 overflow-x-auto px-gutter no-scrollbar snap-x snap-mandatory">
+<!-- 1. Sonic -->
+<div class="snap-start shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden p-2 flex flex-col group active:scale-95 transition-transform">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Portrait of Sonic the Hedgehog smiling confidently with his signature thumbs up gesture, vibrant cobalt blue fur, crimson running shoes, glowing golden ring aura in background, dynamic 3D render art style with high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-QxeCFnX3uUwTlyu_JFq1ZRdG_n5g9mYdNv_nMn7V2fWvYYKxUSBnwESVzKDF8VZpkbDRbeOVIeGti2AMhtsVXRhVVB-a7RXYunPdo4AMPZOp4YFbzMPVrTmoW4M5MDRjQvnSQb_OV2iU8nWL7myt-KQaz1zoGzMgvdL3KsC-sMWgMOOIKU6Z45nfu8ujfFhNQw76QsPDcJCkhXsa8FbZOG6iFQFhAmJB-1BKK4Q"/>
+<div class="absolute bottom-1 left-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-primary-container font-label-sm text-label-sm">#001</span>
+</div>
+</div>
+<div class="mt-2 flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Sonic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">El Erizo Más Rápido</span>
+<div class="mt-1 flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">speed</span>
+<span class="font-label-sm text-label-sm">Velocidad S+</span>
+</div>
+</div>
+</div>
+<!-- 2. Tails -->
+<div class="snap-start shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden p-2 flex flex-col group active:scale-95 transition-transform">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Miles Tails Prower the twin-tailed yellow fox holding a holographic digital datapad wrench tool, curious joyful expression, vibrant amber orange and clean white tones, soft studio depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5jtv_sCE7g8NlLjYPRUXW8oFRv3t7lYIY-gZ462Do1LBq_DDAAeDxTacYMK2QklWkcC59U1lw6DKGcdLTyaPchFsyKpJvpwiKs1n1blIqxK8snGHmmsdIdsIQZ9oqjwn_KB4FcJ2EIwytgBBv7YQpo5_cAfpX0aJ98zf0vaVMqzHlIglGXv14bFRqMLOO3u1y5DRP8lhGm1LibDV6MBnpUS3f_q_mar57Zm4s_eI"/>
+<div class="absolute bottom-1 left-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-secondary-container font-label-sm text-label-sm">#002</span>
+</div>
+</div>
+<div class="mt-2 flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Miles 'Tails'</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Genio Mecánico</span>
+<div class="mt-1 flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span class="font-label-sm text-label-sm">Vuelo / Tech</span>
+</div>
+</div>
+</div>
+<!-- 3. Knuckles -->
+<div class="snap-start shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden p-2 flex flex-col group active:scale-95 transition-transform">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Knuckles the Echidna in ready fighting stance with spiked white gloves, bold scarlet red quills, glowing giant green Master Emerald temple altar behind him, warm cinematic rim light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCslLbEg1QGuRsM07DhrKwr1nDn2T7evpDiQMH8zM2zO_bS9h9k1navA7x5li6RR-3yEbtpnWMvdWMiOTCa2f5nXpQBgKqy-7DThJGQNuHiUgJARgG9LGd3EK6pi2_soi4fwlbne5FhAGHqLoDOZp_T52DBIQozFgLopIpQrz5voPNbAVOb_fEAXyPcfdC2QjN6EhqIpp1_PDLTByhhY0IUOcLnBeRWhz4zwU9Ovoc"/>
+<div class="absolute bottom-1 left-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-error font-label-sm text-label-sm">#003</span>
+</div>
+</div>
+<div class="mt-2 flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Knuckles</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Guardián Sagrado</span>
+<div class="mt-1 flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<span class="font-label-sm text-label-sm">Fuerza Bruta</span>
+</div>
+</div>
+</div>
+<!-- 4. Shadow -->
+<div class="snap-start shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden p-2 flex flex-col group active:scale-95 transition-transform">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Shadow the Hedgehog with dark ebony fur and deep crimson highlights, glowing hover boots releasing fiery amber sparks, dark moody space colony ARK background with red Chaos Control energy particles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnCunsH1qoluWQsGUbPy14aHlMI59t-SXTT4Tn4yahCajKuEhkB_XBJgJCzBT_hfzLYo67k6w9vPVPBbxfn7gBOySSu18Y0aCaPW-Ybpldu32jZjU2xRKvBtBx9l4gxzi73nx5ai_velxomG685m-57IIlaXk3LYIMHF6LHgYzOl5FRc-el6SDzMqGCoK-2Bu3gZ5BKl-WFhhIaSv9tF6QJxlu75sBUYYFvaRyUCw"/>
+<div class="absolute bottom-1 left-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-error-container font-label-sm text-label-sm">#004</span>
+</div>
+</div>
+<div class="mt-2 flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Shadow</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Forma de Vida Suprema</span>
+<div class="mt-1 flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span class="font-label-sm text-label-sm">Chaos Control</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curiosidades y Producción (Directly from sketch) -->
+<section class="px-gutter space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="w-1.5 h-4 rounded-full bg-tertiary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curiosidades y Creación</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Detalles</span>
+</div>
+<div class="space-y-2">
+<!-- Creadores -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Creadores Originales de Sonic</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Yuji Naka, Naoto Ohshima & Hirokazu Yasuhara</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</div>
+<!-- Personajes No Canon -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center text-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[22px]">alt_route</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Personajes No Canónicos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scourge, Sally Acorn, Cosmos y Universos Paralelos</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</div>
+<!-- Actores de Doblaje -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">record_voice_over</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Reparto y Actores de Doblaje</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cast en Español Latino, Castellano, Japonés e Inglés</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Interactive Community Speed Note -->
+<section class="px-gutter pt-1">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center space-x-2.5">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Wiki actualizada hace <strong class="text-on-surface font-semibold">12 minutos</strong> por la comunidad
+        </span>
+</div>
+<button class="h-8 px-3 rounded-full bg-surface-variant text-primary font-label-sm text-label-sm uppercase flex items-center space-x-1 hover:bg-surface-bright active:scale-95 transition-transform" id="random-article-btn">
+<span class="material-symbols-outlined text-[15px]">shuffle</span>
+<span>Aleatorio</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('wiki-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const randomBtn = document.getElementById('random-article-btn');
+
+    if (searchInput && clearBtn) {
+      searchInput.addEventListener('input', function() {
+        if (this.value.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+      });
+
+      clearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        searchInput.focus();
+      });
+    }
+
+    if (randomBtn) {
+      randomBtn.addEventListener('click', function() {
+        const topics = ['Sonic Frontiers', 'Super Shadow', 'Master Emerald', 'Metal Sonic', 'Dr. Eggman'];
+        const chosen = topics[Math.floor(Math.random() * topics.length)];
+        if (searchInput) {
+          searchInput.value = chosen;
+          if (clearBtn) clearBtn.classList.remove('hidden');
+          searchInput.focus();
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container [&_.nav-indicator]:opacity-100 [&_.nav-indicator]:scale-100"><div class="h-16 px-space-sm flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 transition-all group relative text-primary-container [&_.nav-indicator]:opacity-100 [&_.nav-indicator]:scale-100" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Inicio</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="personajes" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Personajes</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="medios" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Medios</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="lore-y-mas" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Lore & Más</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a></div></nav></body></html>

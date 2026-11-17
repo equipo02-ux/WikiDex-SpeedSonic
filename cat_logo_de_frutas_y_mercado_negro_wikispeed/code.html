@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;color:#d6e3ff;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#233148", "on-error": "#690005", "secondary": "#fff0c8", "background": "#041329", "surface-container-lowest": "#010e24", "surface-variant": "#27354c", "surface-container-high": "#1c2a41", "on-primary": "#003548", "secondary-container": "#fdd000", "surface-bright": "#2c3951", "on-tertiary-fixed": "#011d35", "on-surface": "#d6e3ff", "tertiary": "#cce2ff", "on-secondary-fixed-variant": "#564500", "outline-variant": "#3e484e", "surface-container-low": "#0d1c32", "on-secondary": "#3b2f00", "primary-fixed-dim": "#73d1ff", "on-primary-fixed": "#001e2b", "inverse-primary": "#006687", "tertiary-fixed": "#d1e4ff", "on-secondary-container": "#6e5900", "surface": "#041329", "primary": "#bae6ff", "secondary-fixed-dim": "#ecc200", "surface-dim": "#041329", "on-tertiary-fixed-variant": "#314863", "on-background": "#d6e3ff", "on-secondary-fixed": "#231b00", "inverse-surface": "#d6e3ff", "primary-fixed": "#c1e8ff", "on-primary-container": "#005774", "tertiary-container": "#aec6e6", "tertiary-fixed-dim": "#b0c9e8", "surface-container-highest": "#27354c", "surface-tint": "#73d1ff", "error-container": "#93000a", "on-tertiary-container": "#3b526d", "on-surface-variant": "#bec8cf", "on-tertiary": "#19324b", "on-error-container": "#ffdad6", "error": "#ffb4ab", "primary-container": "#69cfff", "on-primary-fixed-variant": "#004d67", "secondary-fixed": "#ffe07c", "outline": "#889299", "surface-container": "#112036" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-sm": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "label-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="WikiSpeed Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDkGU42EEDFm6E4sOD7kSoMnp5V4aA0-I2G1i0IM87fUAzop1-t_KCbJHU-gdCk71aC6b0UctvKqLA0AwkkpDKViZzYYRjSgEjBdmLe_ywWtzq9ekP306keHuwLmDVEOex0ZBMwUp7tNigefEuElOPrep1HZ_-2u09Te-q9zFAn-orLAjqL75rJSnsOzgHIpQC5K3h7ozIxN8_RYFZTKiL2x4KONy_U1fHal8ec1hQ"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md tracking-tight text-primary-container truncate leading-none">WikiSpeed</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Catálogo De Frutas Y Mercado Negro   Wikispeed</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Buscar en la wiki" class="w-11 h-11 flex items-center justify-center rounded-full text-primary-container hover:text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cambiar idioma o apariencia" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[20px]">translate</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Sub-header Breadcrumb / Location Badge -->
+<div class="px-gutter pt-space-md pb-space-xs flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_8px_rgba(105,207,255,0.8)]"></span>
+<span>CHAO KINDERGARTEN</span>
+<span class="text-outline">•</span>
+<span class="text-primary-container">BLACK MARKET</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-low text-secondary-fixed text-label-sm font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span>Stock: Dinámico</span>
+</div>
+</div>
+<!-- Main Title & Wiki Dex Subtitle -->
+<div class="mt-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-primary text-balance leading-tight">
+        Catálogo de Frutas, Semillas &amp; Mercado Negro
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Compendio oficial de precios en Rings, desbloqueo por Emblemas, valor nutricional y genética para Chao en Sonic Adventure 2 &amp; DX.
+      </p>
+</div>
+</div>
+<!-- Ring Wallet / Cart Floating Widget -->
+<div class="px-gutter my-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-high shadow-lg flex items-center justify-between gap-space-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-secondary-container/10 pointer-events-none blur-xl"></div>
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-full bg-secondary-container/20 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(253,208,0,0.35)]">
+<span class="material-symbols-outlined text-secondary-container text-[26px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Billetera de Rings</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-secondary font-bold tracking-tight" id="wallet-balance">45,820</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">RINGS</span>
+</div>
+</div>
+</div>
+<button class="shrink-0 px-3.5 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md active:scale-95 transition-transform flex items-center gap-1 shadow-[0_0_14px_rgba(105,207,255,0.4)]" id="sim-buy-btn">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Simular</span>
+</button>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="px-gutter flex flex-col gap-space-sm my-space-xs">
+<!-- Omni Search Field -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-primary-container text-[20px]">search</span>
+<input class="w-full pl-10 pr-10 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-bright transition-colors" id="market-search" placeholder="Buscar frutas, huevos joya, cascarones..." type="text"/>
+<button class="hidden material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface text-[18px]" id="search-clear-btn">close</button>
+</div>
+<!-- Category Filter Horizontal Scroll -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-gutter px-gutter no-scrollbar">
+<button class="filter-chip px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shrink-0 active:scale-95 transition-all shadow-[0_0_10px_rgba(105,207,255,0.3)]" data-cat="all">
+        Todos (58)
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 active:scale-95 transition-all" data-cat="frutas">
+        Frutas &amp; Dieta
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 active:scale-95 transition-all" data-cat="semillas">
+        Semillas
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 active:scale-95 transition-all" data-cat="huevos">
+        Huevos Joya
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 active:scale-95 transition-all" data-cat="cascarones">
+        Cascarones &amp; Cascos
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 active:scale-95 transition-all" data-cat="requisitos">
+        Emblemas (Tier)
+      </button>
+</div>
+</div>
+<!-- EMBLEM TIER NOTIFICATION ACCORDION -->
+<div class="px-gutter my-space-sm" id="section-requisitos">
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-xs">
+<div class="flex items-center justify-between cursor-pointer" id="emblem-accordion-trigger">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Umbrales de Emblemas de SA2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Requisitos de progreso para desbloquear rarezas</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform duration-200" id="accordion-arrow">expand_more</span>
+</div>
+<div class="hidden flex flex-col gap-space-xs pt-space-sm mt-space-xs" id="emblem-accordion-content">
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">0 - 19 Emblemas</span>
+<span class="text-primary-container">Frutas Básicas, Huevo Blanco, Semilla Normal</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">20 - 39 Emblemas</span>
+<span class="text-primary-container">Chao Fruit, Huevo Azul Metálico, Casco Cono</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">40 - 74 Emblemas</span>
+<span class="text-secondary-fixed">Heart Fruit, Huevo Plata y Oro, Semillas Hero/Dark</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">75 - 99 Emblemas</span>
+<span class="text-secondary-fixed">Huevo Rubí, Maceta y Calavera</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">100 - 180 Emblemas</span>
+<span class="text-error">Zafiro, Esmeralda y Obsidiana Brillante</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 1: FRUTAS & DIETA -->
+<div class="px-gutter mt-space-md flex flex-col gap-space-sm" id="section-frutas">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">nutrition</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Compendio de Frutas &amp; Dieta</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">8 Variedades</span>
+</div>
+<!-- Items Grid -->
+<div class="flex flex-col gap-space-sm" id="fruit-cards-container">
+<!-- Garden Fruit -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm" data-category="frutas" data-name="fruta estandar de jardin garden fruit">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[28px]">eco</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Fruta Estándar de Jardín</h3>
+<span class="font-label-sm text-label-sm text-outline">Garden Fruit • Base Universal</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1 text-secondary-fixed font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span>20</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gratis en árboles</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 rounded-lg bg-surface-container font-label-md text-label-md">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Bocados</span>
+<span class="text-on-surface font-semibold">4 Mordiscos</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Estamina</span>
+<span class="text-primary-container font-semibold">+10% Nivel</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Alineación</span>
+<span class="text-on-surface-variant font-semibold">Neutral 0.0</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Fruta silvestre producida espontáneamente en los árboles del jardín. Alimento básico para mantener nutridos a los Chao bebés sin alterar su balance ético.
+        </p>
+</div>
+<!-- Hero Fruit -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm" data-category="frutas" data-name="hero fruit fruta hero celestial">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[28px]">stars</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Hero Fruit</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Evolución Heroica</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1 text-secondary-fixed font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span>120</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier 0 Emblemas</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 rounded-lg bg-surface-container font-label-md text-label-md">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Bocados</span>
+<span class="text-on-surface font-semibold">3 Mordiscos</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Estamina</span>
+<span class="text-primary-container font-semibold">+15% Nivel</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Alineación</span>
+<span class="text-primary-container font-semibold">+0.10 Hero</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Inculca afinidad angelical. Favorece la aparición gradual del halo flotante y una tonalidad azulada/blanca antes de la metamorfosis en capullo.
+        </p>
+</div>
+<!-- Dark Fruit -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm" data-category="frutas" data-name="dark fruit fruta dark oscura">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[28px]">dark_mode</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Dark Fruit</h3>
+<span class="font-label-sm text-label-sm text-error">Evolución Oscura</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1 text-secondary-fixed font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span>120</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier 0 Emblemas</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 rounded-lg bg-surface-container font-label-md text-label-md">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Bocados</span>
+<span class="text-on-surface font-semibold">3 Mordiscos</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Estamina</span>
+<span class="text-primary-container font-semibold">+15% Nivel</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Alineación</span>
+<span class="text-error font-semibold">+0.10 Dark</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Inculca afinidad siniestra. Promueve la bola flotante puntiaguda de pinchos y un plumaje tenebroso, indispensable para desbloquear el Dark Garden.
+        </p>
+</div>
+<!-- Chao Fruit -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm" data-category="frutas" data-name="chao fruit fruta chao stats multi">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-container text-[28px]">auto_awesome</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Chao Fruit</h3>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Potenciador Universal</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1 text-secondary-fixed font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span>200</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">20 Emblemas</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 rounded-lg bg-surface-container font-label-md text-label-md">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Bocados</span>
+<span class="text-on-surface font-semibold">5 Mordiscos</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Estamina</span>
+<span class="text-primary-container font-semibold">+20% Nivel</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Estadísticas</span>
+<span class="text-secondary-fixed font-semibold">+2 Todos</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Fruto de élite que incrementa simétricamente los puntos ocultos de Swim, Fly, Run y Power, reduciendo el consumo de Chaos Drives y animales.
+        </p>
+</div>
+<!-- Heart Fruit -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm" data-category="frutas" data-name="heart fruit fruta corazon floracion apareamiento">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[28px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Heart Fruit (Fruta Corazón)</h3>
+<span class="font-label-sm text-label-sm text-error">Reproducción / Crianza</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1 text-secondary-fixed font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span>300</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">40 Emblemas</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 p-2 rounded-lg bg-surface-container font-label-md text-label-md">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Bocados</span>
+<span class="text-on-surface font-semibold">3 Mordiscos</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Estamina</span>
+<span class="text-primary-container font-semibold">+10% Nivel</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-outline text-label-sm">Efecto Especial</span>
+<span class="text-error font-semibold">Floración Inmediata</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Genera un anillo de flores alrededor del Chao adulto, entrando en celo durante 3 minutos. Acércale otro Chao maduro para depositar un huevo de Gen 2.
+        </p>
+</div>
+<!-- Smart Fruit & Strong Fruit (2-col grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-xs" data-category="frutas" data-name="smart fruit fruta inteligente kindergarten">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Smart Fruit</h3>
+</div>
+<span class="text-secondary-fixed font-label-lg text-label-lg">180 R</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Desbloqueo: 10 Emblemas</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Aumenta el coeficiente cognitivo. Permite asimilar lecciones complejas en el Kindergarten (piano, campana, dibujo).
+          </p>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-xs" data-category="frutas" data-name="strong fruit fruta fuerte karate combate">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">fitness_center</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Strong Fruit</h3>
+</div>
+<span class="text-secondary-fixed font-label-lg text-label-lg">180 R</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Desbloqueo: 0 Emblemas</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Maximiza el ardor combativo y anula la timidez infantil para torneos en el dojo de Chao Karate.
+          </p>
+</div>
+</div>
+<!-- Tiny Chao Garden Exclusive Fruits -->
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Frutas Geométricas (GBA Link)</span>
+<span class="font-label-sm text-label-sm text-primary-container">Tiny Chao Garden</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="p-2 rounded-lg bg-surface-container text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-container text-[22px]">change_history</span>
+<span class="font-label-md text-label-md text-on-surface mt-1">Triangular</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">80 Rings</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-container text-[22px]">crop_square</span>
+<span class="font-label-md text-label-md text-on-surface mt-1">Cuadrada</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">100 Rings</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-container text-[22px]">circle</span>
+<span class="font-label-md text-label-md text-on-surface mt-1">Redonda</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">150 Rings</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: SEMILLAS Y HUERTO DEL JARDÍN -->
+<div class="px-gutter mt-space-lg flex flex-col gap-space-sm" id="section-semillas">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">potted_plant</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Semillas &amp; Cultivo del Jardín</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Herramientas</span>
+</div>
+<!-- Prerequisite Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[22px] shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-secondary-fixed">Requisito Obligatorio:</strong> Para que un Chao plante una semilla debe haber ganado la <span class="text-on-surface">Pala (Shovel)</span> y la <span class="text-on-surface">Regadera (Watering Can)</span> en los circuitos de Chao Races.
+      </p>
+</div>
+<!-- Seeds Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="semillas" data-name="semilla normal standard seed arbol comun">
+<div>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">grain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Semilla Normal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Produce árbol frutal regular perpetuo.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-outline">Tier 0</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">150 R</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="semillas" data-name="semilla hero hero seed arbol sagrado">
+<div>
+<span class="material-symbols-outlined text-primary-container text-[24px]">psychiatry</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Semilla Hero</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Árbol de frutos Hero constantes.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-outline">Tier 30 Emblemas</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">300 R</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="semillas" data-name="semilla dark dark seed arbol oscuro">
+<div>
+<span class="material-symbols-outlined text-error text-[24px]">psychiatry</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Semilla Dark</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Árbol productor de Dark Fruit pura.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-outline">Tier 30 Emblemas</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">300 R</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="semillas" data-name="semilla fuerte strong seed arbol longevo">
+<div>
+<span class="material-symbols-outlined text-secondary-container text-[24px]">local_florist</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Semilla Fuerte</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Árbol indestructible que jamás se seca.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-outline">Tier 50 Emblemas</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">400 R</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: HUEVOS METÁLICOS Y JOYA -->
+<div class="px-gutter mt-space-lg flex flex-col gap-space-sm" id="section-huevos">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">egg</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Vitrina de Huevos Joya &amp; Raros</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Metálicos</span>
+</div>
+<!-- Egg Showcase Cards -->
+<div class="flex flex-col gap-space-sm">
+<!-- White Egg -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex items-center justify-between gap-space-sm" data-category="huevos" data-name="huevo blanco white egg comun">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-white flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">egg</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Huevo Blanco (White)</h3>
+<span class="font-label-sm text-label-sm text-outline">Tono monocolor básico</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary-fixed">400 Rings</span>
+<span class="font-label-sm text-label-sm text-outline">0 Emblemas</span>
+</div>
+</div>
+<!-- Metallic Blue -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex items-center justify-between gap-space-sm" data-category="huevos" data-name="huevo azul metalico metallic blue egg">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(105,207,255,0.7)]">
+<span class="material-symbols-outlined text-on-primary-container text-[24px]">egg</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Azul Metálico (Metallic Blue)</h3>
+<span class="font-label-sm text-label-sm text-primary-container">Reflejo perlado cian</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary-fixed">2,000 Rings</span>
+<span class="font-label-sm text-label-sm text-primary-container">15 Emblemas</span>
+</div>
+</div>
+<!-- Silver Jewel -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex items-center justify-between gap-space-sm" data-category="huevos" data-name="huevo plata silver jewel egg joya">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-outline-variant flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(190,200,207,0.5)]">
+<span class="material-symbols-outlined text-on-surface text-[24px]">egg</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Plata Joya (Silver Jewel)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Acabado cromado reflectivo</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary-fixed">4,000 Rings</span>
+<span class="font-label-sm text-label-sm text-primary-container">30 Emblemas</span>
+</div>
+</div>
+<!-- Gold Jewel -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex items-center justify-between gap-space-sm" data-category="huevos" data-name="huevo oro gold jewel egg dorado">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-secondary-container flex items-center justify-center shrink-0 shadow-[0_0_14px_rgba(253,208,0,0.6)]">
+<span class="material-symbols-outlined text-on-secondary-container text-[24px]">egg</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Oro Joya (Gold Jewel)</h3>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Reflejo áureo brillante</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary-fixed">5,000 Rings</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">45 Emblemas</span>
+</div>
+</div>
+<!-- Ruby Jewel -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex items-center justify-between gap-space-sm" data-category="huevos" data-name="huevo rubi ruby egg joya rojo">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-error-container flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(255,100,100,0.4)]">
+<span class="material-symbols-outlined text-error text-[24px]">egg</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Rubí Joya (Ruby Egg)</h3>
+<span class="font-label-sm text-label-sm text-error">Cristalino carmesí translúcido</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary-fixed">10,000 Rings</span>
+<span class="font-label-sm text-label-sm text-error">75 Emblemas</span>
+</div>
+</div>
+<!-- Sapphire & Emerald Duo -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex items-center justify-between gap-space-sm" data-category="huevos" data-name="huevo zafiro esmeralda sapphire emerald joya">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-inverse-primary flex items-center justify-center shrink-0 shadow-[0_0_14px_rgba(0,102,135,0.7)]">
+<span class="material-symbols-outlined text-primary text-[24px]">diamond</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Zafiro &amp; Esmeralda</h3>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Gemas de alta refracción</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary-fixed">20,000 Rings c/u</span>
+<span class="font-label-sm text-label-sm text-error">100 Emblemas</span>
+</div>
+</div>
+<!-- Shiny Black / Obsidian -->
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex items-center justify-between gap-space-sm relative overflow-hidden" data-category="huevos" data-name="huevo obsidiana shiny black egg negro brillante oscuro">
+<div class="absolute -right-6 top-0 w-28 h-full bg-gradient-to-l from-primary-container/10 to-transparent pointer-events-none"></div>
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-[0_0_16px_rgba(105,207,255,0.5)]">
+<span class="material-symbols-outlined text-primary-container text-[24px]">dark_mode</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Obsidiana (Shiny Black)</h3>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary-fixed text-label-sm">TOP</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container">Base para Chao Chaos Oscuros Puros</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold">50,000 R</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">120 Emblemas</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: CASCARONES Y SOMBREROS -->
+<div class="px-gutter mt-space-lg flex flex-col gap-space-sm" id="section-cascarones">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">theater_comedy</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Cascarones de Cabeza &amp; Sombreros</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Cosméticos</span>
+</div>
+<!-- Grid of Accessories -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="cascarones" data-name="cascaron de huevo regular eggshell">
+<div>
+<span class="material-symbols-outlined text-on-surface-variant text-[26px]">egg_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Cascarón Regular</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fragmento simple de nacimiento.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-outline">Común</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">50 Rings</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="cascarones" data-name="calabaza pumpkin halloween sombrero">
+<div>
+<span class="material-symbols-outlined text-secondary-container text-[26px]">sentiment_very_satisfied</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Calabaza (Pumpkin)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Máscara con linterna sonriente.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary-fixed">Halloween RNG</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">1,500 Rings</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="cascarones" data-name="calavera skull sombrero macabro">
+<div>
+<span class="material-symbols-outlined text-error text-[26px]">skull</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Calavera (Skull)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ideal para Chao Dark con actitud.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-error">Tier 75</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">3,000 Rings</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="cascarones" data-name="cono de trafico traffic cone casco">
+<div>
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">warning</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Cono de Tráfico</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Casco anaranjado cómico.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-primary-container">Tier 20</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">2,000 Rings</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="cascarones" data-name="maceta con flor flower pot cabeza">
+<div>
+<span class="material-symbols-outlined text-primary-container text-[26px]">yard</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Maceta Florecida</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tiesta de barro con brote vivo.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary-fixed">Tier 75</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">2,500 Rings</span>
+</div>
+</div>
+<div class="item-card p-space-md rounded-xl bg-surface-container-high flex flex-col justify-between gap-space-xs" data-category="cascarones" data-name="bolsa de papel cubo cardboard bucket sombrero">
+<div>
+<span class="material-symbols-outlined text-on-surface-variant text-[26px]">shopping_bag</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Bolsa &amp; Cubo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Con agujeros para los ojos.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-outline">Tier 10</span>
+<span class="text-secondary-fixed font-label-lg text-label-lg">800 Rings</span>
+</div>
+</div>
+</div>
+</div>
+<!-- PERSISTENT BOTTOM FLOATING ACTION BAR -->
+<div class="sticky bottom-2 px-gutter mt-space-xl z-30">
+<div class="p-2.5 rounded-full bg-surface-container-high/90 backdrop-blur-md shadow-2xl flex items-center justify-between gap-2">
+<button class="flex-1 py-2 px-4 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-[0_0_12px_rgba(105,207,255,0.35)]" id="add-to-calc-btn">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+<span>Añadir a Calculadora</span>
+</button>
+<button class="py-2 px-3 rounded-full bg-surface-container text-secondary-fixed font-label-md text-label-md flex items-center gap-1 shrink-0 active:scale-95 transition-all" id="filter-emblem-toggle">
+<span class="material-symbols-outlined text-[18px]">filter_alt</span>
+<span>Emblemas</span>
+</button>
+</div>
+</div>
+<!-- Micro-Modal Feedback Simulation -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-surface-container-highest text-primary-container text-label-md font-label-md shadow-2xl transition-all duration-300 opacity-0 pointer-events-none z-50 flex items-center gap-2" id="sim-toast">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span id="toast-text">¡Compra simulada registrada!</span>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('market-search');
+    const searchClear = document.getElementById('search-clear-btn');
+    const itemCards = document.querySelectorAll('.item-card');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const accordionTrigger = document.getElementById('emblem-accordion-trigger');
+    const accordionContent = document.getElementById('emblem-accordion-content');
+    const accordionArrow = document.getElementById('accordion-arrow');
+    const toast = document.getElementById('sim-toast');
+    const toastText = document.getElementById('toast-text');
+    const simBuyBtn = document.getElementById('sim-buy-btn');
+    const addToCalcBtn = document.getElementById('add-to-calc-btn');
+    const walletBalance = document.getElementById('wallet-balance');
+    const emblemToggle = document.getElementById('filter-emblem-toggle');
+
+    let currentCategory = 'all';
+    let balance = 45820;
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastText.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2000);
+    }
+
+    // Live Instant Search & Category Filter
+    function filterItems() {
+      const query = (searchInput.value || '').trim().toLowerCase();
+
+      if (query.length > 0) {
+        searchClear.classList.remove('hidden');
+      } else {
+        searchClear.classList.add('hidden');
+      }
+
+      itemCards.forEach(card => {
+        const nameData = card.getAttribute('data-name') || '';
+        const catData = card.getAttribute('data-category') || '';
+
+        const matchesQuery = query === '' || nameData.toLowerCase().includes(query);
+        const matchesCategory = currentCategory === 'all' || catData === currentCategory;
+
+        if (matchesQuery && matchesCategory) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterItems);
+    }
+
+    if (searchClear) {
+      searchClear.addEventListener('click', () => {
+        searchInput.value = '';
+        filterItems();
+        searchInput.focus();
+      });
+    }
+
+    // Category Tabs Switching
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_10px_rgba(105,207,255,0.3)]');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+
+        chip.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_10px_rgba(105,207,255,0.3)]');
+        chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+        currentCategory = chip.getAttribute('data-cat') || 'all';
+
+        // Scroll to corresponding view if specific
+        if (currentCategory === 'requisitos') {
+          accordionContent.classList.remove('hidden');
+          accordionArrow.style.transform = 'rotate(180deg)';
+          const sec = document.getElementById('section-requisitos');
+          if (sec) sec.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        filterItems();
+      });
+    });
+
+    // Accordion expand
+    if (accordionTrigger) {
+      accordionTrigger.addEventListener('click', () => {
+        const isHidden = accordionContent.classList.contains('hidden');
+        if (isHidden) {
+          accordionContent.classList.remove('hidden');
+          accordionArrow.style.transform = 'rotate(180deg)';
+        } else {
+          accordionContent.classList.add('hidden');
+          accordionArrow.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+    // Quick Action: Simulate Purchasing
+    if (simBuyBtn) {
+      simBuyBtn.addEventListener('click', () => {
+        if (balance >= 300) {
+          balance -= 300;
+          walletBalance.textContent = balance.toLocaleString('en-US');
+          showToast('-300 Rings: ¡Heart Fruit comprada!');
+        } else {
+          showToast('¡Rings insuficientes en la billetera!');
+        }
+      });
+    }
+
+    // Quick Action: Add items to Calculator
+    if (addToCalcBtn) {
+      addToCalcBtn.addEventListener('click', () => {
+        showToast('Ítems exportados a la Calculadora Chao');
+      });
+    }
+
+    if (emblemToggle) {
+      emblemToggle.addEventListener('click', () => {
+        const sec = document.getElementById('section-requisitos');
+        if (sec) {
+          accordionContent.classList.remove('hidden');
+          accordionArrow.style.transform = 'rotate(180deg)';
+          sec.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container [&amp;_.nav-indicator]:opacity-100 [&amp;_.nav-indicator]:scale-100"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="chao-garden-minijuegos-wikispeed" href="#"><span class="material-symbols-outlined text-[24px]">pest_control</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Garden</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="catalogo-de-frutas-y-mercado-negro-wikispeed" href="#"><span class="material-symbols-outlined text-[24px]">storefront</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Mercado</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="calculadora-de-estadisticas-chao-wikispeed" href="#"><span class="material-symbols-outlined text-[24px]">calculate</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Stats</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Inicio</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-all group relative" data-path="lore-y-mas" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Lore</span><span class="nav-indicator w-1.5 h-1.5 rounded-full bg-primary-container opacity-0 scale-50 transition-all duration-300 mt-0.5 shadow-[0_0_8px_rgba(105,207,255,0.7)]"></span></a></div></nav></body></html>
